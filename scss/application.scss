@@ -1,0 +1,37 @@
+/* Application SCSS for The State Decoded
+
+   To use this file, you need to use some kind of Sass processor. THe easiest
+   way to do this is to use the Gemfile in this application and then use Ruby
+   and bundler to install it. If you're using OS X, Ruby should be built in. If
+   not, you may want to search around for the best way to use this file.
+
+   The CSS in the /css directory is generated from this file. While you can edit
+   the standard CSS, any changes made there will not be saved if you edit and
+   later reprocess this file.
+
+   The easiest setup is to use 'sass --watch' or an application like CodeKit to
+   automatically process this file.
+
+   Typically, you would not write styles in this file, but include files here
+   in order to make for an easier to manage development environment.
+
+   Remember, attributes are one per line and in alphabetical order. We use
+   combination attributes whenever possible for conciseness.
+
+   - John Athayde, Nov 2012
+     jmpa@meticulous.com
+*/
+
+/* Standardize between browsers/reset built in stylesheets */
+@import "normalize.css";
+
+/* Load font stacks and baseline type work */
+@import "dependencies/variables/_typography.css.scss";
+@import "base/_typestandards.css.scss";
+
+
+/* Load site styles */
+@import "base/_boilerplate.css.scss";
+@import "base/_design.css.scss";
+
+/* Load state-specific overrides */

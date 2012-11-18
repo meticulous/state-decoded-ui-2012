@@ -1,0 +1,51 @@
+// *****************************************************************************
+// TYPOGRAPHY VARIABLES
+// *****************************************************************************
+
+// ------------------------------------------------------------------
+//  Font Stacks
+// ------------------------------------------------------------------
+
+// The fonts available from TypeKit are Adobe Jenson Pro, FF Meta Serif Web Pro, and Proxima Nova
+
+$statedecoded-stack1: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;￿
+$statedecoded-stack2: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;￿
+$statedecoded-stack3: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$body-stack: $statedecoded-stack2;
+$alt-stack: "Arial Rounded MT Bold", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$legal-stack: Georgia, "Times New Roman", Times, serif;
+$code-stack: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$baseFontSize:           13px;
+$baseLineHeight:        18px;
+
+// ------------------------------------------------------------------
+//  Headings
+// ------------------------------------------------------------------
+$headingsFontFamily:    $statedecoded-stack1;
+$headingsFontWeight:    normal; // instead of browser default, bold
+$headingsColor:         ''; // empty to use BS default, @textColor
+
+$subHeadingsFontFamily:    $statedecoded-stack2;
+$subHeadingsFontWeight:    normal; // instead of browser default, bold
+$subHeadingsColor:         ''; // empty to use BS default, @textColor
+
+// ------------------------------------------------------------------
+//  Navigation
+// ------------------------------------------------------------------
+$navFontFamily:    $statedecoded-stack2;
+$navFontWeight:    normal; // instead of browser default, bold
+
+// ------------------------------------------------------------------
+//  Body
+// ------------------------------------------------------------------
+
+$baseFontFamily:      $body-stack;
+$altFontFamily:        $alt-stack;
+
+// ------------------------------------------------------------------
+//  Special Case
+// ------------------------------------------------------------------
+
+$legalFontFamily: $legal-stack;
