@@ -31,6 +31,9 @@
 /* Standardize between browsers/reset built in stylesheets */
 @import "normalize.css";
 
+/* Functions not in Compass */
+@import "dependencies/mixins/_gradient-overrides.css.scss";
+
 /* Variables, etc */
 @import "dependencies/variables/_colors.css.scss";
 @import "dependencies/variables/_drop-downs.css.scss";
@@ -39,7 +42,7 @@
 /* Load font stacks and baseline type work */
 @import "dependencies/variables/_typography.css.scss";
 @import "base/_typestandards.css.scss";
-
+@import "base/_buttons.css.scss";
 
 /* Load site styles */
 @import "base/_boilerplate.css.scss";

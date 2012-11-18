@@ -5,8 +5,9 @@
 // Primary Palette
 // ------------------------------------------------------------------
 
-$base:      #137da1; // Blue
-$dark-base: adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
+$base:       #137da1; // Blue
+$light-base: adjust-color($base, $saturation: 0%, $lightness: 15%);
+$dark-base:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
 
 // Secondary Palette
 // ------------------------------------------------------------------
@@ -32,7 +33,7 @@ $grayLighter: #f2f1ee;
 $grayLightest: #faf9f6;
 $grayDark: #95928d;
 $grayDarker: #62615e;
-$grayDarkest: #4b4944;
+$grayDarkest: #403f3d;
 
 
 // Transparent Colors
