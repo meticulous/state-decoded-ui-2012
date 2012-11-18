@@ -1,0 +1,33 @@
+/*
+################################################################################
+# Global Layout Declarations
+################################################################################
+
+These styles are for the base look and feel and layout of the site, including
+navigation, headers, footers, etc.
+
+*/
+
+header#page_header {
+} // header#page_header
+
+footer#page_footer {
+  background-color: $grayDarkest;
+  color: $gray;
+
+  p {
+
+    a {
+      color: $white;
+    } // a
+
+    &.downloads {
+    } // &.downloads
+
+    &.credits {
+    } // &.credits
+
+    &.legalese {
+    } // &.legalese
+  } // p
+} // footer#page_footer
