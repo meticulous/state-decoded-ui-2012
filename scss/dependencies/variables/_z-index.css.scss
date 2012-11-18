@@ -1,0 +1,34 @@
+// *****************************************************************************
+// Z-INDEX VARIABLES
+// *****************************************************************************
+
+// Z-index master list
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+
+$zindexBase:            1000 !default;
+$zindexDropdown:        ($zindexBase + 10) !default;
+$zindexPopover:         ($zindexBase + 20) !default;
+$zindexTooltip:         ($zindexBase + 30) !default;
+$zindexFixedNavbar:     ($zindexBase + 40) !default;
+
+// ------------------------------------------------------------------
+//  Modals
+// ------------------------------------------------------------------
+
+$zindexModalHidden:     ($zindexBase - 10) !default;
+$zindexModalBackdrop:   ($zindexBase + 50) !default;
+$zindexModalBackdropHidden:  ($zindexBase - 50) !default;
+$zindexModal:           ($zindexBase + 60) !default;
+
+// ------------------------------------------------------------------
+//  Responsive Design
+// ------------------------------------------------------------------
+
+$zindexSlideOutToggle: ($zindexBase + 1000) !default;
+$zindexSlideOut: ($zindexSlideOutToggle + 1) !default;
+
+
+// Mobile Full Page Warning
+$zindexPortraitWarning: 9999 !default;

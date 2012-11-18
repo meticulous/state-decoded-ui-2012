@@ -22,11 +22,19 @@
      jmpa@meticulous.com
 */
 
+/* Setup Paths */
+@import "dependencies/variables/_paths.css.scss";
+
 /* Import the Compass Library */
 @import "compass";
 
 /* Standardize between browsers/reset built in stylesheets */
 @import "normalize.css";
+
+/* Variables, etc */
+@import "dependencies/variables/_colors.css.scss";
+@import "dependencies/variables/_drop-downs.css.scss";
+@import "dependencies/variables/_z-index.css.scss";
 
 /* Load font stacks and baseline type work */
 @import "dependencies/variables/_typography.css.scss";

@@ -1,0 +1,114 @@
+// *****************************************************************************
+// COLORS
+// *****************************************************************************
+
+// Primary Palette
+// ------------------------------------------------------------------
+
+$base:      #137da1; // Blue
+$dark-base: adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
+
+// Secondary Palette
+// ------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------
+//  GLOBAL COLORS
+// ------------------------------------------------------------------
+
+// Accent colors
+
+$yellow:                #fff200;
+$black:                 #000;
+$white:                 #fff;
+
+
+// The Grays
+// -------------------------------------------------------------------
+
+$gray: #c9c7c3;
+$grayLight: #e2e1df;
+$grayLighter: #f2f1ee;
+$grayLightest: #faf9f6;
+$grayDark: #95928d;
+$grayDarker: #62615e;
+$grayDarkest: #4b4944;
+
+
+// Transparent Colors
+// -------------------------------------------------------------------
+
+$transparentWhite: hsla(100,100%,100%,0) !default;
+$transparentBlack: hsla(0,0%,0%,0) !default;
+
+$shadowLightest: hsla(0, 0%, 0%, 0.1) !default;
+$shadowLighter: hsla(0, 0%, 0%, 0.25) !default;
+$shadowLight: hsla(0, 0%, 0%, 0.5) !default;
+$shadow: hsla(0, 0%, 0%, 0.75) !default;
+
+$glowLightest: hsla(100,100%,100%,0.1) !default;
+$glowLighter: hsla(100,100%,100%,0.25) !default;
+$glowLight: hsla(100,100%,100%,0.5) !default;
+$glow: hsla(100,100%,100%,0.75) !default;
+
+$highlight: transparentize($yellow, .7);
+
+// ------------------------------------------------------------------
+//  COLORS 2 THINGS
+// ------------------------------------------------------------------
+
+// Default CSS Attributes
+// ------------------------------------------------------------------
+
+// Text Color
+$textColor:             $grayDarker !default;
+$textColorLight:        $grayLight !default;
+
+
+// Input placeholder text color
+$placeholderText:       $grayLight !default;
+
+
+// Links
+$linkColor:         adjust-color($base, $lightness: 0%, $saturation: 0%) !default;
+$linkColorHover:    adjust-color($base, $lightness: 10%, $saturation: 10%) !default;
+$linkColorActive:   adjust-color($base, $lightness: 10%, $saturation: 10%) !default;
+$linkColorVisited:  adjust-color($base, $lightness: -10%, $saturation: -50%) !default;
+
+
+// Form states and alerts
+$warningText:             #c09853 !default;
+$warningBackground:       #fcf8e3 !default;
+$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%) !default;
+
+$errorText:               #b94a48 !default;
+$errorBackground:         #f2dede !default;
+$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%) !default;
+
+$successText:             #39b54a !default;
+$successBackground:       mix(white, $successText, 80%) !default;
+$successBorder:           darken(adjust-hue($successText, -10), 5%) !default;
+
+$infoText:                #3a87ad !default;
+$infoBackground:          #d9edf7 !default;
+$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
+
+
+// States
+// ------------------------------------------------------------------
+$positive-green: #399e25 !default;
+$negative-red: #c83434 !default;
+
+
+// Tooltips and popovers
+// -------------------------
+$tooltipColor:            #fff;
+$tooltipBackground:       #000;
+$tooltipArrowColor:       $tooltipBackground;
+
+$popoverBackground:       #fff;
+$popoverArrowColor:       #fff;
+$popoverTitleBackground:  darken($popoverBackground, 3%);
+
+// Special enhancement for popovers
+$popoverArrowOuterColor:  rgba(0,0,0,.25);
