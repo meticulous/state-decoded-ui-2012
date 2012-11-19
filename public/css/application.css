@@ -866,19 +866,20 @@ textarea {
 /* line 21, ../../scss/base/_boilerplate.css.scss */
 body {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  margin: 0; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, ../../scss/base/_boilerplate.css.scss */
+/* line 33, ../../scss/base/_boilerplate.css.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 37, ../../scss/base/_boilerplate.css.scss */
+/* line 38, ../../scss/base/_boilerplate.css.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -886,7 +887,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 46, ../../scss/base/_boilerplate.css.scss */
+/* line 47, ../../scss/base/_boilerplate.css.scss */
 hr {
   display: block;
   height: 1px;
@@ -898,14 +899,14 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, ../../scss/base/_boilerplate.css.scss */
+/* line 60, ../../scss/base/_boilerplate.css.scss */
 img {
   vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-/* line 67, ../../scss/base/_boilerplate.css.scss */
+/* line 68, ../../scss/base/_boilerplate.css.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -914,14 +915,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, ../../scss/base/_boilerplate.css.scss */
+/* line 78, ../../scss/base/_boilerplate.css.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, ../../scss/base/_boilerplate.css.scss */
+/* line 86, ../../scss/base/_boilerplate.css.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -934,7 +935,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 102, ../../scss/base/_boilerplate.css.scss */
+/* line 103, ../../scss/base/_boilerplate.css.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -942,7 +943,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
 
-/* line 110, ../../scss/base/_boilerplate.css.scss */
+/* line 111, ../../scss/base/_boilerplate.css.scss */
 .ir:before {
   content: "";
   display: block;
@@ -952,7 +953,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 121, ../../scss/base/_boilerplate.css.scss */
+/* line 122, ../../scss/base/_boilerplate.css.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -960,7 +961,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 130, ../../scss/base/_boilerplate.css.scss */
+/* line 131, ../../scss/base/_boilerplate.css.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -975,7 +976,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 147, ../../scss/base/_boilerplate.css.scss */
+/* line 148, ../../scss/base/_boilerplate.css.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -988,7 +989,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 160, ../../scss/base/_boilerplate.css.scss */
+/* line 161, ../../scss/base/_boilerplate.css.scss */
 .invisible {
   visibility: hidden; }
 
@@ -1003,7 +1004,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 177, ../../scss/base/_boilerplate.css.scss */
+/* line 178, ../../scss/base/_boilerplate.css.scss */
 .clearfix:before, .btn-group:before,
 .clearfix:after,
 .btn-group:after {
@@ -1012,7 +1013,7 @@ textarea {
   display: table;
   /* 2 */ }
 
-/* line 182, ../../scss/base/_boilerplate.css.scss */
+/* line 183, ../../scss/base/_boilerplate.css.scss */
 .clearfix:after, .btn-group:after {
   clear: both; }
 
@@ -1020,7 +1021,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 191, ../../scss/base/_boilerplate.css.scss */
+/* line 192, ../../scss/base/_boilerplate.css.scss */
 .clearfix, .btn-group {
   *zoom: 1; }
 
@@ -1037,15 +1038,37 @@ textarea {
 ################################################################################
 
 These styles are for the base look and feel and layout of the site, including
-navigation, headers, footers, etc.￿
+navigation, headers, footers, etc.
 
 */
+/* line 14, ../../scss/base/_global.css.scss */
+footer#page_footer {
+  background-color: #403f3d;
+  color: #c9c7c3;
+  font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1em -1em -1em -1em;
+  overflow: hidden;
+  padding: 1em; }
+  /* line 22, ../../scss/base/_global.css.scss */
+  footer#page_footer p {
+    font-size: 68.75%; }
+    /* line 25, ../../scss/base/_global.css.scss */
+    footer#page_footer p a {
+      color: white; }
+    /* line 29, ../../scss/base/_global.css.scss */
+    footer#page_footer p.downloads, footer#page_footer p.credits {
+      width: 20%; }
+    /* line 37, ../../scss/base/_global.css.scss */
+    footer#page_footer p.legalese {
+      float: right;
+      width: 75%; }
+
 /*
 ################################################################################
 # Homepage style declarations
 ################################################################################
 
-These styles are for the marketing/landing page of The State Decoded.￿
+These styles are for the marketing/landing page of The State Decoded.
 
 */
 /* line 12, ../../scss/base/_design.css.scss */

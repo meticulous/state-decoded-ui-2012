@@ -14,20 +14,30 @@ header#page_header {
 footer#page_footer {
   background-color: $grayDarkest;
   color: $gray;
+  font-family: $statedecoded-stack3;
+  margin: 1em -1em -1em -1em;
+  overflow: hidden;
+  padding: 1em;
 
   p {
+    font-size: 75%;
 
     a {
       color: $white;
     } // a
 
     &.downloads {
+      width: 20%;
     } // &.downloads
 
     &.credits {
+      @extend .downloads;
     } // &.credits
 
     &.legalese {
+      float: right;
+      font-size: 68.75%;
+      width: 75%;
     } // &.legalese
   } // p
 } // footer#page_footer
