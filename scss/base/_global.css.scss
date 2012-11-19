@@ -16,6 +16,37 @@ header#page_header {
   padding: 1em;
   position: relative;
 
+  hgroup#virginia_logo {
+    background-image: url("/public/images/faux_seal.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    height: 117px;
+    padding-left: 125px;
+    position: absolute;
+      left: 2.5em;
+      top: 100px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.35);
+
+    h1 {
+      font-family: $statedecoded-stack1;
+      font-size: 375%;
+      font-weight: normal;
+      margin: 0.25em 0 -0.25em 0; // Override system-wide typography
+    } //h1
+
+    h2 {
+      font-family: $statedecoded-stack3;
+      font-size: 150%;
+      font-weight: 100;
+      letter-spacing: 0.6em;
+      margin: 0; // Override system-wide typography
+      text-transform: uppercase;
+    } //h2
+  } // hgroup#virginia_logo
+
   section#search {
     background-color: $light-base;
     border: 1px solid rgba(255,255,255,0.5);
@@ -52,7 +83,7 @@ header#page_header {
         margin: 0;
         padding: 45px 0 0 0;
         text-align: center;
-        width: 11%; // Not 12.5% due to video margin requirements
+        width: 11%; // Not 12.5% due to video margin requirements1
 
         a {
           background-repeat: no-repeat;
