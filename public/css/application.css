@@ -99,7 +99,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   cursor: pointer;
   color: #62615e !important;
   display: inline-block;
-  font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding: 4px 10px 4px;
@@ -171,7 +171,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-primary, button.btn-primary:hover, input[type="button"].btn-primary, input[type="button"].btn-primary:hover, input[type="submit"].btn-primary, input[type="submit"].btn-primary:hover, input[type="reset"].btn-primary, input[type="reset"].btn-primary:hover, .btn.btn-primary, .btn.btn-primary:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -180,7 +180,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-warning, button.btn-warning:hover, input[type="button"].btn-warning, input[type="button"].btn-warning:hover, input[type="submit"].btn-warning, input[type="submit"].btn-warning:hover, input[type="reset"].btn-warning, input[type="reset"].btn-warning:hover, .btn.btn-warning, .btn.btn-warning:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -189,7 +189,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-danger, button.btn-danger:hover, input[type="button"].btn-danger, input[type="button"].btn-danger:hover, input[type="submit"].btn-danger, input[type="submit"].btn-danger:hover, input[type="reset"].btn-danger, input[type="reset"].btn-danger:hover, .btn.btn-danger, .btn.btn-danger:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -198,7 +198,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-success, button.btn-success:hover, input[type="button"].btn-success, input[type="button"].btn-success:hover, input[type="submit"].btn-success, input[type="submit"].btn-success:hover, input[type="reset"].btn-success, input[type="reset"].btn-success:hover, .btn.btn-success, .btn.btn-success:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -207,7 +207,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-info, button.btn-info:hover, input[type="button"].btn-info, input[type="button"].btn-info:hover, input[type="submit"].btn-info, input[type="submit"].btn-info:hover, input[type="reset"].btn-info, input[type="reset"].btn-info:hover, .btn.btn-info, .btn.btn-info:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -216,7 +216,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   /* line 166, ../../scss/base/_buttons.css.scss */
   button.btn-inverse, button.btn-inverse:hover, input[type="button"].btn-inverse, input[type="button"].btn-inverse:hover, input[type="submit"].btn-inverse, input[type="submit"].btn-inverse:hover, input[type="reset"].btn-inverse, input[type="reset"].btn-inverse:hover, .btn.btn-inverse, .btn.btn-inverse:hover {
     color: white !important;
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 172, ../../scss/base/_buttons.css.scss */
@@ -855,7 +855,14 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../../scss/base/_boilerplate.css.scss */
+/* apply a natural box layout model to all elements */
+/* line 14, ../../scss/base/_boilerplate.css.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 24, ../../scss/base/_boilerplate.css.scss */
 html,
 button,
 input,
@@ -863,7 +870,7 @@ select,
 textarea {
   color: #403f3d; }
 
-/* line 21, ../../scss/base/_boilerplate.css.scss */
+/* line 28, ../../scss/base/_boilerplate.css.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -874,12 +881,12 @@ body {
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-/* line 33, ../../scss/base/_boilerplate.css.scss */
+/* line 40, ../../scss/base/_boilerplate.css.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 38, ../../scss/base/_boilerplate.css.scss */
+/* line 45, ../../scss/base/_boilerplate.css.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -887,7 +894,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 47, ../../scss/base/_boilerplate.css.scss */
+/* line 54, ../../scss/base/_boilerplate.css.scss */
 hr {
   display: block;
   height: 1px;
@@ -899,14 +906,14 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 60, ../../scss/base/_boilerplate.css.scss */
+/* line 67, ../../scss/base/_boilerplate.css.scss */
 img {
   vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-/* line 68, ../../scss/base/_boilerplate.css.scss */
+/* line 75, ../../scss/base/_boilerplate.css.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -915,14 +922,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 78, ../../scss/base/_boilerplate.css.scss */
+/* line 85, ../../scss/base/_boilerplate.css.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 86, ../../scss/base/_boilerplate.css.scss */
+/* line 93, ../../scss/base/_boilerplate.css.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -935,7 +942,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 103, ../../scss/base/_boilerplate.css.scss */
+/* line 110, ../../scss/base/_boilerplate.css.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -943,7 +950,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
 
-/* line 111, ../../scss/base/_boilerplate.css.scss */
+/* line 118, ../../scss/base/_boilerplate.css.scss */
 .ir:before {
   content: "";
   display: block;
@@ -953,7 +960,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 122, ../../scss/base/_boilerplate.css.scss */
+/* line 129, ../../scss/base/_boilerplate.css.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -961,7 +968,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 131, ../../scss/base/_boilerplate.css.scss */
+/* line 138, ../../scss/base/_boilerplate.css.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -976,7 +983,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 148, ../../scss/base/_boilerplate.css.scss */
+/* line 155, ../../scss/base/_boilerplate.css.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -989,7 +996,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 161, ../../scss/base/_boilerplate.css.scss */
+/* line 168, ../../scss/base/_boilerplate.css.scss */
 .invisible {
   visibility: hidden; }
 
@@ -1004,7 +1011,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 178, ../../scss/base/_boilerplate.css.scss */
+/* line 185, ../../scss/base/_boilerplate.css.scss */
 .clearfix:before, .btn-group:before,
 .clearfix:after,
 .btn-group:after {
@@ -1013,7 +1020,7 @@ textarea {
   display: table;
   /* 2 */ }
 
-/* line 183, ../../scss/base/_boilerplate.css.scss */
+/* line 190, ../../scss/base/_boilerplate.css.scss */
 .clearfix:after, .btn-group:after {
   clear: both; }
 
@@ -1021,7 +1028,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 192, ../../scss/base/_boilerplate.css.scss */
+/* line 199, ../../scss/base/_boilerplate.css.scss */
 .clearfix, .btn-group {
   *zoom: 1; }
 
@@ -1041,26 +1048,97 @@ These styles are for the base look and feel and layout of the site, including
 navigation, headers, footers, etc.
 
 */
-/* line 14, ../../scss/base/_global.css.scss */
+/* line 11, ../../scss/base/_global.css.scss */
+header#page_header {
+  background-color: #137da1;
+  height: 345px;
+  margin: -1em;
+  overflow: hidden;
+  padding: 1em;
+  position: relative; }
+  /* line 19, ../../scss/base/_global.css.scss */
+  header#page_header section#search {
+    background-color: #1cb2e4;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    float: right;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 87.5%;
+    padding: 10px;
+    width: 50%; }
+  /* line 30, ../../scss/base/_global.css.scss */
+  header#page_header nav#main_navigation {
+    background-color: #105c80;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 68.75%;
+    height: 70px;
+    letter-spacing: 0.1em;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+    /* line 42, ../../scss/base/_global.css.scss */
+    header#page_header nav#main_navigation ul {
+      height: 70px;
+      list-style-type: none;
+      margin: -1em;
+      padding: 0 1em; }
+      /* line 48, ../../scss/base/_global.css.scss */
+      header#page_header nav#main_navigation ul li {
+        display: inline-block;
+        height: 70px;
+        list-style-type: none;
+        margin: 0;
+        padding: 45px 0 0 0;
+        text-align: center;
+        width: 12.5%; }
+        /* line 57, ../../scss/base/_global.css.scss */
+        header#page_header nav#main_navigation ul li a {
+          background-repeat: no-repeat;
+          background-position: center -5px;
+          color: white;
+          font-weight: bold;
+          height: 70px;
+          padding-top: 40px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          width: 100%; }
+          /* line 69, ../../scss/base/_global.css.scss */
+          header#page_header nav#main_navigation ul li a#the_code {
+            background-image: url("/public/images/nav_the-code.png"); }
+          /* line 73, ../../scss/base/_global.css.scss */
+          header#page_header nav#main_navigation ul li a#court_cases {
+            background-image: url("/public/images/nav_court-cases.png"); }
+          /* line 77, ../../scss/base/_global.css.scss */
+          header#page_header nav#main_navigation ul li a#about_us {
+            background-image: url("/public/images/nav_about-us.png"); }
+          /* line 81, ../../scss/base/_global.css.scss */
+          header#page_header nav#main_navigation ul li a#use_the_api {
+            background-image: url("/public/images/nav_use-the-api.png"); }
+
+/* line 90, ../../scss/base/_global.css.scss */
 footer#page_footer {
   background-color: #403f3d;
   color: #c9c7c3;
-  font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1em -1em -1em -1em;
   overflow: hidden;
   padding: 1em; }
-  /* line 22, ../../scss/base/_global.css.scss */
+  /* line 98, ../../scss/base/_global.css.scss */
   footer#page_footer p {
-    font-size: 68.75%; }
-    /* line 25, ../../scss/base/_global.css.scss */
+    font-size: 75%; }
+    /* line 101, ../../scss/base/_global.css.scss */
     footer#page_footer p a {
       color: white; }
-    /* line 29, ../../scss/base/_global.css.scss */
+    /* line 105, ../../scss/base/_global.css.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
-    /* line 37, ../../scss/base/_global.css.scss */
+    /* line 113, ../../scss/base/_global.css.scss */
     footer#page_footer p.legalese {
       float: right;
+      font-size: 68.75%;
       width: 75%; }
 
 /*
@@ -1083,7 +1161,7 @@ These styles are for the marketing/landing page of The State Decoded.
     margin: 0.1em 0; }
   /* line 23, ../../scss/base/_design.css.scss */
   .homepage hgroup h2 {
-    font-family: "ProximaNovaSoftRegular", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 87.5%;
     font-weight: normal;
     letter-spacing: 0.1em;
