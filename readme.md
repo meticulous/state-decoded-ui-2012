@@ -1,3 +1,5 @@
+N.B.: This is a work in progress. It's not ready to deploy yet.
+
 # ReadMe for The State Decoded design
 
 This is the static breakout of The State Decoded design created in the fall of 2012. This is a combination of boilerplate as well as other functions that come from a variety of resources online, including the Ruby/Sass community. Any questions can be directed at myself (John Athayde) or Waldo Jaquith.
