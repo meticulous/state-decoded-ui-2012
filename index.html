@@ -95,6 +95,10 @@
     <script>window.jQuery || document.write('<script src="public/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
     <script src="public/js/plugins.js"></script>
     <script src="public/js/main.js"></script>
+    <script src="public/js/vendor/js-webshim/minified/polyfillter.js"></script>
+    <script>
+      $.webshims.polyfill('mediaelement');
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
