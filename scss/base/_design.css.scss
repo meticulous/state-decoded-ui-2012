@@ -29,4 +29,18 @@ These styles are for the marketing/landing page of The State Decoded.
       text-transform: uppercase;
     } //h2
   } // hgroup
+
 } // .homepage
+
+div.video-frame {
+  background-color: $white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.75);
+  float: right;
+  height: 35%;
+  padding: 10px;
+  position: relative;
+    top: -150px;
+  width: 50%;
+  z-index: 100;
+
+} // .video-frame

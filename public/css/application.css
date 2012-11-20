@@ -1052,7 +1052,7 @@ navigation, headers, footers, etc.
 header#page_header {
   background-color: #137da1;
   height: 345px;
-  margin: -1em;
+  margin: -1em -1em 0.5em -1em;
   overflow: hidden;
   padding: 1em;
   position: relative; }
@@ -1195,5 +1195,17 @@ These styles are for the marketing/landing page of The State Decoded.
     letter-spacing: 0.1em;
     line-height: 87.5%;
     text-transform: uppercase; }
+
+/* line 35, ../../scss/base/_design.css.scss */
+div.video-frame {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+  float: right;
+  height: 35%;
+  padding: 10px;
+  position: relative;
+  top: -150px;
+  width: 50%;
+  z-index: 100; }
 
 /* Load state-specific overrides */

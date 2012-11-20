@@ -11,7 +11,7 @@ navigation, headers, footers, etc.
 header#page_header {
   background-color: $base;
   height: 345px;
-  margin: -1em;
+  margin: -1em -1em 0.5em -1em;
   overflow: hidden;
   padding: 1em;
   position: relative;
