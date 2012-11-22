@@ -22,3 +22,13 @@ This site was built with future flexibility and reuse in mind. To that end, the 
 This does create a layer of complexity, but one that I feel is worth having. You, as an end user, can write regular CSS in an SCSS file and it will compile normally.
 
 To run this, there are a few setups you need. You need to either run CodeKit, Scout, CompassApp, or do a manual setup with Ruby on your system. This is documented on the Compass site (http://compass-style.org/install/).
+
+## Media Queries
+
+The site is defined mainly as three breakpoints:
+
+* Handheld/iPhone
+* Tablet/iPad (Portrait)
+* Everything else
+
+We'll probably add a desktop layout for windows larger than 1224px (see the scss/base/_media_queries.css.scss file for all breakpoints) but for right now, we're starting with the basics.
