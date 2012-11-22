@@ -8,6 +8,11 @@ navigation, headers, footers, etc.
 
 */
 
+.nest {
+  margin: auto;
+  position: relative;
+}
+
 header#page_header {
   background-color: $base;
   height: 345px;
