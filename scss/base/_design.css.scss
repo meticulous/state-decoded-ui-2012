@@ -30,6 +30,17 @@ These styles are for the marketing/landing page of The State Decoded.
     } //h2
   } // hgroup
 
+  section.feature-content {
+    float: left;
+    margin-right: 1%;
+    width: 49%;
+  } // section.feature-content
+
+  section.secondary-content {
+    float: right;
+    width: 50%;
+  } // section.secondary-content
+
 } // .homepage
 
 div.video-frame {

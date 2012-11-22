@@ -1200,8 +1200,17 @@ These styles are for the marketing/landing page of The State Decoded.
     letter-spacing: 0.1em;
     line-height: 87.5%;
     text-transform: uppercase; }
+/* line 33, ../../scss/base/_design.css.scss */
+.homepage section.feature-content {
+  float: left;
+  margin-right: 1%;
+  width: 49%; }
+/* line 39, ../../scss/base/_design.css.scss */
+.homepage section.secondary-content {
+  float: right;
+  width: 50%; }
 
-/* line 35, ../../scss/base/_design.css.scss */
+/* line 46, ../../scss/base/_design.css.scss */
 div.video-frame {
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -1213,19 +1222,17 @@ div.video-frame {
   width: 50%;
   z-index: 100; }
 
-/* line 48, ../../scss/base/_design.css.scss */
+/* line 59, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */ }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */ }
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
+  /* line 4, ../../scss/base/_media_queries.css.scss */
+  .homepage section.primary-content,
+  .homepage section.secondary-content {
+    float: none !important;
+    width: 100% !important; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */ }
