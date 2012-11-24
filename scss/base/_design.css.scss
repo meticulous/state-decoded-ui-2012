@@ -27,6 +27,10 @@ These styles are for the marketing/landing page of The State Decoded.
       letter-spacing: 0.1em;
       line-height: 87.5%;
       text-transform: uppercase;
+
+      @include respond-to(smartphone) {
+        margin: 0;
+      }
     } //h2
   } // hgroup
 
@@ -63,6 +67,13 @@ div.video-frame {
   width: 50%;
   z-index: 100;
 
+  @include respond-to(smartphone) {
+    float: none;
+    margin: 1em 0;
+    position: relative;
+      top: 0;
+    width:100%;
+  }
 } // .video-frame
 
 .nest {
