@@ -23,7 +23,7 @@ header#page_header {
 
   @include respond-to(smartphone) {
     padding-top: 0;
-    height: 375px;
+    height: 370px;
   }
 
   hgroup#virginia_logo {
@@ -87,13 +87,20 @@ header#page_header {
     @include respond-to(smartphone) {
       float: none;
       font-size: 70%;
-      margin: -1em -1.2em 0 -1.5em;
+      height: 50px;
+      margin: -1em -1.2em 1em -1.5em;
       width: 115%;
     }
 
     label {
       @include respond-to(smartphone) {
         display: none;
+      }
+    }
+
+    input[type="search"] {
+      @include respond-to(smartphone) {
+        width: 220px;
       }
     }
   } // section#search
