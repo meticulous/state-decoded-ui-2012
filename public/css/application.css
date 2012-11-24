@@ -1273,26 +1273,32 @@ These styles are for the marketing/landing page of The State Decoded.
       .homepage hgroup h2 {
         margin: 0; } }
 /* line 37, ../../scss/base/_design.css.scss */
+.homepage h3 {
+  font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 93.75%;
+  font-weight: normal;
+  text-transform: uppercase; }
+/* line 44, ../../scss/base/_design.css.scss */
 .homepage section.feature-content {
   float: left;
   margin-right: 1%;
   width: 49%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 37, ../../scss/base/_design.css.scss */
+    /* line 44, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
-/* line 47, ../../scss/base/_design.css.scss */
+/* line 54, ../../scss/base/_design.css.scss */
 .homepage section.secondary-content {
   float: right;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 47, ../../scss/base/_design.css.scss */
+    /* line 54, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
       width: 100%; } }
 
-/* line 59, ../../scss/base/_design.css.scss */
+/* line 66, ../../scss/base/_design.css.scss */
 div.video-frame {
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -1304,7 +1310,7 @@ div.video-frame {
   width: 50%;
   z-index: 100; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 59, ../../scss/base/_design.css.scss */
+    /* line 66, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 1em 0;
@@ -1312,7 +1318,7 @@ div.video-frame {
       top: 0;
       width: 100%; } }
 
-/* line 79, ../../scss/base/_design.css.scss */
+/* line 86, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 

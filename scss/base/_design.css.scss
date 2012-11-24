@@ -34,6 +34,13 @@ These styles are for the marketing/landing page of The State Decoded.
     } //h2
   } // hgroup
 
+  h3 {
+    font-family: $statedecoded-stack3;
+    font-size: 93.75%;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
   section.feature-content {
     float: left;
     margin-right: 1%;
