@@ -1089,7 +1089,7 @@ header#page_header {
         padding-left: 100px;
         position: relative;
         top: 0;
-        left: 50px; } }
+        left: 10px; } }
     /* line 52, ../../scss/base/_global.css.scss */
     header#page_header hgroup#virginia_logo h1 {
       font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
@@ -1128,8 +1128,12 @@ header#page_header {
         float: none;
         font-size: 70%;
         margin: -1em -1.2em 0 -1.5em;
-        width: 110%; } }
-  /* line 95, ../../scss/base/_global.css.scss */
+        width: 115%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+      /* line 94, ../../scss/base/_global.css.scss */
+      header#page_header section#search label {
+        display: none; } }
+  /* line 101, ../../scss/base/_global.css.scss */
   header#page_header nav#main_navigation {
     background-color: #105c80;
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1142,24 +1146,24 @@ header#page_header {
     left: 0;
     width: 100%; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 95, ../../scss/base/_global.css.scss */
+      /* line 101, ../../scss/base/_global.css.scss */
       header#page_header nav#main_navigation {
         height: auto;
         margin: 0 -1.5em;
         padding: 0;
         position: relative;
-        width: 110%; } }
-    /* line 115, ../../scss/base/_global.css.scss */
+        width: 115%; } }
+    /* line 121, ../../scss/base/_global.css.scss */
     header#page_header nav#main_navigation ul {
       height: 70px;
       list-style-type: none;
       margin: -1em;
       padding: 0 1em; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 115, ../../scss/base/_global.css.scss */
+        /* line 121, ../../scss/base/_global.css.scss */
         header#page_header nav#main_navigation ul {
           height: auto; } }
-      /* line 125, ../../scss/base/_global.css.scss */
+      /* line 131, ../../scss/base/_global.css.scss */
       header#page_header nav#main_navigation ul li {
         display: inline-block;
         height: 70px;
@@ -1169,7 +1173,7 @@ header#page_header {
         text-align: center;
         width: 11%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 125, ../../scss/base/_global.css.scss */
+          /* line 131, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li {
             border-bottom: 1px solid #137da1;
             display: block;
@@ -1177,8 +1181,8 @@ header#page_header {
             height: 50px;
             padding: 15px 10px 0 10px;
             text-align: left;
-            width: 100%; } }
-        /* line 144, ../../scss/base/_global.css.scss */
+            width: 110%; } }
+        /* line 150, ../../scss/base/_global.css.scss */
         header#page_header nav#main_navigation ul li a {
           background-repeat: no-repeat;
           background-position: center -5px;
@@ -1191,26 +1195,26 @@ header#page_header {
           text-transform: uppercase;
           width: 100%; }
           @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-            /* line 144, ../../scss/base/_global.css.scss */
+            /* line 150, ../../scss/base/_global.css.scss */
             header#page_header nav#main_navigation ul li a {
               background-position: 0 0;
               height: 50px;
-              padding: 15px 200px 15px 50px;
+              padding: 15px 100px 15px 50px;
               width: 100%; } }
-          /* line 163, ../../scss/base/_global.css.scss */
+          /* line 169, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#the_code {
             background-image: url("/public/images/nav_the-code.png"); }
-          /* line 167, ../../scss/base/_global.css.scss */
+          /* line 173, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#court_cases {
             background-image: url("/public/images/nav_court-cases.png"); }
-          /* line 171, ../../scss/base/_global.css.scss */
+          /* line 177, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#about_us {
             background-image: url("/public/images/nav_about-us.png"); }
-          /* line 175, ../../scss/base/_global.css.scss */
+          /* line 181, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#use_the_api {
             background-image: url("/public/images/nav_use-the-api.png"); }
 
-/* line 184, ../../scss/base/_global.css.scss */
+/* line 190, ../../scss/base/_global.css.scss */
 footer#page_footer {
   background-color: #403f3d;
   color: #c9c7c3;
@@ -1218,16 +1222,16 @@ footer#page_footer {
   margin: 1em -1em -1em -1em;
   overflow: hidden;
   padding: 1em; }
-  /* line 192, ../../scss/base/_global.css.scss */
+  /* line 198, ../../scss/base/_global.css.scss */
   footer#page_footer p {
     font-size: 75%; }
-    /* line 195, ../../scss/base/_global.css.scss */
+    /* line 201, ../../scss/base/_global.css.scss */
     footer#page_footer p a {
       color: white; }
-    /* line 199, ../../scss/base/_global.css.scss */
+    /* line 205, ../../scss/base/_global.css.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
-    /* line 207, ../../scss/base/_global.css.scss */
+    /* line 213, ../../scss/base/_global.css.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
