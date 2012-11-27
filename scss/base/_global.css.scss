@@ -216,16 +216,29 @@ footer#page_footer {
 
     &.downloads {
       width: 20%;
+
+      @include respond-to(smartphone) {
+        width: 100%;
+      }
     } // &.downloads
 
     &.credits {
       @extend .downloads;
+
+      @include respond-to(smartphone) {
+        width: 100%;
+      }
     } // &.credits
 
     &.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%;
+
+      @include respond-to(smartphone) {
+        float: none;
+        width: 100%;
+      }
     } // &.legalese
   } // p
 } // footer#page_footer

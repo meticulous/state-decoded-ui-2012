@@ -1242,11 +1242,24 @@ footer#page_footer {
     /* line 217, ../../scss/base/_global.css.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
-    /* line 225, ../../scss/base/_global.css.scss */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 217, ../../scss/base/_global.css.scss */
+        footer#page_footer p.downloads, footer#page_footer p.credits {
+          width: 100%; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+      /* line 225, ../../scss/base/_global.css.scss */
+      footer#page_footer p.credits {
+        width: 100%; } }
+    /* line 233, ../../scss/base/_global.css.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 233, ../../scss/base/_global.css.scss */
+        footer#page_footer p.legalese {
+          float: none;
+          width: 100%; } }
 
 /*
 ################################################################################
