@@ -100,7 +100,11 @@ header#page_header {
     }
 
     input[type="search"] {
+      font-size: 200%;
+      width: 80%;
+
       @include respond-to(smartphone) {
+        font-size: 100%;
         width: 220px;
       }
     }
