@@ -63,14 +63,15 @@ These styles are for the marketing/landing page of The State Decoded.
 
 } // .homepage
 
+div.nest.video {
+}
+
 div.video-frame {
   background-color: $white;
   box-shadow: 0 0 20px rgba(0,0,0,0.75);
   float: right;
-  height: 35%;
-  padding: 10px;
+  margin-top: -150px;
   position: relative;
-    top: -150px;
   width: 50%;
   z-index: 100;
 
@@ -80,6 +81,26 @@ div.video-frame {
     position: relative;
       top: 0;
     width:100%;
+  }
+
+  div.video-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    width: 100%;
+
+    iframe,
+    object,
+    embed,
+    img,
+    video {
+      position: absolute;
+        top: 0;
+        left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+    }
   }
 } // .video-frame
 
