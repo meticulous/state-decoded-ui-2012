@@ -6,7 +6,7 @@
 // ------------------------------------------------------------------
 
 $base:       #137da1; // Blue
-$light-base: adjust-color($base, $saturation: 0%, $lightness: 15%);
+$light-base: adjust-color($base, $saturation: -20%, $lightness: 10%);
 $dark-base:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
 
 // Secondary Palette
