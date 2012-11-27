@@ -1279,32 +1279,86 @@ These styles are for the marketing/landing page of The State Decoded.
       .homepage hgroup h2 {
         margin: 0; } }
 /* line 37, ../../scss/base/_design.css.scss */
-.homepage h3 {
-  font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 93.75%;
-  font-weight: normal;
-  text-transform: uppercase; }
-/* line 44, ../../scss/base/_design.css.scss */
 .homepage section.feature-content {
   float: left;
   margin-right: 1%;
   width: 49%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 44, ../../scss/base/_design.css.scss */
+    /* line 37, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
-/* line 54, ../../scss/base/_design.css.scss */
+/* line 47, ../../scss/base/_design.css.scss */
 .homepage section.secondary-content {
   float: right;
+  margin-top: 30px;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 54, ../../scss/base/_design.css.scss */
+    /* line 47, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
       width: 100%; } }
+  /* line 56, ../../scss/base/_design.css.scss */
+  .homepage section.secondary-content article.abstract {
+    font-size: 87.5%;
+    position: relative; }
+    /* line 60, ../../scss/base/_design.css.scss */
+    .homepage section.secondary-content article.abstract:nth-child(1) {
+      border-right: 1px solid #ccc;
+      float: left;
+      margin-bottom: 20px;
+      padding-right: 5%;
+      width: 50%; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 60, ../../scss/base/_design.css.scss */
+        .homepage section.secondary-content article.abstract:nth-child(1) {
+          border-right: none;
+          float: none;
+          width: 100%; } }
+    /* line 74, ../../scss/base/_design.css.scss */
+    .homepage section.secondary-content article.abstract:nth-child(2) {
+      float: right;
+      margin-bottom: 20px;
+      width: 45%; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 74, ../../scss/base/_design.css.scss */
+        .homepage section.secondary-content article.abstract:nth-child(2) {
+          float: none;
+          width: 100%; } }
+    /* line 85, ../../scss/base/_design.css.scss */
+    .homepage section.secondary-content article.abstract:nth-child(3) {
+      margin: 20px 0; }
+    /* line 89, ../../scss/base/_design.css.scss */
+    .homepage section.secondary-content article.abstract figure {
+      height: 125px;
+      margin: 20px 0;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      width: 100%; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 89, ../../scss/base/_design.css.scss */
+        .homepage section.secondary-content article.abstract figure {
+          height: 75px; } }
+      /* line 101, ../../scss/base/_design.css.scss */
+      .homepage section.secondary-content article.abstract figure img {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        width: 100%; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+          /* line 101, ../../scss/base/_design.css.scss */
+          .homepage section.secondary-content article.abstract figure img {
+            top: -70px; } }
+    /* line 113, ../../scss/base/_design.css.scss */
+    .homepage section.secondary-content article.abstract h1 {
+      font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 107.1428%;
+      font-weight: normal;
+      margin: 0;
+      text-transform: uppercase; }
 
-/* line 69, ../../scss/base/_design.css.scss */
+/* line 130, ../../scss/base/_design.css.scss */
 div.video-frame {
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -1314,20 +1368,20 @@ div.video-frame {
   width: 50%;
   z-index: 100; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 69, ../../scss/base/_design.css.scss */
+    /* line 130, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 1em 0;
       position: relative;
       top: 0;
       width: 100%; } }
-  /* line 86, ../../scss/base/_design.css.scss */
+  /* line 147, ../../scss/base/_design.css.scss */
   div.video-frame div.video-container {
     height: 0;
     padding-bottom: 56.25%;
     padding-top: 30px;
     width: 100%; }
-    /* line 96, ../../scss/base/_design.css.scss */
+    /* line 157, ../../scss/base/_design.css.scss */
     div.video-frame div.video-container iframe,
     div.video-frame div.video-container object,
     div.video-frame div.video-container embed,
@@ -1340,7 +1394,7 @@ div.video-frame {
       height: 100%;
       z-index: 1000; }
 
-/* line 107, ../../scss/base/_design.css.scss */
+/* line 168, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 

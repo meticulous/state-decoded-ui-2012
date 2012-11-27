@@ -34,13 +34,6 @@ These styles are for the marketing/landing page of The State Decoded.
     } //h2
   } // hgroup
 
-  h3 {
-    font-family: $statedecoded-stack3;
-    font-size: 93.75%;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
   section.feature-content {
     float: left;
     margin-right: 1%;
@@ -53,11 +46,79 @@ These styles are for the marketing/landing page of The State Decoded.
 
   section.secondary-content {
     float: right;
+    margin-top: 30px;
     width: 50%;
     @include respond-to(smartphone) {
       float: none;
       width: 100%;
     }
+
+    article.abstract {
+      font-size: 87.5%;
+      position: relative;
+    
+      &:nth-child(1) {
+        border-right: 1px solid #ccc;
+        float: left;
+        margin-bottom: 20px;
+        padding-right: 5%;
+        width: 50%;
+
+        @include respond-to(smartphone) {
+          border-right: none;
+          float: none;
+          width: 100%;
+        }
+      }
+      
+      &:nth-child(2) {
+        float: right;
+        margin-bottom: 20px;
+        width: 45%;
+
+        @include respond-to(smartphone) {
+          float: none;
+          width: 100%;
+        }
+      }
+      
+      &:nth-child(3) {
+        margin: 20px 0;
+      }
+      
+      figure {
+        height: 125px;
+        margin: 20px 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        @include respond-to(smartphone) {
+          height: 75px;
+        }
+
+        img {
+          position: absolute;
+            top: -120px;
+            left: 0;
+          width: 100%;
+
+          @include respond-to(smartphone) {
+            top: -70px;
+          }
+        }
+      } // figure
+    
+      h1 {
+        font-family: $statedecoded-stack3;
+        font-size: 107.1428%;
+        font-weight: normal;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+  } // article.abstract
 
   } // section.secondary-content
 
