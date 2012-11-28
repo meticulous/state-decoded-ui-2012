@@ -140,6 +140,10 @@ header#page_header {
         height: auto;
       }
 
+      @include respond-to(tablet) {
+        text-align: center;
+      }
+
       li {
         display: inline-block;
         height: 70px;
@@ -157,6 +161,10 @@ header#page_header {
           padding: 15px 10px 0 10px;
           text-align: left;
           width: 110%;
+        }
+        
+        @include respond-to(tablet) {
+          width: 22%;
         }
 
         a {
@@ -220,6 +228,10 @@ footer#page_footer {
       @include respond-to(smartphone) {
         width: 100%;
       }
+
+      @include respond-to(tablet) {
+        width: 30%;
+      }
     } // &.downloads
 
     &.credits {
@@ -227,6 +239,10 @@ footer#page_footer {
 
       @include respond-to(smartphone) {
         width: 100%;
+      }
+
+      @include respond-to(tablet) {
+        width: 30%;
       }
     } // &.credits
 
@@ -239,6 +255,11 @@ footer#page_footer {
         float: none;
         width: 100%;
       }
+
+      @include respond-to(tablet) {
+        width: 70%;
+      }
+
     } // &.legalese
   } // p
 } // footer#page_footer

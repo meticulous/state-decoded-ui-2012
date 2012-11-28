@@ -38,7 +38,13 @@ These styles are for the marketing/landing page of The State Decoded.
     float: left;
     margin-right: 1%;
     width: 49%;
+
     @include respond-to(smartphone) {
+      float: none;
+      width: 100%;
+    }
+
+    @include respond-to(tablet) {
       float: none;
       width: 100%;
     }
@@ -48,7 +54,13 @@ These styles are for the marketing/landing page of The State Decoded.
     float: right;
     margin-top: 30px;
     width: 50%;
+
     @include respond-to(smartphone) {
+      float: none;
+      width: 100%;
+    }
+
+    @include respond-to(tablet) {
       float: none;
       width: 100%;
     }
@@ -142,6 +154,14 @@ div.video-frame {
     position: relative;
       top: 0;
     width:100%;
+  }
+  
+  @include respond-to(tablet) {
+    float: none;
+    margin: 2em 0;
+    position: relative;
+      top: 0;
+    width: 100%;
   }
 
   div.video-container {
