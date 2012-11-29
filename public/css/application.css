@@ -1485,14 +1485,23 @@ div.video-frame {
     div.video-frame div.video-container embed,
     div.video-frame div.video-container img,
     div.video-frame div.video-container video {
+      border: 10px solid white;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: 1000; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 192, ../../scss/base/_design.css.scss */
+        div.video-frame div.video-container iframe,
+        div.video-frame div.video-container object,
+        div.video-frame div.video-container embed,
+        div.video-frame div.video-container img,
+        div.video-frame div.video-container video {
+          border: 5px solid white; } }
 
-/* line 203, ../../scss/base/_design.css.scss */
+/* line 208, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 

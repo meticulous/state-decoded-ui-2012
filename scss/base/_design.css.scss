@@ -190,12 +190,17 @@ div.video-frame {
     embed,
     img,
     video {
+      border: 10px solid white;
       position: absolute;
         top: 0;
         left: 0;
       width: 100%;
       height: 100%;
       z-index: 1000;
+
+      @include respond-to(smartphone) {
+        border: 5px solid white;
+      }
     }
   }
 } // .video-frame
