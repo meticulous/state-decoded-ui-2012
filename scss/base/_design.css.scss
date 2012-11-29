@@ -11,6 +11,7 @@ These styles are for the marketing/landing page of The State Decoded.
 
   hgroup {
     text-align: center;
+    margin-top: 1.5em;
 
     h1 {
       font-family: $statedecoded-stack1;
@@ -62,7 +63,7 @@ These styles are for the marketing/landing page of The State Decoded.
 
     @include respond-to(tablet) {
       float: none;
-      width: 100%;
+      width: 66%;
     }
 
     article.abstract {
@@ -81,6 +82,9 @@ These styles are for the marketing/landing page of The State Decoded.
           float: none;
           width: 100%;
         }
+
+        @include respond-to(tablet) {
+        }
       }
       
       &:nth-child(2) {
@@ -91,6 +95,9 @@ These styles are for the marketing/landing page of The State Decoded.
         @include respond-to(smartphone) {
           float: none;
           width: 100%;
+        }
+
+        @include respond-to(tablet) {
         }
       }
       
@@ -110,6 +117,10 @@ These styles are for the marketing/landing page of The State Decoded.
           height: 75px;
         }
 
+        @include respond-to(tablet) {
+          height: 100px;
+        }
+
         img {
           position: absolute;
             top: -120px;
@@ -118,6 +129,10 @@ These styles are for the marketing/landing page of The State Decoded.
 
           @include respond-to(smartphone) {
             top: -70px;
+          }
+
+          @include respond-to(tablet) {
+            top:-150px;
           }
         }
       } // figure

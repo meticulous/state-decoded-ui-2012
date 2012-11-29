@@ -26,6 +26,11 @@ header#page_header {
     height: 370px;
   }
 
+  @include respond-to(tablet) {
+    padding-top: 0;
+    height: 190px;
+  }
+
   hgroup#virginia_logo {
     background-image: url("/public/images/faux_seal.png");
     background-repeat: no-repeat;
@@ -49,6 +54,16 @@ header#page_header {
         left: 10px;
     }
 
+    @include respond-to(tablet) {
+      background-size: 88px 88px; //~75%
+      float: left;
+      padding-left: 100px;
+      position: relative;
+        top: 20px;
+        left: 0;
+      width: 40%;
+    }
+
     h1 {
       font-family: $statedecoded-stack1;
       font-size: 375%;
@@ -57,6 +72,11 @@ header#page_header {
 
       @include respond-to(smartphone) {
         font-size: 300%;
+      }
+
+      @include respond-to(tablet) {
+        font-size: 325%;
+        margin: 0 0 0 0;
       }
     } //h1
 
@@ -70,6 +90,13 @@ header#page_header {
 
       @include respond-to(smartphone) {
         font-size: 125%;
+      }
+
+      @include respond-to(tablet) {
+        font-size: 130%;
+        font-weight: 400;
+        letter-spacing: 0.55em;
+        margin: -0.7em 0 0 0;
       }
     } //h2
   } // hgroup#virginia_logo
@@ -93,6 +120,12 @@ header#page_header {
       width: 115%;
     }
 
+    @include respond-to(tablet) {
+      margin-top: 2.5em; 
+      font-size: 75%;
+      width: 60%;
+    }
+
     label {
       @include respond-to(smartphone) {
         display: none;
@@ -106,6 +139,11 @@ header#page_header {
       @include respond-to(smartphone) {
         font-size: 100%;
         width: 220px;
+      }
+
+      @include respond-to(tablet) {
+        font-size: 125%;
+        width: 325px;
       }
     }
   } // section#search

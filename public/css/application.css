@@ -1067,7 +1067,12 @@ header#page_header {
     header#page_header {
       padding-top: 0;
       height: 370px; } }
-  /* line 29, ../../scss/base/_global.css.scss */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 16, ../../scss/base/_global.css.scss */
+    header#page_header {
+      padding-top: 0;
+      height: 190px; } }
+  /* line 34, ../../scss/base/_global.css.scss */
   header#page_header hgroup#virginia_logo {
     background-image: url("/public/images/faux_seal.png");
     background-repeat: no-repeat;
@@ -1083,24 +1088,39 @@ header#page_header {
     top: 100px;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35); }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 29, ../../scss/base/_global.css.scss */
+      /* line 34, ../../scss/base/_global.css.scss */
       header#page_header hgroup#virginia_logo {
         background-size: 88px 88px;
         padding-left: 100px;
         position: relative;
         top: 0;
         left: 10px; } }
-    /* line 52, ../../scss/base/_global.css.scss */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* line 34, ../../scss/base/_global.css.scss */
+      header#page_header hgroup#virginia_logo {
+        background-size: 88px 88px;
+        float: left;
+        padding-left: 100px;
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 40%; } }
+    /* line 67, ../../scss/base/_global.css.scss */
     header#page_header hgroup#virginia_logo h1 {
       font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
       font-size: 375%;
       font-weight: normal;
       margin: 0.25em 0 -0.25em 0; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 52, ../../scss/base/_global.css.scss */
+        /* line 67, ../../scss/base/_global.css.scss */
         header#page_header hgroup#virginia_logo h1 {
           font-size: 300%; } }
-    /* line 63, ../../scss/base/_global.css.scss */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 67, ../../scss/base/_global.css.scss */
+        header#page_header hgroup#virginia_logo h1 {
+          font-size: 325%;
+          margin: 0 0 0 0; } }
+    /* line 83, ../../scss/base/_global.css.scss */
     header#page_header hgroup#virginia_logo h2 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 150%;
@@ -1109,10 +1129,17 @@ header#page_header {
       margin: 0;
       text-transform: uppercase; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 63, ../../scss/base/_global.css.scss */
+        /* line 83, ../../scss/base/_global.css.scss */
         header#page_header hgroup#virginia_logo h2 {
           font-size: 125%; } }
-  /* line 77, ../../scss/base/_global.css.scss */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 83, ../../scss/base/_global.css.scss */
+        header#page_header hgroup#virginia_logo h2 {
+          font-size: 130%;
+          font-weight: 400;
+          letter-spacing: 0.55em;
+          margin: -0.7em 0 0 0; } }
+  /* line 104, ../../scss/base/_global.css.scss */
   header#page_header section#search {
     background-color: #2f95b8;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1124,27 +1151,38 @@ header#page_header {
     padding: 10px;
     width: 50%; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 77, ../../scss/base/_global.css.scss */
+      /* line 104, ../../scss/base/_global.css.scss */
       header#page_header section#search {
         float: none;
         font-size: 70%;
         height: 50px;
         margin: -1em -1.2em 1em -1.5em;
         width: 115%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* line 104, ../../scss/base/_global.css.scss */
+      header#page_header section#search {
+        margin-top: 2.5em;
+        font-size: 75%;
+        width: 60%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 96, ../../scss/base/_global.css.scss */
+      /* line 129, ../../scss/base/_global.css.scss */
       header#page_header section#search label {
         display: none; } }
-    /* line 102, ../../scss/base/_global.css.scss */
+    /* line 135, ../../scss/base/_global.css.scss */
     header#page_header section#search input[type="search"] {
       font-size: 200%;
       width: 80%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 102, ../../scss/base/_global.css.scss */
+        /* line 135, ../../scss/base/_global.css.scss */
         header#page_header section#search input[type="search"] {
           font-size: 100%;
           width: 220px; } }
-  /* line 113, ../../scss/base/_global.css.scss */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 135, ../../scss/base/_global.css.scss */
+        header#page_header section#search input[type="search"] {
+          font-size: 125%;
+          width: 325px; } }
+  /* line 151, ../../scss/base/_global.css.scss */
   header#page_header nav#main_navigation {
     background-color: #105c80;
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1157,28 +1195,28 @@ header#page_header {
     left: 0;
     width: 100%; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 113, ../../scss/base/_global.css.scss */
+      /* line 151, ../../scss/base/_global.css.scss */
       header#page_header nav#main_navigation {
         height: auto;
         margin: 0 -1.5em;
         padding: 0;
         position: relative;
         width: 115%; } }
-    /* line 133, ../../scss/base/_global.css.scss */
+    /* line 171, ../../scss/base/_global.css.scss */
     header#page_header nav#main_navigation ul {
       height: 70px;
       list-style-type: none;
       margin: -1em;
       padding: 0 1em; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 133, ../../scss/base/_global.css.scss */
+        /* line 171, ../../scss/base/_global.css.scss */
         header#page_header nav#main_navigation ul {
           height: auto; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 133, ../../scss/base/_global.css.scss */
+        /* line 171, ../../scss/base/_global.css.scss */
         header#page_header nav#main_navigation ul {
           text-align: center; } }
-      /* line 147, ../../scss/base/_global.css.scss */
+      /* line 185, ../../scss/base/_global.css.scss */
       header#page_header nav#main_navigation ul li {
         display: inline-block;
         height: 70px;
@@ -1188,7 +1226,7 @@ header#page_header {
         text-align: center;
         width: 11%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 147, ../../scss/base/_global.css.scss */
+          /* line 185, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li {
             border-bottom: 1px solid #137da1;
             display: block;
@@ -1198,10 +1236,10 @@ header#page_header {
             text-align: left;
             width: 110%; } }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-          /* line 147, ../../scss/base/_global.css.scss */
+          /* line 185, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li {
             width: 22%; } }
-        /* line 170, ../../scss/base/_global.css.scss */
+        /* line 208, ../../scss/base/_global.css.scss */
         header#page_header nav#main_navigation ul li a {
           background-repeat: no-repeat;
           background-position: center -5px;
@@ -1214,26 +1252,26 @@ header#page_header {
           text-transform: uppercase;
           width: 100%; }
           @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-            /* line 170, ../../scss/base/_global.css.scss */
+            /* line 208, ../../scss/base/_global.css.scss */
             header#page_header nav#main_navigation ul li a {
               background-position: 0 0;
               height: 50px;
               padding: 15px 100px 15px 50px;
               width: 100%; } }
-          /* line 189, ../../scss/base/_global.css.scss */
+          /* line 227, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#the_code {
             background-image: url("/public/images/nav_the-code.png"); }
-          /* line 193, ../../scss/base/_global.css.scss */
+          /* line 231, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#court_cases {
             background-image: url("/public/images/nav_court-cases.png"); }
-          /* line 197, ../../scss/base/_global.css.scss */
+          /* line 235, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#about_us {
             background-image: url("/public/images/nav_about-us.png"); }
-          /* line 201, ../../scss/base/_global.css.scss */
+          /* line 239, ../../scss/base/_global.css.scss */
           header#page_header nav#main_navigation ul li a#use_the_api {
             background-image: url("/public/images/nav_use-the-api.png"); }
 
-/* line 210, ../../scss/base/_global.css.scss */
+/* line 248, ../../scss/base/_global.css.scss */
 footer#page_footer {
   background-color: #403f3d;
   color: #c9c7c3;
@@ -1241,43 +1279,43 @@ footer#page_footer {
   margin: 1em -1em -1em -1em;
   overflow: hidden;
   padding: 1em; }
-  /* line 218, ../../scss/base/_global.css.scss */
+  /* line 256, ../../scss/base/_global.css.scss */
   footer#page_footer p {
     font-size: 75%; }
-    /* line 221, ../../scss/base/_global.css.scss */
+    /* line 259, ../../scss/base/_global.css.scss */
     footer#page_footer p a {
       color: white; }
-    /* line 225, ../../scss/base/_global.css.scss */
+    /* line 263, ../../scss/base/_global.css.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 225, ../../scss/base/_global.css.scss */
+        /* line 263, ../../scss/base/_global.css.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 225, ../../scss/base/_global.css.scss */
+        /* line 263, ../../scss/base/_global.css.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 30%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 237, ../../scss/base/_global.css.scss */
+      /* line 275, ../../scss/base/_global.css.scss */
       footer#page_footer p.credits {
         width: 100%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 237, ../../scss/base/_global.css.scss */
+      /* line 275, ../../scss/base/_global.css.scss */
       footer#page_footer p.credits {
         width: 30%; } }
-    /* line 249, ../../scss/base/_global.css.scss */
+    /* line 287, ../../scss/base/_global.css.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 249, ../../scss/base/_global.css.scss */
+        /* line 287, ../../scss/base/_global.css.scss */
         footer#page_footer p.legalese {
           float: none;
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 249, ../../scss/base/_global.css.scss */
+        /* line 287, ../../scss/base/_global.css.scss */
         footer#page_footer p.legalese {
           width: 70%; } }
 
@@ -1291,15 +1329,16 @@ These styles are for the marketing/landing page of The State Decoded.
 */
 /* line 12, ../../scss/base/_design.css.scss */
 .homepage hgroup {
-  text-align: center; }
-  /* line 15, ../../scss/base/_design.css.scss */
+  text-align: center;
+  margin-top: 1.5em; }
+  /* line 16, ../../scss/base/_design.css.scss */
   .homepage hgroup h1 {
     font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
     font-size: 225%;
     font-weight: normal;
     line-height: 100%;
     margin: 0.1em 0; }
-  /* line 23, ../../scss/base/_design.css.scss */
+  /* line 24, ../../scss/base/_design.css.scss */
   .homepage hgroup h2 {
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 87.5%;
@@ -1308,44 +1347,44 @@ These styles are for the marketing/landing page of The State Decoded.
     line-height: 87.5%;
     text-transform: uppercase; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 23, ../../scss/base/_design.css.scss */
+      /* line 24, ../../scss/base/_design.css.scss */
       .homepage hgroup h2 {
         margin: 0; } }
-/* line 37, ../../scss/base/_design.css.scss */
+/* line 38, ../../scss/base/_design.css.scss */
 .homepage section.feature-content {
   float: left;
   margin-right: 1%;
   width: 49%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 37, ../../scss/base/_design.css.scss */
+    /* line 38, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 37, ../../scss/base/_design.css.scss */
+    /* line 38, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
-/* line 53, ../../scss/base/_design.css.scss */
+/* line 54, ../../scss/base/_design.css.scss */
 .homepage section.secondary-content {
   float: right;
   margin-top: 30px;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 53, ../../scss/base/_design.css.scss */
+    /* line 54, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 53, ../../scss/base/_design.css.scss */
+    /* line 54, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
-      width: 100%; } }
-  /* line 68, ../../scss/base/_design.css.scss */
+      width: 66%; } }
+  /* line 69, ../../scss/base/_design.css.scss */
   .homepage section.secondary-content article.abstract {
     font-size: 87.5%;
     position: relative; }
-    /* line 72, ../../scss/base/_design.css.scss */
+    /* line 73, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(1) {
       border-right: 1px solid #ccc;
       float: left;
@@ -1353,25 +1392,25 @@ These styles are for the marketing/landing page of The State Decoded.
       padding-right: 5%;
       width: 50%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 72, ../../scss/base/_design.css.scss */
+        /* line 73, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract:nth-child(1) {
           border-right: none;
           float: none;
           width: 100%; } }
-    /* line 86, ../../scss/base/_design.css.scss */
+    /* line 90, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(2) {
       float: right;
       margin-bottom: 20px;
       width: 45%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 86, ../../scss/base/_design.css.scss */
+        /* line 90, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract:nth-child(2) {
           float: none;
           width: 100%; } }
-    /* line 97, ../../scss/base/_design.css.scss */
+    /* line 104, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(3) {
       margin: 20px 0; }
-    /* line 101, ../../scss/base/_design.css.scss */
+    /* line 108, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract figure {
       height: 125px;
       margin: 20px 0;
@@ -1380,20 +1419,28 @@ These styles are for the marketing/landing page of The State Decoded.
       overflow: hidden;
       width: 100%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 101, ../../scss/base/_design.css.scss */
+        /* line 108, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 75px; } }
-      /* line 113, ../../scss/base/_design.css.scss */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 108, ../../scss/base/_design.css.scss */
+        .homepage section.secondary-content article.abstract figure {
+          height: 100px; } }
+      /* line 124, ../../scss/base/_design.css.scss */
       .homepage section.secondary-content article.abstract figure img {
         position: absolute;
         top: -120px;
         left: 0;
         width: 100%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 113, ../../scss/base/_design.css.scss */
+          /* line 124, ../../scss/base/_design.css.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -70px; } }
-    /* line 125, ../../scss/base/_design.css.scss */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+          /* line 124, ../../scss/base/_design.css.scss */
+          .homepage section.secondary-content article.abstract figure img {
+            top: -150px; } }
+    /* line 140, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract h1 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 107.1428%;
@@ -1401,7 +1448,7 @@ These styles are for the marketing/landing page of The State Decoded.
       margin: 0;
       text-transform: uppercase; }
 
-/* line 142, ../../scss/base/_design.css.scss */
+/* line 157, ../../scss/base/_design.css.scss */
 div.video-frame {
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -1411,7 +1458,7 @@ div.video-frame {
   width: 50%;
   z-index: 100; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 142, ../../scss/base/_design.css.scss */
+    /* line 157, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 1em 0;
@@ -1419,20 +1466,20 @@ div.video-frame {
       top: 0;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 142, ../../scss/base/_design.css.scss */
+    /* line 157, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 2em 0;
       position: relative;
       top: 0;
       width: 100%; } }
-  /* line 167, ../../scss/base/_design.css.scss */
+  /* line 182, ../../scss/base/_design.css.scss */
   div.video-frame div.video-container {
     height: 0;
     padding-bottom: 56.25%;
     padding-top: 30px;
     width: 100%; }
-    /* line 177, ../../scss/base/_design.css.scss */
+    /* line 192, ../../scss/base/_design.css.scss */
     div.video-frame div.video-container iframe,
     div.video-frame div.video-container object,
     div.video-frame div.video-container embed,
@@ -1445,7 +1492,7 @@ div.video-frame {
       height: 100%;
       z-index: 1000; }
 
-/* line 188, ../../scss/base/_design.css.scss */
+/* line 203, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 
