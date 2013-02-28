@@ -197,7 +197,7 @@ div.video-frame {
       width: 100%;
       height: 100%;
       z-index: 1000;
-
+ 
       @include respond-to(smartphone) {
         border: 5px solid white;
       }
@@ -207,4 +207,20 @@ div.video-frame {
 
 .nest {
   max-width: 960px;
+}
+
+/*
+################################################################################
+# Law page
+################################################################################
+
+These styles are for the law#show pages of The State Decoded.
+
+*/
+
+body.law {
+  .nest {}
+  
+  
+
 }

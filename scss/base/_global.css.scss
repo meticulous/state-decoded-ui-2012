@@ -14,12 +14,14 @@ navigation, headers, footers, etc.
 }
 
 header#page_header {
+  // This is the big header. Small header is below
   background-color: $base;
   height: 345px;
   margin: -1em -1em 0.5em -1em;
   overflow: hidden;
   padding: 1em;
   position: relative;
+
 
   @include respond-to(smartphone) {
     padding-top: 0;
@@ -30,7 +32,7 @@ header#page_header {
     padding-top: 0;
     height: 190px;
   }
-
+  
   hgroup#virginia_logo {
     background-image: url("/public/images/faux_seal.png");
     background-repeat: no-repeat;
@@ -243,6 +245,66 @@ header#page_header {
       } // li
     } // ul
   } // nav
+  
+  &.inside {
+    // Style for the small header
+    border-bottom: 10px solid $dark-base;
+    height: 75px;
+    
+    .nest {
+      max-width: none;
+      padding: 0 40px;
+      width: 100%;
+    }
+    
+    hgroup#virginia_logo {
+      background-size: 50px 50px;
+      height: 50px;
+      padding-left: 0;
+      position: absolute;
+        top: -10px;
+        left: 40px;
+      
+      h1 {
+        font-size: 220%;
+        margin: 0 0 0 50px;
+      } // h1
+      
+      h2 {
+        font-size: 75%;
+        font-weight: 400;
+        letter-spacing: 0.5em;
+        margin: -15px 0 0 115px;
+      }
+    } // hgroup#virginia_logo
+    
+    section#search {
+      margin-top: -1.5em;
+      width: 25%;
+      
+      label {
+        display: none;
+      }
+      
+      input[type="search"] {
+        width: 78%;
+      }
+      
+    } // section#search
+    
+    nav#main_navigation {
+      background-color: transparent;
+      margin-left: 250px;
+      padding: 0;
+      position: relative;
+      top: -5px;
+      width: 35%;
+      
+      li {
+        width: 24%;
+      }
+    } // nav#main_navigation
+  } // .inside nav
 } // header#page_header
 
 footer#page_footer {
