@@ -219,7 +219,11 @@ These styles are for the law#show pages of The State Decoded.
 */
 
 body.law {
-  .nest {}
+  .nest {
+    max-width: none;
+    padding: 0 40px;
+    width: 100%;
+  }
   
   
 

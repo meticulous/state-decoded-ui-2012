@@ -1306,7 +1306,7 @@ header#page_header {
         display: none; }
       /* line 289, ../../scss/base/_global.css.scss */
       header#page_header.inside section#search input[type="search"] {
-        width: 78%; }
+        width: 70%; }
     /* line 295, ../../scss/base/_global.css.scss */
     header#page_header.inside nav#main_navigation {
       background-color: transparent;
@@ -1314,12 +1314,13 @@ header#page_header {
       padding: 0;
       position: relative;
       top: -5px;
-      width: 35%; }
-      /* line 303, ../../scss/base/_global.css.scss */
+      width: 35%;
+      min-width: 450px; }
+      /* line 304, ../../scss/base/_global.css.scss */
       header#page_header.inside nav#main_navigation li {
         width: 24%; }
 
-/* line 310, ../../scss/base/_global.css.scss */
+/* line 311, ../../scss/base/_global.css.scss */
 footer#page_footer {
   background-color: #403f3d;
   color: #c9c7c3;
@@ -1327,43 +1328,43 @@ footer#page_footer {
   margin: 1em -1em -1em -1em;
   overflow: hidden;
   padding: 1em; }
-  /* line 318, ../../scss/base/_global.css.scss */
+  /* line 319, ../../scss/base/_global.css.scss */
   footer#page_footer p {
     font-size: 75%; }
-    /* line 321, ../../scss/base/_global.css.scss */
+    /* line 322, ../../scss/base/_global.css.scss */
     footer#page_footer p a {
       color: white; }
-    /* line 325, ../../scss/base/_global.css.scss */
+    /* line 326, ../../scss/base/_global.css.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 325, ../../scss/base/_global.css.scss */
+        /* line 326, ../../scss/base/_global.css.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 325, ../../scss/base/_global.css.scss */
+        /* line 326, ../../scss/base/_global.css.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 30%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 337, ../../scss/base/_global.css.scss */
+      /* line 338, ../../scss/base/_global.css.scss */
       footer#page_footer p.credits {
         width: 100%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 337, ../../scss/base/_global.css.scss */
+      /* line 338, ../../scss/base/_global.css.scss */
       footer#page_footer p.credits {
         width: 30%; } }
-    /* line 349, ../../scss/base/_global.css.scss */
+    /* line 350, ../../scss/base/_global.css.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 349, ../../scss/base/_global.css.scss */
+        /* line 350, ../../scss/base/_global.css.scss */
         footer#page_footer p.legalese {
           float: none;
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 349, ../../scss/base/_global.css.scss */
+        /* line 350, ../../scss/base/_global.css.scss */
         footer#page_footer p.legalese {
           width: 70%; } }
 
@@ -1561,4 +1562,10 @@ div.video-frame {
 These styles are for the law#show pages of The State Decoded.
 
 */
+/* line 222, ../../scss/base/_design.css.scss */
+body.law .nest {
+  max-width: none;
+  padding: 0 40px;
+  width: 100%; }
+
 /* Load state-specific overrides */
