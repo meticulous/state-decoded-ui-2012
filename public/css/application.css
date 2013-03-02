@@ -1376,18 +1376,18 @@ footer#page_footer {
 These styles are for the marketing/landing page of The State Decoded.
 
 */
-/* line 12, ../../scss/base/_design.css.scss */
+/* line 15, ../../scss/base/_design.css.scss */
 .homepage hgroup {
   text-align: center;
   margin-top: 1.5em; }
-  /* line 16, ../../scss/base/_design.css.scss */
+  /* line 19, ../../scss/base/_design.css.scss */
   .homepage hgroup h1 {
     font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
     font-size: 225%;
     font-weight: normal;
     line-height: 100%;
     margin: 0.1em 0; }
-  /* line 24, ../../scss/base/_design.css.scss */
+  /* line 27, ../../scss/base/_design.css.scss */
   .homepage hgroup h2 {
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 87.5%;
@@ -1396,44 +1396,44 @@ These styles are for the marketing/landing page of The State Decoded.
     line-height: 87.5%;
     text-transform: uppercase; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 24, ../../scss/base/_design.css.scss */
+      /* line 27, ../../scss/base/_design.css.scss */
       .homepage hgroup h2 {
         margin: 0; } }
-/* line 38, ../../scss/base/_design.css.scss */
+/* line 41, ../../scss/base/_design.css.scss */
 .homepage section.feature-content {
   float: left;
   margin-right: 1%;
   width: 49%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 38, ../../scss/base/_design.css.scss */
+    /* line 41, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 38, ../../scss/base/_design.css.scss */
+    /* line 41, ../../scss/base/_design.css.scss */
     .homepage section.feature-content {
       float: none;
       width: 100%; } }
-/* line 54, ../../scss/base/_design.css.scss */
+/* line 57, ../../scss/base/_design.css.scss */
 .homepage section.secondary-content {
   float: right;
   margin-top: 30px;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 54, ../../scss/base/_design.css.scss */
+    /* line 57, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 54, ../../scss/base/_design.css.scss */
+    /* line 57, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content {
       float: none;
       width: 66%; } }
-  /* line 69, ../../scss/base/_design.css.scss */
+  /* line 72, ../../scss/base/_design.css.scss */
   .homepage section.secondary-content article.abstract {
     font-size: 87.5%;
     position: relative; }
-    /* line 73, ../../scss/base/_design.css.scss */
+    /* line 76, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(1) {
       border-right: 1px solid #cccccc;
       float: left;
@@ -1441,25 +1441,25 @@ These styles are for the marketing/landing page of The State Decoded.
       padding-right: 5%;
       width: 50%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 73, ../../scss/base/_design.css.scss */
+        /* line 76, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract:nth-child(1) {
           border-right: none;
           float: none;
           width: 100%; } }
-    /* line 90, ../../scss/base/_design.css.scss */
+    /* line 93, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(2) {
       float: right;
       margin-bottom: 20px;
       width: 45%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 90, ../../scss/base/_design.css.scss */
+        /* line 93, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract:nth-child(2) {
           float: none;
           width: 100%; } }
-    /* line 104, ../../scss/base/_design.css.scss */
+    /* line 107, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract:nth-child(3) {
       margin: 20px 0; }
-    /* line 108, ../../scss/base/_design.css.scss */
+    /* line 111, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract figure {
       height: 125px;
       margin: 20px 0;
@@ -1468,28 +1468,28 @@ These styles are for the marketing/landing page of The State Decoded.
       overflow: hidden;
       width: 100%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 108, ../../scss/base/_design.css.scss */
+        /* line 111, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 75px; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 108, ../../scss/base/_design.css.scss */
+        /* line 111, ../../scss/base/_design.css.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 100px; } }
-      /* line 124, ../../scss/base/_design.css.scss */
+      /* line 127, ../../scss/base/_design.css.scss */
       .homepage section.secondary-content article.abstract figure img {
         position: absolute;
         top: -120px;
         left: 0;
         width: 100%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 124, ../../scss/base/_design.css.scss */
+          /* line 127, ../../scss/base/_design.css.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -70px; } }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-          /* line 124, ../../scss/base/_design.css.scss */
+          /* line 127, ../../scss/base/_design.css.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -150px; } }
-    /* line 140, ../../scss/base/_design.css.scss */
+    /* line 143, ../../scss/base/_design.css.scss */
     .homepage section.secondary-content article.abstract h1 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 107.1428%;
@@ -1497,7 +1497,7 @@ These styles are for the marketing/landing page of The State Decoded.
       margin: 0;
       text-transform: uppercase; }
 
-/* line 157, ../../scss/base/_design.css.scss */
+/* line 160, ../../scss/base/_design.css.scss */
 div.video-frame {
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -1507,7 +1507,7 @@ div.video-frame {
   width: 50%;
   z-index: 100; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 157, ../../scss/base/_design.css.scss */
+    /* line 160, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 1em 0;
@@ -1515,20 +1515,20 @@ div.video-frame {
       top: 0;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 157, ../../scss/base/_design.css.scss */
+    /* line 160, ../../scss/base/_design.css.scss */
     div.video-frame {
       float: none;
       margin: 2em 0;
       position: relative;
       top: 0;
       width: 100%; } }
-  /* line 182, ../../scss/base/_design.css.scss */
+  /* line 185, ../../scss/base/_design.css.scss */
   div.video-frame div.video-container {
     height: 0;
     padding-bottom: 56.25%;
     padding-top: 30px;
     width: 100%; }
-    /* line 192, ../../scss/base/_design.css.scss */
+    /* line 195, ../../scss/base/_design.css.scss */
     div.video-frame div.video-container iframe,
     div.video-frame div.video-container object,
     div.video-frame div.video-container embed,
@@ -1542,7 +1542,7 @@ div.video-frame {
       height: 100%;
       z-index: 1000; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 192, ../../scss/base/_design.css.scss */
+        /* line 195, ../../scss/base/_design.css.scss */
         div.video-frame div.video-container iframe,
         div.video-frame div.video-container object,
         div.video-frame div.video-container embed,
@@ -1550,7 +1550,7 @@ div.video-frame {
         div.video-frame div.video-container video {
           border: 5px solid white; } }
 
-/* line 208, ../../scss/base/_design.css.scss */
+/* line 211, ../../scss/base/_design.css.scss */
 .nest {
   max-width: 960px; }
 
@@ -1562,10 +1562,51 @@ div.video-frame {
 These styles are for the law#show pages of The State Decoded.
 
 */
-/* line 222, ../../scss/base/_design.css.scss */
+/* line 225, ../../scss/base/_design.css.scss */
 body.law .nest {
   max-width: none;
   padding: 0 40px;
   width: 100%; }
+/* line 231, ../../scss/base/_design.css.scss */
+body.law section#main_content {
+  overflow: hidden; }
+/* line 235, ../../scss/base/_design.css.scss */
+body.law section.law-detail {
+  float: left;
+  margin-right: 1%;
+  width: 49%; }
+/* line 241, ../../scss/base/_design.css.scss */
+body.law section.secondary-content {
+  float: right;
+  width: 49%; }
+  /* line 245, ../../scss/base/_design.css.scss */
+  body.law section.secondary-content > section {
+    border: 1px solid #e4e9e7;
+    background-color: #fcfdfa;
+    -webkit-box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
+    -moz-box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
+    box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
+    margin-bottom: 1em;
+    margin-right: 1%;
+    padding: 0 1em;
+    width: 32%; }
+    /* line 256, ../../scss/base/_design.css.scss */
+    body.law section.secondary-content > section h1 {
+      font-size: 18px;
+      margin: 0.5em 0;
+      text-transform: uppercase; }
+    /* line 262, ../../scss/base/_design.css.scss */
+    body.law section.secondary-content > section.header-bar-full {
+      float: none;
+      width: 100%; }
+      /* line 265, ../../scss/base/_design.css.scss */
+      body.law section.secondary-content > section.header-bar-full h1 {
+        background-color: #656358;
+        color: #fff;
+        font-size: 30px;
+        font-weight: normal;
+        margin: 0 -0.5em;
+        padding: 0.25em 0.5em;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4); }
 
 /* Load state-specific overrides */

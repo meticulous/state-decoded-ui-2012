@@ -1,3 +1,6 @@
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+
 /*
 ################################################################################
 # Homepage style declarations
@@ -225,6 +228,60 @@ body.law {
     width: 100%;
   }
   
+  section#main_content {
+    overflow: hidden;
+  }
   
+  section.law-detail {
+    float: left;
+    margin-right: 1%;
+    width: 49%;
+  }
+  
+  section.secondary-content {
+    float: right;
+    width: 49%;
+    
+    & > section {
 
+  //    @include opacity(.5); // layer alpha
+      border: 1px solid #e4e9e7; // stroke
+      background-color: #fcfdfa; // layer fill content + color overlay
+      @include box-shadow(inset 0 2px 20px rgba(111,114,117,.15)); // inner shadow
+      margin-bottom: 1em;
+      margin-right: 1%;
+      padding: 0 1em;
+      width: 32%;
+      
+      h1 {
+        font-size: 18px;
+        margin: 0.5em 0;
+        text-transform: uppercase;
+      }
+      
+      &.header-bar-full {
+        float: none;
+        width: 100%;
+        h1 {
+          background-color: #656358;
+          color: #fff;
+          font-size: 30px;
+          font-weight: normal;
+          margin: 0 -0.5em;
+          padding: 0.25em 0.5em;
+          text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+        } // h1
+      } // &.header-bar-full
+      
+      &#legal_self_help {}
+      
+      &#history {}
+      
+      &#amendment_attempts {}
+      
+      &#court_decisions {}
+      
+      &#cross_references {}
+    }
+  }
 }
