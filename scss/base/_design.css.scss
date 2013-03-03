@@ -240,6 +240,7 @@ body.law {
   
   section.secondary-content {
     float: right;
+    font-size: 81.25%;
     width: 49%;
     
     & > section {
@@ -254,26 +255,62 @@ body.law {
       width: 32%;
       
       h1 {
-        font-size: 18px;
+        font-size:16px;
+        font-style: italic;
         margin: 0.5em 0;
+        text-transform: capitalize;
+      }
+      
+      > h1 {
+        font-style: normal;
         text-transform: uppercase;
       }
       
       &.header-bar-full {
         float: none;
         width: 100%;
-        h1 {
+        
+        > h1 {
           background-color: #656358;
           color: #fff;
           font-size: 30px;
           font-weight: normal;
+          font-style: normal;
           margin: 0 -0.5em;
           padding: 0.25em 0.5em;
           text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+          text-transform: uppercase;
         } // h1
       } // &.header-bar-full
       
-      &#legal_self_help {}
+      &#legal_self_help {
+        overflow: hidden;
+        
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          
+          li {
+            list-style-type: none;
+            float: left;
+            width: 49%;
+      
+            article {
+          
+              &.legal-reference {
+              }
+          
+              &.pdf {
+                background-image: url("/public/images/icon_pdf_32.png");
+                background-repeat: no-repeat;
+                background-position: top left;
+                padding-left: 42px;
+              }
+            }
+          }
+        }
+      }
       
       &#history {}
       

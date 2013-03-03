@@ -1578,8 +1578,9 @@ body.law section.law-detail {
 /* line 241, ../../scss/base/_design.css.scss */
 body.law section.secondary-content {
   float: right;
+  font-size: 81.25%;
   width: 49%; }
-  /* line 245, ../../scss/base/_design.css.scss */
+  /* line 246, ../../scss/base/_design.css.scss */
   body.law section.secondary-content > section {
     border: 1px solid #e4e9e7;
     background-color: #fcfdfa;
@@ -1590,23 +1591,49 @@ body.law section.secondary-content {
     margin-right: 1%;
     padding: 0 1em;
     width: 32%; }
-    /* line 256, ../../scss/base/_design.css.scss */
+    /* line 257, ../../scss/base/_design.css.scss */
     body.law section.secondary-content > section h1 {
-      font-size: 18px;
+      font-size: 16px;
+      font-style: italic;
       margin: 0.5em 0;
+      text-transform: capitalize; }
+    /* line 264, ../../scss/base/_design.css.scss */
+    body.law section.secondary-content > section > h1 {
+      font-style: normal;
       text-transform: uppercase; }
-    /* line 262, ../../scss/base/_design.css.scss */
+    /* line 269, ../../scss/base/_design.css.scss */
     body.law section.secondary-content > section.header-bar-full {
       float: none;
       width: 100%; }
-      /* line 265, ../../scss/base/_design.css.scss */
-      body.law section.secondary-content > section.header-bar-full h1 {
+      /* line 273, ../../scss/base/_design.css.scss */
+      body.law section.secondary-content > section.header-bar-full > h1 {
         background-color: #656358;
         color: #fff;
         font-size: 30px;
         font-weight: normal;
+        font-style: normal;
         margin: 0 -0.5em;
         padding: 0.25em 0.5em;
-        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4); }
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+        text-transform: uppercase; }
+    /* line 286, ../../scss/base/_design.css.scss */
+    body.law section.secondary-content > section#legal_self_help {
+      overflow: hidden; }
+      /* line 289, ../../scss/base/_design.css.scss */
+      body.law section.secondary-content > section#legal_self_help ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        /* line 294, ../../scss/base/_design.css.scss */
+        body.law section.secondary-content > section#legal_self_help ul li {
+          list-style-type: none;
+          float: left;
+          width: 49%; }
+          /* line 304, ../../scss/base/_design.css.scss */
+          body.law section.secondary-content > section#legal_self_help ul li article.pdf {
+            background-image: url("/public/images/icon_pdf_32.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            padding-left: 42px; }
 
 /* Load state-specific overrides */
