@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js ie lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js ie ie7"><![endif]-->
-<!--[if IE 8]><html class="no-js ie ie8"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="lt-ie8" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,7 +14,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="public/css/application.css">
-    <script src="public/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="public/js/vendor/modernizr.min.js"></script>
 
     <!-- TypeKit Font loading -->
     <script type="text/javascript" src="//use.typekit.net/djv6ymt.js"></script>
@@ -33,12 +34,10 @@
         </hgroup>
         <section id="search">
           <form id="search_form">
-            <label for="">
-              Search the code by title name, common phrase,
-              or assocaited court cases
-            </label>
+            <label for="search">Search the code by title name, common phrase, or assocaited court cases</label>
             <input type="search" name="search" value="" id="search" placeholder="Search the code...">
             <input type="submit" name="submit" value="Search" id="submit" class="btn btn-success">
+            <a href="#">Advanced</a>
           </form>
         </div> <!-- // .nest -->
       </section> <!-- // #search -->
@@ -67,7 +66,7 @@
            http://webdesignerwall.com/tutorials/css-elastic-videos-->
       <div class="video-frame">
         <div class="video-container">
-<iframe width="560" height="315" src="http://www.youtube.com/embed/3R2cnxz27LI" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/3R2cnxz27LI" frameborder="0" allowfullscreen></iframe>
         <!-- <video width="" height="" controls="controls">
           <source src="" type="video/mp4">
           <source src="" type="video/webm">
@@ -87,6 +86,9 @@
           <p>Virginia Decoded provides the Code of Virginia on one friendly website. Court decisions, legislation past and present, inline definitions, a modern API, and all of the niceties of modern website design. It’s like the expensive software lawyers use, but free and wonderful.</p>
           <p>This is a public beta test of Virginia Decoded, which is to say that everything is under development. Things are funny looking, broken, and generally unreliable right now.</p>
           <p>This site is powered by <a href="">The State Decoded</a></p>
+
+          <img src="http://lorempixel.com/470/80/business/" class="ad">
+
         </section> <!-- // .feature -->
 
         <section class="secondary-content">
@@ -100,7 +102,7 @@
           </article>
           <article class="abstract">
             <figure>
-              <img src="/public/images/richmond_capitol.jpg" 
+              <img src="/public/images/richmond_capitol.jpg"
                    alt="The Richmond Capitol Building">
             </figure>
             <h1>The Capitol File</h1>
@@ -131,8 +133,8 @@
 
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="public/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="public/js/vendor/jquery.min.js"><\/script>')</script>
 <!--    <script src="public/js/plugins.js"></script> -->
 <!--    <script src="public/js/main.js"></script> -->
     <script src="public/js/vendor/js-webshim/minified/polyfillter.js"></script>

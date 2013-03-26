@@ -38,22 +38,6 @@ These styles are for the marketing/landing page of The State Decoded.
     } //h2
   } // hgroup
 
-  section.feature-content {
-    float: left;
-    margin-right: 1%;
-    width: 49%;
-
-    @include respond-to(smartphone) {
-      float: none;
-      width: 100%;
-    }
-
-    @include respond-to(tablet) {
-      float: none;
-      width: 100%;
-    }
-  } // section.feature-content
-
   section.secondary-content {
     float: right;
     margin-top: 30px;
@@ -72,7 +56,7 @@ These styles are for the marketing/landing page of The State Decoded.
     article.abstract {
       font-size: 87.5%;
       position: relative;
-    
+
       &:nth-child(1) {
         border-right: 1px solid #ccc;
         float: left;
@@ -89,7 +73,7 @@ These styles are for the marketing/landing page of The State Decoded.
         @include respond-to(tablet) {
         }
       }
-      
+
       &:nth-child(2) {
         float: right;
         margin-bottom: 20px;
@@ -103,11 +87,11 @@ These styles are for the marketing/landing page of The State Decoded.
         @include respond-to(tablet) {
         }
       }
-      
+
       &:nth-child(3) {
         margin: 20px 0;
       }
-      
+
       figure {
         height: 125px;
         margin: 20px 0;
@@ -139,7 +123,7 @@ These styles are for the marketing/landing page of The State Decoded.
           }
         }
       } // figure
-    
+
       h1 {
         font-family: $statedecoded-stack3;
         font-size: 107.1428%;
@@ -173,7 +157,7 @@ div.video-frame {
       top: 0;
     width:100%;
   }
-  
+
   @include respond-to(tablet) {
     float: none;
     margin: 2em 0;
@@ -200,7 +184,7 @@ div.video-frame {
       width: 100%;
       height: 100%;
       z-index: 1000;
- 
+
       @include respond-to(smartphone) {
         border: 5px solid white;
       }
@@ -227,16 +211,16 @@ body.law {
     padding: 0 40px;
     width: 100%;
   }
-  
+
   section#main_content {
     overflow: hidden;
   }
-  
+
   section.law-detail {
     float: left;
     margin-right: 1%;
     width: 49%;
-    
+
     h1 {
       font-family: $statedecoded-stack1;
       font-size: 125%;
@@ -245,7 +229,7 @@ body.law {
       margin: 1em 0 0 0;
       text-transform: small-caps;
     }
-    
+
     h2 {
       font-family: $statedecoded-stack1;
       font-size: 200%;
@@ -253,22 +237,22 @@ body.law {
       margin: 0;
     }
   }
-  
+
   section.secondary-content {
     float: right;
     font-size: 81.25%;
     width: 49%;
-    
+
     div.grouping {
       float: left;
       margin-right:1%;
       width: 32.5%;
     }
-    
+
     div.grouping.last {
       margin-right: 0;
     }
-    
+
     div.grouping > section,
     section#legal_self_help {
 
@@ -278,7 +262,7 @@ body.law {
       @include box-shadow(inset 0 2px 20px rgba(111,114,117,.15)); // inner shadow
       margin-bottom: 1em;
       padding: 0 1em;
-      
+
       h1 {
         font-family: $statedecoded-stack3;
         font-size:16px;
@@ -286,16 +270,16 @@ body.law {
         margin: 0.5em 0;
         text-transform: capitalize;
       }
-      
+
       > h1 {
         font-style: normal;
         text-transform: uppercase;
       }
-      
+
       &.header-bar-full {
         float: none;
         width: 100%;
-        
+
         > h1 {
           background-color: #656358;
           color: #fff;
@@ -308,29 +292,29 @@ body.law {
           text-transform: uppercase;
         } // h1
       } // &.header-bar-full
-      
+
       &#legal_self_help {
         overflow: hidden;
-        
+
         ul {
           list-style-type: none;
           padding: 0;
           margin: 0;
-          
+
           li {
             list-style-type: none;
             float: left;
             width: 49%;
-      
+
             article {
-              
+
               h1 {
                 font-family: $statedecoded-stack2;
               }
-          
+
               &.legal-reference {
               }
-          
+
               &.pdf {
                 background-image: url("/public/images/icon_pdf_32.png");
                 background-repeat: no-repeat;
@@ -341,29 +325,29 @@ body.law {
           } // li
         } // ul
       } // &#legal_self_help
-      
+
       &#history {}
-      
+
       &#amendment_attempts {
         h2 {
           font-size: 125%;
         }
-        
+
         a {
           font-size: 18px;
           font-style: italic;
           font-weight: bold;
         }
       }
-      
+
       &#court_decisions {
-      
+
         article.court-decision {
           h1 {
             font-family: $statedecoded-stack2;
             margin: 1em 0 0 0;
           }
-          
+
           h2 {
             font-size: 81.25%;
             font-weight: normal;
@@ -372,9 +356,9 @@ body.law {
             text-transform: uppsercase;
           }
         } // article.court-decision
-      
+
       }
-      
+
       &#cross_references {
         article.cross-reference {
           h1 {
@@ -383,7 +367,7 @@ body.law {
           }
         }
       }
-      
+
       &#related_laws {
         article.related-law {
           h1 {
@@ -392,7 +376,7 @@ body.law {
           }
         }
       }
-      
+
       &#cite_as {
         background-color: #656358;
         color: #fff;
@@ -409,18 +393,18 @@ body.law {
           text-transform: uppercase;
           width: 50%;
         } // h1
-        
+
         dl {
           float: right;
           margin: 1em 0 0 0;
           padding: 0;
           width: 49%;
-          
+
           dt { font-size: 85%; margin: 0; padding: 0; text-transform: uppercase;}
           dd { margin: 0 0 1em 0; padding: 0; }
-          
+
         }
-        
+
       } // &#cite_as
     }
   }
