@@ -10,7 +10,7 @@ $zindexDropdown:        1000 !default;
 $zindexPopover:         1010 !default;
 
 // Primary (Active) Buttons
-$primaryButtonBackground:    $linkColor !default;
+$primaryButtonBackground:    $link-color !default;
 $withStateButtonFontFamily: $statedecoded-stack3;
 
 $buttonFontFamily: $statedecoded-stack3;
@@ -65,18 +65,18 @@ $buttonFontFamily: $statedecoded-stack3;
 // ------------------------------------------------------------------
 
 button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
-  $shadow-for-box: inset 0 1px 0 $glowLighter, 0 1px 2px $shadowLightest;
+  $shadow-for-box: inset 0 1px 0 $glow-lighter, 0 1px 2px $shadow-lightest;
   border-radius: 4px;
   box-shadow: $shadow-for-box;
   @include gradient-vertical-three-colors($white, $white, 25%, darken($white, 10%)); // Don't use .gradientbar() here since it does a three-color gradient
-  border: 1px solid $grayLighter;
-  border-bottom-color: $grayLight;
+  border: 1px solid $gray-lighter;
+  border-bottom-color: $gray-light;
   cursor: pointer;
-  color: $grayDarker !important;
+  color: $gray-darker !important;
   display: inline-block;
   font-family: $buttonFontFamily;
-  font-size: $baseFontSize;
-  line-height: $baseLineHeight;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
   padding: 4px 10px 4px;
   text-align: center;
   text-decoration: none !important;
@@ -85,7 +85,7 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
   // Hover state
   &:hover {
     @include transition(background-position .1s linear);
-    color: $grayDarker;
+    color: $gray-darker;
     text-decoration: none;
     background-color: darken($white, 10%);
     background-position: 0 -15px;
@@ -100,12 +100,12 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
   // Active state
   &.active, &:active {
-    $shadow-for-box: inset 0 2px 4px $shadowLight, 0 1px 2px $shadowLightest;
+    $shadow-for-box: inset 0 2px 4px $shadow-light, 0 1px 2px $shadow-lightest;
     box-shadow: $shadow-for-box;
     @include transition(background-position .1s linear);
     background-image: none;
     background-color: darken($white, 10%);
-    color: $shadowLight;
+    color: $shadow-light;
     outline: 0;
   }
 
@@ -120,7 +120,7 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
       @include transition(background-position .1s linear);
       background-color: none;
       background-position: none;
-      color: $grayDarker;
+      color: $gray-darker;
       text-decoration: none;
     }
   }
@@ -133,7 +133,7 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
   // Large
   &.btn-large {
     padding: 9px 14px;
-    font-size: $baseFontSize + 2px;
+    font-size: $base-font-size + 2px;
     font-weight: bold;
     line-height: normal;
     border-radius: 5px;
@@ -145,8 +145,8 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
   // Small
   &.btn-small {
     padding: 5px 9px;
-    font-size: $baseFontSize - 2px;
-    line-height: $baseLineHeight - 2px;
+    font-size: $base-font-size - 2px;
+    line-height: $base-line-height - 2px;
     [class^="icon-"] {
       margin-top: -1px;
     }
@@ -154,8 +154,8 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
   &.btn-mini {
     padding: 2px 6px;
-    font-size: $baseFontSize - 2px;
-    line-height: $baseLineHeight - 4px;
+    font-size: $base-font-size - 2px;
+    line-height: $base-line-height - 4px;
   }
 
 // ------------------------------------------------------------------
@@ -167,7 +167,7 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
     color: $white !important;
     font-family: $withStateButtonFontFamily;
     text-decoration: none !important;
-    text-shadow: 0 -1px 0 $shadowLighter;
+    text-shadow: 0 -1px 0 $shadow-lighter;
   }
    &.btn-#{$button-type}.active {
       color: $glow;
@@ -225,8 +225,8 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
-  margin-top: $baseLineHeight / 2;
-  margin-bottom: $baseLineHeight / 2;
+  margin-top: $base-line-height / 2;
+  margin-bottom: $base-line-height / 2;
   .btn-group {
     display: inline-block;
   }
@@ -284,14 +284,14 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
 // Give the line between buttons some depth
 .btn-group.dropdown > .dropdown-toggle {
-  $shadow-for-box: inset 1px 0 0 $glowLightest, inset 0 1px 0 $glowLighter, 0 1px 2px $shadowLightest;
+  $shadow-for-box: inset 1px 0 0 $glow-lightest, inset 0 1px 0 $glow-lighter, 0 1px 2px $shadow-lightest;
   box-shadow: $shadow-for-box;
   padding-left: 8px;
   padding-right: 8px;
   *padding-top: 3px;
   *padding-bottom: 3px;
   &:after {
-    border-top:   4px solid $grayDarker;
+    border-top:   4px solid $gray-darker;
   }
   &.btn-primary, &.btn-danger, &.btn-info, &.btn-success, &.btn-inverse {
     &:after {
@@ -330,7 +330,7 @@ button,  input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
   .dropdown-toggle {
     background-image: none;
-    $shadow-for-box: inset 0 1px 6px $shadowLightest, 0 1px 2px $shadowLightest;
+    $shadow-for-box: inset 0 1px 6px $shadow-lightest, 0 1px 2px $shadow-lightest;
     box-shadow: $shadow-for-box;
   }
 }

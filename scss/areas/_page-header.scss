@@ -4,7 +4,6 @@
     height: 345px;
     margin: 0;
     overflow: hidden;
-    padding: 1em;
     position: relative;
 
 
@@ -53,9 +52,10 @@
 
     h1 {
       font-family: $statedecoded-stack1;
-      font-size: 375%;
+      font-size: 65px;
+      line-height: 75px;
       font-weight: normal;
-      margin: 0 0 -0.25em 0; // Override system-wide typography
+      margin: 0;
 
       @include respond-to(smartphone) {
         font-size: 300%;
@@ -71,8 +71,8 @@
       font-family: $statedecoded-stack3;
       font-size: 150%;
       font-weight: 100;
-      letter-spacing: 0.6em;
-      margin: 8px 0 0 0 ; // Override system-wide typography
+      letter-spacing: 0.75em;
+      margin: 10px 0 0 5px ; // Override system-wide typography
       text-transform: uppercase;
 
       @include respond-to(smartphone) {
@@ -148,19 +148,18 @@
 
         a {
           background-repeat: no-repeat;
-          background-position: center 5px;
-          background-size: 35px 35px;
+          background-position: center 10px;
+          background-size: 30px 30px;
           color: $white;
           display: block;
           font-weight: bold;
           height: $nav-height;
-          padding-top: 50px;
+          padding-top: 45px;
           text-align: center;
           text-decoration: none;
           text-transform: uppercase;
           width: 100%;
           .lt-ie8 & {
-            background-position: center 5px;
             background-size: auto !important;
           }
           @include respond-to(smartphone) {
@@ -190,6 +189,7 @@
             background-size: 50px 50px;
             .lt-ie8 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
+              background-position: center 5px;
             }
           } // &#the_code
 

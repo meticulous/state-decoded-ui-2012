@@ -16,34 +16,29 @@ $body-stack: $statedecoded-stack2;
 $legal-stack: Georgia, "Times New Roman", Times, serif;
 $code-stack: Menlo, Monaco, Consolas, "Courier New", monospace;
 
-$baseFontSize:           13px;
-$baseLineHeight:        18px;
+$base-font-size: 13px !default;
+$base-line-height: 18px !default;
 
-// ------------------------------------------------------------------
 //  Headings
 // ------------------------------------------------------------------
-$headingsFontFamily:    $statedecoded-stack1;
-$headingsFontWeight:    normal; // instead of browser default, bold
-$headingsColor:         ''; // empty to use BS default, @textColor
+$headings-font-family: $statedecoded-stack1 !default;
+$headings-font-weight: normal !default; // instead of browser default, bold
+$headings-font-color: '' !default; // empty to use BS default, $text-color
 
-$subHeadingsFontFamily:    $statedecoded-stack2;
-$subHeadingsFontWeight:    normal; // instead of browser default, bold
-$subHeadingsColor:         ''; // empty to use BS default, @textColor
+$subheadings-font-family: $statedecoded-stack2 !default;
+$subheadings-font-weight: normal !default; // instead of browser default, bold
+$subheadings-font-color: '' !default; // empty to use BS default, $text-color
 
-// ------------------------------------------------------------------
 //  Navigation
 // ------------------------------------------------------------------
-$navFontFamily:    $statedecoded-stack2;
-$navFontWeight:    normal; // instead of browser default, bold
+$nav-font-family:    $statedecoded-stack2;
+$nav-font-weight:    normal; // instead of browser default, bold
 
-// ------------------------------------------------------------------
 //  Body
 // ------------------------------------------------------------------
+$base-font-family: $body-stack !default;
 
-$baseFontFamily:      $body-stack;
 
+///  Special Case
 // ------------------------------------------------------------------
-//  Special Case
-// ------------------------------------------------------------------
-
-$legalFontFamily: $legal-stack;
+$legal-font-family: $legal-stack !default;

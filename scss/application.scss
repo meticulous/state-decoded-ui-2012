@@ -33,6 +33,7 @@
 @import "vendor/_keanu.scss"; // Standardize between browsers/reset built in stylesheets
 
 /* Functions not in Compass */
+@import "dependencies/mixins/_non-semantic-helpers.scss";
 @import "dependencies/mixins/_gradient-overrides.css.scss";
 
 /* Variables, etc */
@@ -46,13 +47,15 @@
 @import "base/_buttons.css.scss";
 
 /* Load site styles */
-@import "base/_boilerplate.css.scss";
+@import "base/_default.scss";
 @import "base/_global.css.scss";
 @import "base/_design.css.scss";
 
 // Areas
-@import "areas/_header.scss";
+@import "areas/_page-header.scss";
+@import "areas/_page-footer.scss";
 @import "areas/_search.scss";
+@import "areas/_homepage.scss";
 @import "areas/_homepage-feature-content.scss";
 
 /* Load state-specific overrides */

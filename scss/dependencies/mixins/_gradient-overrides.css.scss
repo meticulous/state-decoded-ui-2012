@@ -27,6 +27,6 @@
 @mixin gradientBar($primaryColor, $secondaryColor) {
   @include gradient-vertical($primaryColor, $secondaryColor);
   border-color: $secondaryColor $secondaryColor darken($secondaryColor, 15%);
-  border-color: $shadowLightest $shadowLightest fade-in($shadowLightest, 0.15);
+  border-color: $shadow-lightest $shadow-lightest fade-in($shadow-lightest, 0.15);
 }
 
