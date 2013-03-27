@@ -6,9 +6,10 @@
 // ------------------------------------------------------------------
 
 $base:       #137da1; // Blue
-$light-base: adjust-color($base, $saturation: -20%, $lightness: 10%);
-$dark-base:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
-
+$base-light: adjust-color($base, $saturation: -20%, $lightness: 10%);
+$base-lightest: #8fa9b2;
+$base-dark:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
+$base-darkest: #526166;
 // Secondary Palette
 // ------------------------------------------------------------------
 
@@ -19,9 +20,10 @@ $dark-base:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness:
 
 // Accent colors
 
-$yellow:                #fff200;
-$black:                 #000;
-$white:                 #fff;
+$yellow: #fff200;
+$black: #000;
+$white: #fff;
+  $white-off: #d9d8d6;
 
 
 // The Grays
@@ -68,7 +70,7 @@ $text-color-light: $gray-light !default;
 $placeholder-text-color: $gray-light !default;
 
 // Links
-$link-color:  adjust-color($base, $lightness: 0%, $saturation: 0%) !default;
+$link-color: #558fae;
 $link-color-hover: adjust-color($base, $lightness: 10%, $saturation: 10%) !default;
 $link-color-active: adjust-color($base, $lightness: 10%, $saturation: 10%) !default;
 $link-color-visited: adjust-color($base, $lightness: -10%, $saturation: -50%) !default;

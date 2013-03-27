@@ -1,82 +1,6 @@
-@import "compass/css3/opacity";
-@import "compass/css3/box-shadow";
-
-/*
-################################################################################
-# Homepage style declarations
-################################################################################
-
-These styles are for the marketing/landing page of The State Decoded.
-
-*/
-
-
-
-div.nest.video {
-}
-
-div.video-frame {
-  background-color: $white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.75);
-  float: right;
-  margin-top: -150px;
-  position: relative;
-  width: 50%;
-  z-index: 100;
-
-  @include respond-to(smartphone) {
-    float: none;
-    margin: 1em 0;
-    position: relative;
-      top: 0;
-    width:100%;
-  }
-
-  @include respond-to(tablet) {
-    float: none;
-    margin: 2em 0;
-    position: relative;
-      top: 0;
-    width: 100%;
-  }
-
-  div.video-container {
-    height: 0;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    width: 100%;
-
-    iframe,
-    object,
-    embed,
-    img,
-    video {
-      border: 10px solid white;
-      position: absolute;
-        top: 0;
-        left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1000;
-
-      @include respond-to(smartphone) {
-        border: 5px solid white;
-      }
-    }
-  }
-} // .video-frame
-
-.nest {
-  max-width: 960px;
-}
-
-/*
-################################################################################
+/* ################################################################################
 # Law page
 ################################################################################
-
-These styles are for the law#show pages of The State Decoded.
-
 */
 
 body.law {
@@ -93,14 +17,15 @@ body.law {
   section.law-detail {
     float: left;
     margin-right: 1%;
+    padding: 20px;
     width: 49%;
 
     h1 {
       font-family: $statedecoded-stack1;
       font-size: 125%;
       font-variant: small-caps;
-      letter-spacing: -0.05em;
-      margin: 1em 0 0 0;
+      letter-spacing: 0.05em;
+      margin: 0 0 10px 0;
       text-transform: small-caps;
     }
 
@@ -108,18 +33,36 @@ body.law {
       font-family: $statedecoded-stack1;
       font-size: 200%;
       font-weight: 100;
-      margin: 0;
+      margin: 0 0 20px 0;
     }
+
+    h3 {
+      margin: 40px 0 10px 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+    }
+
   }
 
   section.secondary-content {
+
     float: right;
     font-size: 81.25%;
+    padding: 20px;
+    text-align: center;
     width: 49%;
+
+    .ad {
+      margin: 0 auto 20px auto ;
+    }
 
     div.grouping {
       float: left;
       margin-right:1%;
+      text-align: left;
       width: 32.5%;
     }
 
@@ -133,9 +76,10 @@ body.law {
   //    @include opacity(.5); // layer alpha
       border: 1px solid #e4e9e7; // stroke
       background-color: #fcfdfa; // layer fill content + color overlay
-      @include box-shadow(inset 0 2px 20px rgba(111,114,117,.15)); // inner shadow
+      box-shadow:inset 0 2px 20px rgba(111,114,117,.15); // inner shadow
       margin-bottom: 1em;
       padding: 0 1em;
+      text-align: left;
 
       h1 {
         font-family: $statedecoded-stack3;
@@ -165,6 +109,11 @@ body.law {
           text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
           text-transform: uppercase;
         } // h1
+
+        p {
+          margin: 0 0 10px 0;
+        }
+
       } // &.header-bar-full
 
       &#legal_self_help {
@@ -178,6 +127,7 @@ body.law {
           li {
             list-style-type: none;
             float: left;
+            margin-bottom: 15px;
             width: 49%;
 
             article {
@@ -283,3 +233,94 @@ body.law {
     }
   }
 }
+
+
+// Function Specific Mixins
+// ------------------------------------------------------------------
+
+@mixin wizard-step($bgColor, $shadowTone) {
+  color: $white;
+  text-shadow: 0 1px 0 darken($bgColor, $shadowTone);
+  background-color: $bgColor;
+
+  &:before {
+    border-top-color: $bgColor;
+    border-bottom-color: $bgColor;
+  }
+
+  &:after {
+    border-left-color: $bgColor;
+  }
+} // @mixin wizard-step
+
+@mixin wizard-step-group($bgColor) {
+  a {
+    @include wizard-step($bgColor, 15%);
+  }
+
+  &:hover a {
+    @include wizard-step(darken($bgColor, 20%), 20%);
+  }
+} // @mixin wizard-step-group
+
+// CSS
+// ------------------------------------------------------------------
+
+section.breadcrumbs {
+  @extend %clearfix;
+  clear: both;
+  margin-bottom: 20px;
+} // section#progress-bar
+
+.steps-nav {
+  clear: both;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  li {
+    padding: 0;
+    position: relative;
+    float: left;
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 12px;
+      height: $base-line-height;
+      line-height: $base-line-height;
+      margin-right: 20px;
+      padding: 0 5px;
+      color: $white !important;
+      background-color: $base-lightest;
+      text-decoration: none;
+      span {
+        font-weight: bold;
+      }
+      &:before, &:after {
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: "";
+        top: 0;
+        border: $base-line-height / 2 solid $base-lightest;
+        border-right-width: 0;
+      }
+      &:before {
+        border-left: $base-line-height solid transparent;
+        left: -$base-line-height;
+      }
+      &:after {
+        border-color: transparent;
+        border-left: $base-line-height  solid $base-lightest;
+        right: -$base-line-height;
+      }
+    } // a
+    &:first-child a:before {
+      border-left: none;
+    }
+    &.active {
+      @include wizard-step-group($base-darkest);
+    }
+  } // li
+} // .steps-nav

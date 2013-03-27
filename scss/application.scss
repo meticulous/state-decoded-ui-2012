@@ -22,11 +22,11 @@
      jmpa@meticulous.com
 */
 
-/* Setup Paths */
-@import "dependencies/variables/_paths.css.scss";
 
 /* Import the Compass Library */
 @import "compass";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
 
 // Vendor
 @import "vendor/_normalize.scss"; // Standardize between browsers/reset built in stylesheets
@@ -36,26 +36,31 @@
 @import "dependencies/mixins/_non-semantic-helpers.scss";
 @import "dependencies/mixins/_gradient-overrides.css.scss";
 
+/* Setup Paths */
+@import "dependencies/variables/_paths.css.scss";
+@import "dependencies/variables/_typography.css.scss";
+
 /* Variables, etc */
 @import "dependencies/variables/_colors.css.scss";
 @import "dependencies/variables/_drop-downs.css.scss";
 @import "dependencies/variables/_z-index.css.scss";
 
-/* Load font stacks and baseline type work */
-@import "dependencies/variables/_typography.css.scss";
-@import "base/_typestandards.css.scss";
-@import "base/_buttons.css.scss";
-
 /* Load site styles */
 @import "base/_default.scss";
-@import "base/_global.css.scss";
-@import "base/_design.css.scss";
+
+/* Load font stacks and baseline type work */
+@import "base/_buttons.css.scss";
+
+/* Components */
+@import "components/_modal.scss";
 
 // Areas
-@import "areas/_page-header.scss";
-@import "areas/_page-footer.scss";
+@import "areas/_header.scss";
+@import "areas/_footer.scss";
+@import "areas/_video-frame.scss";
 @import "areas/_search.scss";
-@import "areas/_homepage.scss";
-@import "areas/_homepage-feature-content.scss";
 
-/* Load state-specific overrides */
+@import "areas/_page-homepage.scss";
+@import "areas/_page-homepage-feature-content.scss";
+
+@import "areas/_page-law-show.scss";

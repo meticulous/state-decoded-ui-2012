@@ -21,7 +21,6 @@
    - John Athayde, Nov 2012
      jmpa@meticulous.com
 */
-/* Setup Paths */
 /* Import the Compass Library */
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -393,21 +392,112 @@ table {
   border-spacing: 0; }
 
 /* Functions not in Compass */
+/* line 60, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
+.modal .modal-footer:before, section.breadcrumbs:before, .modal .modal-footer:after, section.breadcrumbs:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+/* line 64, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
+.modal .modal-footer:after, section.breadcrumbs:after {
+  clear: both; }
+
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+/* Setup Paths */
 /* Variables, etc */
-/* Load font stacks and baseline type work */
-/* #############################################################################
-   # TYPOGRAPHY BASELINE
-   #############################################################################
-*/
-/* line 6, ../../scss/base/_typestandards.css.scss */
-body {
-  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif; }
+/* Load site styles */
+/* line 5, ../../scss/base/_default.scss */
+* {
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
 
-/* line 10, ../../scss/base/_typestandards.css.scss */
+/* line 10, ../../scss/base/_default.scss */
+html {
+  text-align: center; }
+  /* line 12, ../../scss/base/_default.scss */
+  html body {
+    background-color: white;
+    color: #62615e;
+    font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    padding: 0;
+    text-align: left; }
+    /* line 21, ../../scss/base/_default.scss */
+    html body.preload * {
+      transition: none !important; }
+    /* line 24, ../../scss/base/_default.scss */
+    html body p {
+      font-size: 16px;
+      line-height: 24px; }
+    /* line 28, ../../scss/base/_default.scss */
+    html body h1, html body h2, html body h3 {
+      color: "";
+      font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
+      font-weight: normal; }
+    /* line 33, ../../scss/base/_default.scss */
+    html body h4, html body h5, html body h6 {
+      color: "";
+      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+      font-weight: normal; }
+    /* line 38, ../../scss/base/_default.scss */
+    html body a, html body a:link {
+      color: #558fae; }
+    /* line 41, ../../scss/base/_default.scss */
+    html body a:hover {
+      color: #0da6da; }
+    /* line 44, ../../scss/base/_default.scss */
+    html body a:active {
+      color: #0da6da; }
+    /* line 47, ../../scss/base/_default.scss */
+    html body a:visited {
+      color: #2e4a53; }
+    /* line 53, ../../scss/base/_default.scss */
+    html body ::-moz-selection {
+      background-color: #558fae;
+      color: white;
+      text-shadow: none; }
+    /* line 59, ../../scss/base/_default.scss */
+    html body ::selection {
+      background-color: #558fae;
+      color: white;
+      text-shadow: none; }
+    /* line 65, ../../scss/base/_default.scss */
+    html body hr {
+      border: 0;
+      border-bottom: 1px solid white;
+      border-top: 1px solid #faf9f6;
+      margin: 24px 0; }
+    /* line 73, ../../scss/base/_default.scss */
+    html body img {
+      vertical-align: middle; }
+    /* line 78, ../../scss/base/_default.scss */
+    html body fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0; }
+    /* line 85, ../../scss/base/_default.scss */
+    html body textarea {
+      resize: vertical; }
+
+/* line 94, ../../scss/base/_default.scss */
+.chromeframe {
+  background-color: #ccc;
+  color: black;
+  margin: 0.2em 0;
+  padding: 0.2em 0; }
+
+/* line 102, ../../scss/base/_default.scss */
+.nest {
+  margin: auto;
+  position: relative;
+  max-width: 960px; }
+
+/* line 108, ../../scss/base/_default.scss */
 p {
   hyphenate: auto;
   /* http://webtypography.net/Rhythm_and_Proportion/Etiquette_of_Hyphenation_and_Pagination/2.4.3/ */
@@ -416,29 +506,29 @@ p {
   orphans: 4;
   widows: 4; }
 
-/* line 18, ../../scss/base/_typestandards.css.scss */
+/* line 116, ../../scss/base/_default.scss */
 small {
   font-size: 85%; }
 
-/* line 20, ../../scss/base/_typestandards.css.scss */
+/* line 118, ../../scss/base/_default.scss */
 strong, th {
   font-weight: bold; }
 
-/* line 22, ../../scss/base/_typestandards.css.scss */
+/* line 120, ../../scss/base/_default.scss */
 td, td img {
   vertical-align: top; }
 
-/* line 24, ../../scss/base/_typestandards.css.scss */
+/* line 122, ../../scss/base/_default.scss */
 sub {
   vertical-align: sub;
   font-size: smaller; }
 
-/* line 26, ../../scss/base/_typestandards.css.scss */
+/* line 124, ../../scss/base/_default.scss */
 sup {
   vertical-align: super;
   font-size: smaller; }
 
-/* line 28, ../../scss/base/_typestandards.css.scss */
+/* line 126, ../../scss/base/_default.scss */
 pre {
   padding: 15px;
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
@@ -451,6 +541,7 @@ pre {
   word-wrap: break-word;
   /* IE */ }
 
+/* Load font stacks and baseline type work */
 /* line 67, ../../scss/base/_buttons.css.scss */
 button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
   border-radius: 4px;
@@ -597,89 +688,89 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
     color: rgba(255, 255, 255, 0.75); }
   /* line 180, ../../scss/base/_buttons.css.scss */
   button.btn-primary, input[type="button"].btn-primary, input[type="submit"].btn-primary, input[type="reset"].btn-primary, .btn.btn-primary {
-    background-color: #134ea1;
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#137da1), to(#134ea1));
-    background-image: -moz-linear-gradient(top, #137da1, #134ea1);
-    background-image: -ms-linear-gradient(top, #137da1, #134ea1);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #137da1), color-stop(100%, #134ea1));
-    background-image: -webkit-linear-gradient(top, #137da1, #134ea1);
-    background-image: -o-linear-gradient(top, #137da1, #134ea1);
+    background-color: #5571ae;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#558fae), to(#5571ae));
+    background-image: -moz-linear-gradient(top, #558fae, #5571ae);
+    background-image: -ms-linear-gradient(top, #558fae, #5571ae);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #558fae), color-stop(100%, #5571ae));
+    background-image: -webkit-linear-gradient(top, #558fae, #5571ae);
+    background-image: -o-linear-gradient(top, #558fae, #5571ae);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#137da1', endColorstr='#134ea1', GradientType=0);
-    border-color: #134ea1 #134ea1 #0b2d5d;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fae', endColorstr='#5571ae', GradientType=0);
+    border-color: #5571ae #5571ae #3b4f7c;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
     /* line 26, ../../scss/base/_buttons.css.scss */
     button.btn-primary:hover, button.btn-primary:active, button.btn-primary.active, input[type="button"].btn-primary:hover, input[type="button"].btn-primary:active, input[type="button"].btn-primary.active, input[type="submit"].btn-primary:hover, input[type="submit"].btn-primary:active, input[type="submit"].btn-primary.active, input[type="reset"].btn-primary:hover, input[type="reset"].btn-primary:active, input[type="reset"].btn-primary.active, .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary.active {
-      background-color: #134ea1; }
+      background-color: #5571ae; }
     /* line 31, ../../scss/base/_buttons.css.scss */
     button.btn-primary.disabled:hover, button.btn-primary[disabled]:hover, input[type="button"].btn-primary.disabled:hover, input[type="button"].btn-primary[disabled]:hover, input[type="submit"].btn-primary.disabled:hover, input[type="submit"].btn-primary[disabled]:hover, input[type="reset"].btn-primary.disabled:hover, input[type="reset"].btn-primary[disabled]:hover, .btn.btn-primary.disabled:hover, .btn.btn-primary[disabled]:hover {
-      background-color: #134ea1;
-      background-image: -khtml-gradient(linear, left top, left bottom, from(#137da1), to(#134ea1));
-      background-image: -moz-linear-gradient(top, #137da1, #134ea1);
-      background-image: -ms-linear-gradient(top, #137da1, #134ea1);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #137da1), color-stop(100%, #134ea1));
-      background-image: -webkit-linear-gradient(top, #137da1, #134ea1);
-      background-image: -o-linear-gradient(top, #137da1, #134ea1);
+      background-color: #5571ae;
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#558fae), to(#5571ae));
+      background-image: -moz-linear-gradient(top, #558fae, #5571ae);
+      background-image: -ms-linear-gradient(top, #558fae, #5571ae);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #558fae), color-stop(100%, #5571ae));
+      background-image: -webkit-linear-gradient(top, #558fae, #5571ae);
+      background-image: -o-linear-gradient(top, #558fae, #5571ae);
       background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#137da1', endColorstr='#134ea1', GradientType=0);
-      border-color: #134ea1 #134ea1 #0b2d5d;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fae', endColorstr='#5571ae', GradientType=0);
+      border-color: #5571ae #5571ae #3b4f7c;
       border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
     /* line 37, ../../scss/base/_buttons.css.scss */
     button.btn-primary:active, button.btn-primary.active, input[type="button"].btn-primary:active, input[type="button"].btn-primary.active, input[type="submit"].btn-primary:active, input[type="submit"].btn-primary.active, input[type="reset"].btn-primary:active, input[type="reset"].btn-primary.active, .btn.btn-primary:active, .btn.btn-primary.active {
-      background-color: #0e3873 \9;
-      background-color: #137da1;
-      background-image: -khtml-gradient(linear, left top, left bottom, from(#134ea1), to(#137da1));
-      background-image: -moz-linear-gradient(top, #134ea1, #137da1);
-      background-image: -ms-linear-gradient(top, #134ea1, #137da1);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #134ea1), color-stop(100%, #137da1));
-      background-image: -webkit-linear-gradient(top, #134ea1, #137da1);
-      background-image: -o-linear-gradient(top, #134ea1, #137da1);
+      background-color: #435b8d \9;
+      background-color: #558fae;
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#5571ae), to(#558fae));
+      background-image: -moz-linear-gradient(top, #5571ae, #558fae);
+      background-image: -ms-linear-gradient(top, #5571ae, #558fae);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5571ae), color-stop(100%, #558fae));
+      background-image: -webkit-linear-gradient(top, #5571ae, #558fae);
+      background-image: -o-linear-gradient(top, #5571ae, #558fae);
       background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#134ea1', endColorstr='#137da1', GradientType=0);
-      border-color: #137da1 #137da1 #0b485d;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5571ae', endColorstr='#558fae', GradientType=0);
+      border-color: #558fae #558fae #3b657c;
       border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
     /* line 41, ../../scss/base/_buttons.css.scss */
     button.btn-primary ~ ul.dropdown-menu li a:hover, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover, .btn.btn-primary ~ ul.dropdown-menu li a:hover {
-      background-color: #134ea1;
-      background-image: -khtml-gradient(linear, left top, left bottom, from(#137da1), to(#134ea1));
-      background-image: -moz-linear-gradient(top, #137da1, #134ea1);
-      background-image: -ms-linear-gradient(top, #137da1, #134ea1);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #137da1), color-stop(100%, #134ea1));
-      background-image: -webkit-linear-gradient(top, #137da1, #134ea1);
-      background-image: -o-linear-gradient(top, #137da1, #134ea1);
+      background-color: #5571ae;
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#558fae), to(#5571ae));
+      background-image: -moz-linear-gradient(top, #558fae, #5571ae);
+      background-image: -ms-linear-gradient(top, #558fae, #5571ae);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #558fae), color-stop(100%, #5571ae));
+      background-image: -webkit-linear-gradient(top, #558fae, #5571ae);
+      background-image: -o-linear-gradient(top, #558fae, #5571ae);
       background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#137da1', endColorstr='#134ea1', GradientType=0);
-      border-color: #134ea1 #134ea1 #0b2d5d;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fae', endColorstr='#5571ae', GradientType=0);
+      border-color: #5571ae #5571ae #3b4f7c;
       border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
       /* line 45, ../../scss/base/_buttons.css.scss */
       button.btn-primary ~ ul.dropdown-menu li a:hover:hover, button.btn-primary ~ ul.dropdown-menu li a:hover:active, button.btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover:hover, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover:hover, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover:hover, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover.active, .btn.btn-primary ~ ul.dropdown-menu li a:hover:hover, .btn.btn-primary ~ ul.dropdown-menu li a:hover:active, .btn.btn-primary ~ ul.dropdown-menu li a:hover.active {
-        background-color: #134ea1; }
+        background-color: #5571ae; }
       /* line 50, ../../scss/base/_buttons.css.scss */
       button.btn-primary ~ ul.dropdown-menu li a:hover.disabled:hover, button.btn-primary ~ ul.dropdown-menu li a:hover[disabled]:hover, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover.disabled:hover, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover[disabled]:hover, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover.disabled:hover, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover[disabled]:hover, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover.disabled:hover, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover[disabled]:hover, .btn.btn-primary ~ ul.dropdown-menu li a:hover.disabled:hover, .btn.btn-primary ~ ul.dropdown-menu li a:hover[disabled]:hover {
-        background-color: #134ea1;
-        background-image: -khtml-gradient(linear, left top, left bottom, from(#137da1), to(#134ea1));
-        background-image: -moz-linear-gradient(top, #137da1, #134ea1);
-        background-image: -ms-linear-gradient(top, #137da1, #134ea1);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #137da1), color-stop(100%, #134ea1));
-        background-image: -webkit-linear-gradient(top, #137da1, #134ea1);
-        background-image: -o-linear-gradient(top, #137da1, #134ea1);
+        background-color: #5571ae;
+        background-image: -khtml-gradient(linear, left top, left bottom, from(#558fae), to(#5571ae));
+        background-image: -moz-linear-gradient(top, #558fae, #5571ae);
+        background-image: -ms-linear-gradient(top, #558fae, #5571ae);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #558fae), color-stop(100%, #5571ae));
+        background-image: -webkit-linear-gradient(top, #558fae, #5571ae);
+        background-image: -o-linear-gradient(top, #558fae, #5571ae);
         background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#137da1', endColorstr='#134ea1', GradientType=0);
-        border-color: #134ea1 #134ea1 #0b2d5d;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fae', endColorstr='#5571ae', GradientType=0);
+        border-color: #5571ae #5571ae #3b4f7c;
         border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
       /* line 56, ../../scss/base/_buttons.css.scss */
       button.btn-primary ~ ul.dropdown-menu li a:hover:active, button.btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="button"].btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="submit"].btn-primary ~ ul.dropdown-menu li a:hover.active, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover:active, input[type="reset"].btn-primary ~ ul.dropdown-menu li a:hover.active, .btn.btn-primary ~ ul.dropdown-menu li a:hover:active, .btn.btn-primary ~ ul.dropdown-menu li a:hover.active {
-        background-color: #0e3873 \9;
-        background-color: #137da1;
-        background-image: -khtml-gradient(linear, left top, left bottom, from(#134ea1), to(#137da1));
-        background-image: -moz-linear-gradient(top, #134ea1, #137da1);
-        background-image: -ms-linear-gradient(top, #134ea1, #137da1);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #134ea1), color-stop(100%, #137da1));
-        background-image: -webkit-linear-gradient(top, #134ea1, #137da1);
-        background-image: -o-linear-gradient(top, #134ea1, #137da1);
+        background-color: #435b8d \9;
+        background-color: #558fae;
+        background-image: -khtml-gradient(linear, left top, left bottom, from(#5571ae), to(#558fae));
+        background-image: -moz-linear-gradient(top, #5571ae, #558fae);
+        background-image: -ms-linear-gradient(top, #5571ae, #558fae);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5571ae), color-stop(100%, #558fae));
+        background-image: -webkit-linear-gradient(top, #5571ae, #558fae);
+        background-image: -o-linear-gradient(top, #5571ae, #558fae);
         background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#134ea1', endColorstr='#137da1', GradientType=0);
-        border-color: #137da1 #137da1 #0b485d;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5571ae', endColorstr='#558fae', GradientType=0);
+        border-color: #558fae #558fae #3b657c;
         border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
   /* line 184, ../../scss/base/_buttons.css.scss */
   button.btn-inverse, input[type="button"].btn-inverse, input[type="submit"].btn-inverse, input[type="reset"].btn-inverse, .btn.btn-inverse {
@@ -1206,7 +1297,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
 
 /* line 319, ../../scss/base/_buttons.css.scss */
 .btn-group.open {
-  *z-index: 1010; }
+  *z-index: 1000; }
   /* line 325, ../../scss/base/_buttons.css.scss */
   .btn-group.open .dropdown-menu {
     display: block;
@@ -1217,355 +1308,127 @@ button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
     background-image: none;
     box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
 
-/* Load site styles */
-/* line 5, ../../scss/base/_default.scss */
-* {
-  background-repeat: no-repeat;
-  box-sizing: border-box; }
+/* Components */
+/* line 9, ../../scss/components/_modal.scss */
+.modal-open .dropdown-menu {
+  z-index: 2070; }
+/* line 10, ../../scss/components/_modal.scss */
+.modal-open .dropdown.open {
+  *z-index: 2070; }
+/* line 11, ../../scss/components/_modal.scss */
+.modal-open .popover {
+  z-index: 2080; }
+/* line 12, ../../scss/components/_modal.scss */
+.modal-open .tooltip {
+  z-index: 2090; }
 
-/* line 10, ../../scss/base/_default.scss */
-html {
-  text-align: center; }
-  /* line 12, ../../scss/base/_default.scss */
-  html body {
-    background-color: white;
-    color: #62615e;
-    font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
-    font-size: 16px;
-    line-height: 24px;
-    margin: auto;
-    padding: 0;
-    text-align: left; }
-    /* line 21, ../../scss/base/_default.scss */
-    html body.preload * {
-      transition: none !important; }
-    /* line 24, ../../scss/base/_default.scss */
-    html body p {
-      font-size: 16px;
-      line-height: 24px; }
-    /* line 28, ../../scss/base/_default.scss */
-    html body h1, html body h2, html body h3 {
-      color: "";
-      font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
-      font-weight: normal; }
-    /* line 33, ../../scss/base/_default.scss */
-    html body h4, html body h5, html body h6 {
-      color: "";
-      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
-      font-weight: normal; }
-    /* line 38, ../../scss/base/_default.scss */
-    html body a, html body a:link {
-      color: #137da1; }
-    /* line 41, ../../scss/base/_default.scss */
-    html body a:hover {
-      color: #0da6da; }
-    /* line 44, ../../scss/base/_default.scss */
-    html body a:active {
-      color: #0da6da; }
-    /* line 47, ../../scss/base/_default.scss */
-    html body a:visited {
-      color: #2e4a53; }
-    /* line 53, ../../scss/base/_default.scss */
-    html body ::-moz-selection {
-      background-color: #137da1;
-      color: white;
-      text-shadow: none; }
-    /* line 59, ../../scss/base/_default.scss */
-    html body ::selection {
-      background-color: #137da1;
-      color: white;
-      text-shadow: none; }
-    /* line 65, ../../scss/base/_default.scss */
-    html body hr {
-      border: 0;
-      border-bottom: 1px solid white;
-      border-top: 1px solid #faf9f6;
-      margin: 24px 0; }
-    /* line 73, ../../scss/base/_default.scss */
-    html body img {
-      vertical-align: middle; }
-    /* line 78, ../../scss/base/_default.scss */
-    html body fieldset {
-      border: 0;
-      margin: 0;
-      padding: 0; }
-    /* line 85, ../../scss/base/_default.scss */
-    html body textarea {
-      resize: vertical; }
+/* line 16, ../../scss/components/_modal.scss */
+.modal-backdrop {
+  opacity: .8;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 950; }
+  /* line 26, ../../scss/components/_modal.scss */
+  .modal-backdrop.fade {
+    opacity: 0; }
+    /* line 28, ../../scss/components/_modal.scss */
+    .modal-backdrop.fade.in {
+      opacity: .8; }
+  /* line 32, ../../scss/components/_modal.scss */
+  .modal-backdrop.in {
+    z-index: 1050; }
+    /* line 34, ../../scss/components/_modal.scss */
+    .modal-backdrop.in ~ .modal {
+      z-index: 1060; }
 
-/* line 94, ../../scss/base/_default.scss */
-.chromeframe {
-  background-color: #ccc;
-  color: black;
-  margin: 0.2em 0;
-  padding: 0.2em 0; }
-
-/*
-################################################################################
-# Global Layout Declarations
-################################################################################
-
-These styles are for the base look and feel and layout of the site, including
-navigation, headers, footers, etc.
-
-*/
-/* line 11, ../../scss/base/_global.css.scss */
-.nest {
-  margin: auto;
-  position: relative; }
-
-/*
-################################################################################
-# Homepage style declarations
-################################################################################
-
-These styles are for the marketing/landing page of The State Decoded.
-
-*/
-/* line 18, ../../scss/base/_design.css.scss */
-div.video-frame {
+/* line 41, ../../scss/components/_modal.scss */
+.modal {
+  background-clip: padding-box;
   background-color: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-  float: right;
-  margin-top: -150px;
-  position: relative;
-  width: 50%;
-  z-index: 100; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 18, ../../scss/base/_design.css.scss */
-    div.video-frame {
-      float: none;
-      margin: 1em 0;
-      position: relative;
-      top: 0;
-      width: 100%; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 18, ../../scss/base/_design.css.scss */
-    div.video-frame {
-      float: none;
-      margin: 2em 0;
-      position: relative;
-      top: 0;
-      width: 100%; } }
-  /* line 43, ../../scss/base/_design.css.scss */
-  div.video-frame div.video-container {
-    height: 0;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    width: 100%; }
-    /* line 53, ../../scss/base/_design.css.scss */
-    div.video-frame div.video-container iframe,
-    div.video-frame div.video-container object,
-    div.video-frame div.video-container embed,
-    div.video-frame div.video-container img,
-    div.video-frame div.video-container video {
-      border: 10px solid white;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1000; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 53, ../../scss/base/_design.css.scss */
-        div.video-frame div.video-container iframe,
-        div.video-frame div.video-container object,
-        div.video-frame div.video-container embed,
-        div.video-frame div.video-container img,
-        div.video-frame div.video-container video {
-          border: 5px solid white; } }
-
-/* line 69, ../../scss/base/_design.css.scss */
-.nest {
-  max-width: 960px; }
-
-/*
-################################################################################
-# Law page
-################################################################################
-
-These styles are for the law#show pages of The State Decoded.
-
-*/
-/* line 83, ../../scss/base/_design.css.scss */
-body.law .nest {
-  max-width: none;
-  padding: 0 40px;
-  width: 100%; }
-/* line 89, ../../scss/base/_design.css.scss */
-body.law section#main_content {
-  overflow: hidden; }
-/* line 93, ../../scss/base/_design.css.scss */
-body.law section.law-detail {
-  float: left;
-  margin-right: 1%;
-  width: 49%; }
-  /* line 98, ../../scss/base/_design.css.scss */
-  body.law section.law-detail h1 {
-    font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
-    font-size: 125%;
-    font-variant: small-caps;
-    letter-spacing: -0.05em;
-    margin: 1em 0 0 0;
-    text-transform: small-caps; }
-  /* line 107, ../../scss/base/_design.css.scss */
-  body.law section.law-detail h2 {
-    font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
-    font-size: 200%;
-    font-weight: 100;
-    margin: 0; }
-/* line 115, ../../scss/base/_design.css.scss */
-body.law section.secondary-content {
-  float: right;
-  font-size: 81.25%;
-  width: 49%; }
-  /* line 120, ../../scss/base/_design.css.scss */
-  body.law section.secondary-content div.grouping {
-    float: left;
-    margin-right: 1%;
-    width: 32.5%; }
-  /* line 126, ../../scss/base/_design.css.scss */
-  body.law section.secondary-content div.grouping.last {
-    margin-right: 0; }
-  /* line 131, ../../scss/base/_design.css.scss */
-  body.law section.secondary-content div.grouping > section,
-  body.law section.secondary-content section#legal_self_help {
-    border: 1px solid #e4e9e7;
-    background-color: #fcfdfa;
-    -webkit-box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
-    -moz-box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
-    box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
-    margin-bottom: 1em;
-    padding: 0 1em; }
-    /* line 140, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section h1,
-    body.law section.secondary-content section#legal_self_help h1 {
-      font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      font-style: italic;
-      margin: 0.5em 0;
-      text-transform: capitalize; }
-    /* line 148, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section > h1,
-    body.law section.secondary-content section#legal_self_help > h1 {
-      font-style: normal;
-      text-transform: uppercase; }
-    /* line 153, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section.header-bar-full,
-    body.law section.secondary-content section#legal_self_help.header-bar-full {
-      float: none;
-      width: 100%; }
-      /* line 157, ../../scss/base/_design.css.scss */
-      body.law section.secondary-content div.grouping > section.header-bar-full > h1,
-      body.law section.secondary-content section#legal_self_help.header-bar-full > h1 {
-        background-color: #656358;
-        color: #fff;
-        font-size: 30px;
-        font-weight: 100;
-        font-style: normal;
-        margin: 0 -0.5em;
-        padding: 0.25em 0.5em;
-        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
-        text-transform: uppercase; }
-    /* line 170, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#legal_self_help,
-    body.law section.secondary-content section#legal_self_help#legal_self_help {
-      overflow: hidden; }
-      /* line 173, ../../scss/base/_design.css.scss */
-      body.law section.secondary-content div.grouping > section#legal_self_help ul,
-      body.law section.secondary-content section#legal_self_help#legal_self_help ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0; }
-        /* line 178, ../../scss/base/_design.css.scss */
-        body.law section.secondary-content div.grouping > section#legal_self_help ul li,
-        body.law section.secondary-content section#legal_self_help#legal_self_help ul li {
-          list-style-type: none;
-          float: left;
-          width: 49%; }
-          /* line 185, ../../scss/base/_design.css.scss */
-          body.law section.secondary-content div.grouping > section#legal_self_help ul li article h1,
-          body.law section.secondary-content section#legal_self_help#legal_self_help ul li article h1 {
-            font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif; }
-          /* line 192, ../../scss/base/_design.css.scss */
-          body.law section.secondary-content div.grouping > section#legal_self_help ul li article.pdf,
-          body.law section.secondary-content section#legal_self_help#legal_self_help ul li article.pdf {
-            background-image: url("/public/images/icon_pdf_32.png");
-            background-repeat: no-repeat;
-            background-position: top left;
-            padding-left: 42px; }
-    /* line 206, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#amendment_attempts h2,
-    body.law section.secondary-content section#legal_self_help#amendment_attempts h2 {
-      font-size: 125%; }
-    /* line 210, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#amendment_attempts a,
-    body.law section.secondary-content section#legal_self_help#amendment_attempts a {
-      font-size: 18px;
-      font-style: italic;
-      font-weight: bold; }
-    /* line 220, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h1,
-    body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h1 {
-      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
-      margin: 1em 0 0 0; }
-    /* line 225, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h2,
-    body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h2 {
-      font-size: 81.25%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  display: none;
+  left: 50%;
+  margin-left: -280px;
+  margin-top: -250px;
+  overflow: auto;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  width: 560px;
+  z-index: 990; }
+  /* line 57, ../../scss/components/_modal.scss */
+  .modal.in {
+    display: block;
+    z-index: 1060; }
+  /* line 61, ../../scss/components/_modal.scss */
+  .modal.fade {
+    top: -25%; }
+    /* line 63, ../../scss/components/_modal.scss */
+    .modal.fade.in {
+      top: 50%; }
+  /* line 68, ../../scss/components/_modal.scss */
+  .modal .modal-header {
+    background: #f2f1ee;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #faf9f6;
+    padding: 9px 15px;
+    text-transform: uppercase; }
+    /* line 74, ../../scss/components/_modal.scss */
+    .modal .modal-header h3 {
+      font-size: 32px;
       font-weight: normal;
-      font-variant: uppercase;
+      line-height: 48px;
       margin: 0;
-      text-transform: uppsercase; }
-    /* line 238, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#cross_references article.cross-reference h1,
-    body.law section.secondary-content section#legal_self_help#cross_references article.cross-reference h1 {
-      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
-      margin: 1em 0 0 0; }
-    /* line 247, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#related_laws article.related-law h1,
-    body.law section.secondary-content section#legal_self_help#related_laws article.related-law h1 {
-      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
-      margin: 1em 0 0 0; }
-    /* line 254, ../../scss/base/_design.css.scss */
-    body.law section.secondary-content div.grouping > section#cite_as,
-    body.law section.secondary-content section#legal_self_help#cite_as {
-      background-color: #656358;
-      color: #fff;
-      overflow: hidden;
-      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4); }
-      /* line 260, ../../scss/base/_design.css.scss */
-      body.law section.secondary-content div.grouping > section#cite_as > h1,
-      body.law section.secondary-content section#legal_self_help#cite_as > h1 {
-        float: left;
-        font-size: 24px;
-        font-weight: 100;
-        font-style: normal;
-        margin: 0 -0.5em;
-        padding: 0.25em 0.5em;
-        text-transform: uppercase;
-        width: 50%; }
-      /* line 271, ../../scss/base/_design.css.scss */
-      body.law section.secondary-content div.grouping > section#cite_as dl,
-      body.law section.secondary-content section#legal_self_help#cite_as dl {
-        float: right;
-        margin: 1em 0 0 0;
-        padding: 0;
-        width: 49%; }
-        /* line 277, ../../scss/base/_design.css.scss */
-        body.law section.secondary-content div.grouping > section#cite_as dl dt,
-        body.law section.secondary-content section#legal_self_help#cite_as dl dt {
-          font-size: 85%;
-          margin: 0;
-          padding: 0;
-          text-transform: uppercase; }
-        /* line 278, ../../scss/base/_design.css.scss */
-        body.law section.secondary-content div.grouping > section#cite_as dl dd,
-        body.law section.secondary-content section#legal_self_help#cite_as dl dd {
-          margin: 0 0 1em 0;
-          padding: 0; }
+      text-transform: none; }
+    /* line 81, ../../scss/components/_modal.scss */
+    .modal .modal-header .close {
+      -webkit-appearance: none;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      color: #403f3d;
+      cursor: pointer;
+      float: right;
+      font-size: 48px;
+      line-height: 48px;
+      margin-top: 2px;
+      opacity: .7;
+      padding: 0; }
+      /* line 94, ../../scss/components/_modal.scss */
+      .modal .modal-header .close:hover {
+        opacity: 1; }
+  /* line 100, ../../scss/components/_modal.scss */
+  .modal .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px; }
+  /* line 107, ../../scss/components/_modal.scss */
+  .modal .modal-form {
+    margin-bottom: 0; }
+  /* line 112, ../../scss/components/_modal.scss */
+  .modal .modal-footer {
+    border-radius: 0 0 6px 6px;
+    background-color: #faf9f6;
+    border-top: 1px solid #ddd;
+    box-shadow: inset 0 1px 0 white;
+    margin-bottom: 0;
+    padding: 14px 15px 15px;
+    text-align: right; }
+    /* line 122, ../../scss/components/_modal.scss */
+    .modal .modal-footer .btn + .btn {
+      margin-left: 5px;
+      margin-bottom: 0; }
+    /* line 127, ../../scss/components/_modal.scss */
+    .modal .modal-footer .btn-group .btn + .btn {
+      margin-left: -1px; }
 
-/* line 1, ../../scss/areas/_page-header.scss */
+/* line 1, ../../scss/areas/_header.scss */
 header#page_header {
   background-color: #137da1;
   height: 345px;
@@ -1573,16 +1436,16 @@ header#page_header {
   overflow: hidden;
   position: relative; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 1, ../../scss/areas/_page-header.scss */
+    /* line 1, ../../scss/areas/_header.scss */
     header#page_header {
       padding-top: 0;
       height: 370px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 1, ../../scss/areas/_page-header.scss */
+    /* line 1, ../../scss/areas/_header.scss */
     header#page_header {
       padding-top: 0;
       height: 190px; } }
-  /* line 20, ../../scss/areas/_page-header.scss */
+  /* line 20, ../../scss/areas/_header.scss */
   header#page_header hgroup#virginia_logo {
     background-image: url("/public/images/faux_seal.png");
     background-repeat: no-repeat;
@@ -1598,7 +1461,7 @@ header#page_header {
     top: 70px;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35); }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 20, ../../scss/areas/_page-header.scss */
+      /* line 20, ../../scss/areas/_header.scss */
       header#page_header hgroup#virginia_logo {
         background-size: 88px 88px;
         padding-left: 100px;
@@ -1606,7 +1469,7 @@ header#page_header {
         top: 0;
         left: 10px; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 20, ../../scss/areas/_page-header.scss */
+      /* line 20, ../../scss/areas/_header.scss */
       header#page_header hgroup#virginia_logo {
         background-size: 88px 88px;
         float: left;
@@ -1615,7 +1478,7 @@ header#page_header {
         top: 20px;
         left: 0;
         width: 40%; } }
-    /* line 53, ../../scss/areas/_page-header.scss */
+    /* line 53, ../../scss/areas/_header.scss */
     header#page_header hgroup#virginia_logo h1 {
       font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
       font-size: 65px;
@@ -1623,15 +1486,15 @@ header#page_header {
       font-weight: normal;
       margin: 0; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 53, ../../scss/areas/_page-header.scss */
+        /* line 53, ../../scss/areas/_header.scss */
         header#page_header hgroup#virginia_logo h1 {
           font-size: 300%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 53, ../../scss/areas/_page-header.scss */
+        /* line 53, ../../scss/areas/_header.scss */
         header#page_header hgroup#virginia_logo h1 {
           font-size: 325%;
           margin: 0 0 0 0; } }
-    /* line 70, ../../scss/areas/_page-header.scss */
+    /* line 70, ../../scss/areas/_header.scss */
     header#page_header hgroup#virginia_logo h2 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 150%;
@@ -1640,17 +1503,17 @@ header#page_header {
       margin: 10px 0 0 5px;
       text-transform: uppercase; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 70, ../../scss/areas/_page-header.scss */
+        /* line 70, ../../scss/areas/_header.scss */
         header#page_header hgroup#virginia_logo h2 {
           font-size: 125%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 70, ../../scss/areas/_page-header.scss */
+        /* line 70, ../../scss/areas/_header.scss */
         header#page_header hgroup#virginia_logo h2 {
           font-size: 130%;
           font-weight: 400;
           letter-spacing: 0.55em;
           margin: -0.7em 0 0 0; } }
-  /* line 91, ../../scss/areas/_page-header.scss */
+  /* line 91, ../../scss/areas/_header.scss */
   header#page_header nav#main_navigation {
     background-color: #105c80;
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1663,28 +1526,28 @@ header#page_header {
     left: 0;
     width: 100%; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 91, ../../scss/areas/_page-header.scss */
+      /* line 91, ../../scss/areas/_header.scss */
       header#page_header nav#main_navigation {
         height: auto;
         margin: 0 -1.5em;
         padding: 0;
         position: relative;
         width: 115%; } }
-    /* line 112, ../../scss/areas/_page-header.scss */
+    /* line 112, ../../scss/areas/_header.scss */
     header#page_header nav#main_navigation ul {
       height: 70px;
       list-style-type: none;
       margin: 0;
       padding: 0; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 112, ../../scss/areas/_page-header.scss */
+        /* line 112, ../../scss/areas/_header.scss */
         header#page_header nav#main_navigation ul {
           height: auto; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 112, ../../scss/areas/_page-header.scss */
+        /* line 112, ../../scss/areas/_header.scss */
         header#page_header nav#main_navigation ul {
           text-align: center; } }
-      /* line 126, ../../scss/areas/_page-header.scss */
+      /* line 126, ../../scss/areas/_header.scss */
       header#page_header nav#main_navigation ul li {
         display: inline-block;
         height: 70px;
@@ -1694,7 +1557,7 @@ header#page_header {
         text-align: center;
         width: 11%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 126, ../../scss/areas/_page-header.scss */
+          /* line 126, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li {
             border-bottom: 1px solid #137da1;
             display: block;
@@ -1704,10 +1567,10 @@ header#page_header {
             text-align: left;
             width: 110%; } }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-          /* line 126, ../../scss/areas/_page-header.scss */
+          /* line 126, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li {
             width: 22%; } }
-        /* line 149, ../../scss/areas/_page-header.scss */
+        /* line 149, ../../scss/areas/_header.scss */
         header#page_header nav#main_navigation ul li a {
           background-repeat: no-repeat;
           background-position: center 10px;
@@ -1720,83 +1583,100 @@ header#page_header {
           text-align: center;
           text-decoration: none;
           text-transform: uppercase;
+          text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
           width: 100%; }
-          /* line 162, ../../scss/areas/_page-header.scss */
+          /* line 163, ../../scss/areas/_header.scss */
           .lt-ie8 header#page_header nav#main_navigation ul li a {
             background-size: auto !important; }
           @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-            /* line 149, ../../scss/areas/_page-header.scss */
+            /* line 149, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a {
               background-position: 0 0;
               height: 50px;
               padding: 15px 100px 15px 50px;
               width: 100%; } }
-          /* line 172, ../../scss/areas/_page-header.scss */
+          /* line 173, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#the_code {
             background-image: url("/public/images/nav-icons/nav_the-code.svg"); }
-            /* line 174, ../../scss/areas/_page-header.scss */
+            /* line 175, ../../scss/areas/_header.scss */
+            header#page_header nav#main_navigation ul li a#the_code:hover {
+              background-image: url("/public/images/nav-icons/nav_the-code-hover.svg"); }
+            /* line 178, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#the_code {
               background-image: url("/public/images/nav-icons/fallbacks/nav_the-code.png"); }
-          /* line 179, ../../scss/areas/_page-header.scss */
+          /* line 183, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#court_cases {
             background-image: url("/public/images/nav-icons/nav_court-cases.svg"); }
-            /* line 181, ../../scss/areas/_page-header.scss */
+            /* line 185, ../../scss/areas/_header.scss */
+            header#page_header nav#main_navigation ul li a#court_cases:hover {
+              background-image: url("/public/images/nav-icons/nav_court-cases-hover.svg"); }
+            /* line 188, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#court_cases {
               background-image: url("/public/images/nav-icons/fallbacks/nav_court-cases.png"); }
-          /* line 186, ../../scss/areas/_page-header.scss */
+          /* line 193, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#about_us {
             background-image: url("/public/images/nav-icons/nav_about-us.svg");
             background-position: center top;
             background-size: 50px 50px; }
-            /* line 190, ../../scss/areas/_page-header.scss */
+            /* line 197, ../../scss/areas/_header.scss */
+            header#page_header nav#main_navigation ul li a#about_us:hover {
+              background-image: url("/public/images/nav-icons/nav_about-us-hover.svg"); }
+            /* line 200, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#about_us {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
               background-position: center 5px; }
-          /* line 196, ../../scss/areas/_page-header.scss */
+          /* line 206, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#use_the_api {
             background-image: url("/public/images/nav-icons/nav_use-the-api.svg"); }
-            /* line 198, ../../scss/areas/_page-header.scss */
+            /* line 208, ../../scss/areas/_header.scss */
+            header#page_header nav#main_navigation ul li a#use_the_api:hover {
+              background-image: url("/public/images/nav-icons/nav_use-the-api-hover.svg"); }
+            /* line 211, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#use_the_api {
               background-image: url("/public/images/nav-icons/fallbacks/nav_use-the-api.png"); }
-  /* line 207, ../../scss/areas/_page-header.scss */
-  header#page_header.inside {
+  /* line 220, ../../scss/areas/_header.scss */
+  .inside header#page_header {
     border-bottom: 10px solid #105c80;
     height: 75px; }
-    /* line 212, ../../scss/areas/_page-header.scss */
-    header#page_header.inside .nest {
+    /* line 225, ../../scss/areas/_header.scss */
+    .inside header#page_header .nest {
       max-width: none;
       padding: 0 40px;
       width: 100%; }
-    /* line 218, ../../scss/areas/_page-header.scss */
-    header#page_header.inside hgroup#virginia_logo {
+    /* line 231, ../../scss/areas/_header.scss */
+    .inside header#page_header hgroup#virginia_logo {
       background-size: 50px 50px;
       height: 50px;
       padding-left: 0;
       position: absolute;
-      top: -10px;
+      top: 8px;
       left: 40px; }
-      /* line 226, ../../scss/areas/_page-header.scss */
-      header#page_header.inside hgroup#virginia_logo h1 {
-        font-size: 220%;
-        margin: 0 0 0 50px; }
-      /* line 231, ../../scss/areas/_page-header.scss */
-      header#page_header.inside hgroup#virginia_logo h2 {
-        font-size: 75%;
+      /* line 239, ../../scss/areas/_header.scss */
+      .inside header#page_header hgroup#virginia_logo h1 {
+        font-size: 35px;
+        line-height: 35px;
+        margin: 0 0 0 55px; }
+      /* line 245, ../../scss/areas/_header.scss */
+      .inside header#page_header hgroup#virginia_logo h2 {
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: 0.5em;
-        margin: -15px 0 0 115px; }
-    /* line 239, ../../scss/areas/_page-header.scss */
-    header#page_header.inside section#search {
-      margin-top: -1.5em;
+        margin: -5px 0 0 120px; }
+    /* line 253, ../../scss/areas/_header.scss */
+    .inside header#page_header section#search {
+      margin-top: 0;
       width: 25%; }
-      /* line 243, ../../scss/areas/_page-header.scss */
-      header#page_header.inside section#search label {
+      /* line 257, ../../scss/areas/_header.scss */
+      .inside header#page_header section#search label {
         display: none; }
-      /* line 247, ../../scss/areas/_page-header.scss */
-      header#page_header.inside section#search input[type="search"] {
+      /* line 261, ../../scss/areas/_header.scss */
+      .inside header#page_header section#search input[type="search"] {
         width: 70%; }
-    /* line 253, ../../scss/areas/_page-header.scss */
-    header#page_header.inside nav#main_navigation {
+      /* line 265, ../../scss/areas/_header.scss */
+      .inside header#page_header section#search input[type="submit"] {
+        padding: 2px 10px; }
+    /* line 271, ../../scss/areas/_header.scss */
+    .inside header#page_header nav#main_navigation {
       background-color: transparent;
       margin-left: 250px;
       padding: 0;
@@ -1804,11 +1684,20 @@ header#page_header {
       top: -5px;
       width: 35%;
       min-width: 450px; }
-      /* line 262, ../../scss/areas/_page-header.scss */
-      header#page_header.inside nav#main_navigation li {
+      /* line 280, ../../scss/areas/_header.scss */
+      .inside header#page_header nav#main_navigation li {
         width: 24%; }
+        /* line 282, ../../scss/areas/_header.scss */
+        .inside header#page_header nav#main_navigation li a {
+          background-size: 25px 25px;
+          background-position: center 15px;
+          padding-top: 45px; }
+          /* line 286, ../../scss/areas/_header.scss */
+          .inside header#page_header nav#main_navigation li a#about_us {
+            background-size: 40px 40px;
+            background-position: center 8px; }
 
-/* line 2, ../../scss/areas/_page-footer.scss */
+/* line 2, ../../scss/areas/_footer.scss */
 footer#page_footer {
   background-color: #403f3d;
   color: #c9c7c3;
@@ -1816,45 +1705,98 @@ footer#page_footer {
   margin: 1em -1em -1em -1em;
   overflow: hidden;
   padding: 1em; }
-  /* line 10, ../../scss/areas/_page-footer.scss */
+  /* line 10, ../../scss/areas/_footer.scss */
   footer#page_footer p {
     font-size: 75%; }
-    /* line 13, ../../scss/areas/_page-footer.scss */
+    /* line 13, ../../scss/areas/_footer.scss */
     footer#page_footer p a {
-      color: white; }
-    /* line 17, ../../scss/areas/_page-footer.scss */
+      color: #d9d8d6; }
+    /* line 17, ../../scss/areas/_footer.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 17, ../../scss/areas/_page-footer.scss */
+        /* line 17, ../../scss/areas/_footer.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 17, ../../scss/areas/_page-footer.scss */
+        /* line 17, ../../scss/areas/_footer.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 30%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 29, ../../scss/areas/_page-footer.scss */
+      /* line 29, ../../scss/areas/_footer.scss */
       footer#page_footer p.credits {
         width: 100%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 29, ../../scss/areas/_page-footer.scss */
+      /* line 29, ../../scss/areas/_footer.scss */
       footer#page_footer p.credits {
         width: 30%; } }
-    /* line 41, ../../scss/areas/_page-footer.scss */
+    /* line 41, ../../scss/areas/_footer.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 41, ../../scss/areas/_page-footer.scss */
+        /* line 41, ../../scss/areas/_footer.scss */
         footer#page_footer p.legalese {
           float: none;
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 41, ../../scss/areas/_page-footer.scss */
+        /* line 41, ../../scss/areas/_footer.scss */
         footer#page_footer p.legalese {
           width: 70%; } }
+
+/* line 1, ../../scss/areas/_video-frame.scss */
+div.video-frame {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+  float: right;
+  margin-top: -150px;
+  position: relative;
+  width: 50%;
+  z-index: 100; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+    /* line 1, ../../scss/areas/_video-frame.scss */
+    div.video-frame {
+      float: none;
+      margin: 1em 0;
+      position: relative;
+      top: 0;
+      width: 100%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 1, ../../scss/areas/_video-frame.scss */
+    div.video-frame {
+      float: none;
+      margin: 2em 0;
+      position: relative;
+      top: 0;
+      width: 100%; } }
+  /* line 26, ../../scss/areas/_video-frame.scss */
+  div.video-frame div.video-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    width: 100%; }
+    /* line 36, ../../scss/areas/_video-frame.scss */
+    div.video-frame div.video-container iframe,
+    div.video-frame div.video-container object,
+    div.video-frame div.video-container embed,
+    div.video-frame div.video-container img,
+    div.video-frame div.video-container video {
+      border: 10px solid white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
+        /* line 36, ../../scss/areas/_video-frame.scss */
+        div.video-frame div.video-container iframe,
+        div.video-frame div.video-container object,
+        div.video-frame div.video-container embed,
+        div.video-frame div.video-container img,
+        div.video-frame div.video-container video {
+          border: 5px solid white; } }
 
 /* line 1, ../../scss/areas/_search.scss */
 section#search {
@@ -1909,18 +1851,18 @@ section#search {
     line-height: 28px;
     margin-left: 20px; }
 
-/* line 3, ../../scss/areas/_homepage.scss */
+/* line 3, ../../scss/areas/_page-homepage.scss */
 .homepage hgroup {
   text-align: center;
   margin-top: 2em; }
-  /* line 7, ../../scss/areas/_homepage.scss */
+  /* line 7, ../../scss/areas/_page-homepage.scss */
   .homepage hgroup h1 {
     font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
     font-size: 225%;
     font-weight: normal;
     line-height: 100%;
     margin: 0.1em 0; }
-  /* line 15, ../../scss/areas/_homepage.scss */
+  /* line 15, ../../scss/areas/_page-homepage.scss */
   .homepage hgroup h2 {
     font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 87.5%;
@@ -1929,29 +1871,29 @@ section#search {
     line-height: 87.5%;
     text-transform: uppercase; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 15, ../../scss/areas/_homepage.scss */
+      /* line 15, ../../scss/areas/_page-homepage.scss */
       .homepage hgroup h2 {
         margin: 0; } }
-/* line 29, ../../scss/areas/_homepage.scss */
+/* line 29, ../../scss/areas/_page-homepage.scss */
 .homepage section.secondary-content {
   float: right;
   margin-top: 30px;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 29, ../../scss/areas/_homepage.scss */
+    /* line 29, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 29, ../../scss/areas/_homepage.scss */
+    /* line 29, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content {
       float: none;
       width: 66%; } }
-  /* line 44, ../../scss/areas/_homepage.scss */
+  /* line 44, ../../scss/areas/_page-homepage.scss */
   .homepage section.secondary-content article.abstract {
     font-size: 87.5%;
     position: relative; }
-    /* line 48, ../../scss/areas/_homepage.scss */
+    /* line 48, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract:nth-child(1) {
       border-right: 1px solid #ccc;
       float: left;
@@ -1959,25 +1901,25 @@ section#search {
       padding-right: 5%;
       width: 50%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 48, ../../scss/areas/_homepage.scss */
+        /* line 48, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract:nth-child(1) {
           border-right: none;
           float: none;
           width: 100%; } }
-    /* line 65, ../../scss/areas/_homepage.scss */
+    /* line 65, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract:nth-child(2) {
       float: right;
       margin-bottom: 20px;
       width: 45%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 65, ../../scss/areas/_homepage.scss */
+        /* line 65, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract:nth-child(2) {
           float: none;
           width: 100%; } }
-    /* line 79, ../../scss/areas/_homepage.scss */
+    /* line 79, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract:nth-child(3) {
       margin: 20px 0; }
-    /* line 83, ../../scss/areas/_homepage.scss */
+    /* line 83, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract figure {
       height: 125px;
       margin: 20px 0;
@@ -1986,28 +1928,28 @@ section#search {
       overflow: hidden;
       width: 100%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 83, ../../scss/areas/_homepage.scss */
+        /* line 83, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 75px; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 83, ../../scss/areas/_homepage.scss */
+        /* line 83, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 100px; } }
-      /* line 99, ../../scss/areas/_homepage.scss */
+      /* line 99, ../../scss/areas/_page-homepage.scss */
       .homepage section.secondary-content article.abstract figure img {
         position: absolute;
         top: -120px;
         left: 0;
         width: 100%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 99, ../../scss/areas/_homepage.scss */
+          /* line 99, ../../scss/areas/_page-homepage.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -70px; } }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-          /* line 99, ../../scss/areas/_homepage.scss */
+          /* line 99, ../../scss/areas/_page-homepage.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -150px; } }
-    /* line 115, ../../scss/areas/_homepage.scss */
+    /* line 115, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract h1 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 107.1428%;
@@ -2015,28 +1957,305 @@ section#search {
       margin: 0;
       text-transform: uppercase; }
 
-/* line 1, ../../scss/areas/_homepage-feature-content.scss */
+/* line 1, ../../scss/areas/_page-homepage-feature-content.scss */
 section.feature-content {
   float: left;
   margin-right: 1%;
   width: 49%; }
-  /* line 6, ../../scss/areas/_homepage-feature-content.scss */
+  /* line 6, ../../scss/areas/_page-homepage-feature-content.scss */
   section.feature-content p {
     font-size: 18px;
     line-height: 28px;
     padding: 0 20px; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-    /* line 1, ../../scss/areas/_homepage-feature-content.scss */
+    /* line 1, ../../scss/areas/_page-homepage-feature-content.scss */
     section.feature-content {
       float: none;
       width: 100%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* line 1, ../../scss/areas/_homepage-feature-content.scss */
+    /* line 1, ../../scss/areas/_page-homepage-feature-content.scss */
     section.feature-content {
       float: none;
       width: 100%; } }
-  /* line 22, ../../scss/areas/_homepage-feature-content.scss */
+  /* line 22, ../../scss/areas/_page-homepage-feature-content.scss */
   section.feature-content img.ad {
     margin: 20px 0; }
 
-/* Load state-specific overrides */
+/* ################################################################################
+# Law page
+################################################################################
+*/
+/* line 7, ../../scss/areas/_page-law-show.scss */
+body.law .nest {
+  max-width: none;
+  padding: 0 40px;
+  width: 100%; }
+/* line 13, ../../scss/areas/_page-law-show.scss */
+body.law section#main_content {
+  overflow: hidden; }
+/* line 17, ../../scss/areas/_page-law-show.scss */
+body.law section.law-detail {
+  float: left;
+  margin-right: 1%;
+  padding: 20px;
+  width: 49%; }
+  /* line 23, ../../scss/areas/_page-law-show.scss */
+  body.law section.law-detail h1 {
+    font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
+    font-size: 125%;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    margin: 0 0 10px 0;
+    text-transform: small-caps; }
+  /* line 32, ../../scss/areas/_page-law-show.scss */
+  body.law section.law-detail h2 {
+    font-family: "adobe-jenson-pro", Georgia, "Times New Roman", Times, serif;
+    font-size: 200%;
+    font-weight: 100;
+    margin: 0 0 20px 0; }
+  /* line 39, ../../scss/areas/_page-law-show.scss */
+  body.law section.law-detail h3 {
+    margin: 40px 0 10px 0;
+    text-transform: uppercase; }
+  /* line 44, ../../scss/areas/_page-law-show.scss */
+  body.law section.law-detail p {
+    margin: 0 0 20px 0; }
+/* line 50, ../../scss/areas/_page-law-show.scss */
+body.law section.secondary-content {
+  float: right;
+  font-size: 81.25%;
+  padding: 20px;
+  text-align: center;
+  width: 49%; }
+  /* line 58, ../../scss/areas/_page-law-show.scss */
+  body.law section.secondary-content .ad {
+    margin: 0 auto 20px auto; }
+  /* line 62, ../../scss/areas/_page-law-show.scss */
+  body.law section.secondary-content div.grouping {
+    float: left;
+    margin-right: 1%;
+    text-align: left;
+    width: 32.5%; }
+  /* line 69, ../../scss/areas/_page-law-show.scss */
+  body.law section.secondary-content div.grouping.last {
+    margin-right: 0; }
+  /* line 74, ../../scss/areas/_page-law-show.scss */
+  body.law section.secondary-content div.grouping > section,
+  body.law section.secondary-content section#legal_self_help {
+    border: 1px solid #e4e9e7;
+    background-color: #fcfdfa;
+    box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
+    margin-bottom: 1em;
+    padding: 0 1em;
+    text-align: left; }
+    /* line 84, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section h1,
+    body.law section.secondary-content section#legal_self_help h1 {
+      font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      margin: 0.5em 0;
+      text-transform: capitalize; }
+    /* line 92, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section > h1,
+    body.law section.secondary-content section#legal_self_help > h1 {
+      font-style: normal;
+      text-transform: uppercase; }
+    /* line 97, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section.header-bar-full,
+    body.law section.secondary-content section#legal_self_help.header-bar-full {
+      float: none;
+      width: 100%; }
+      /* line 101, ../../scss/areas/_page-law-show.scss */
+      body.law section.secondary-content div.grouping > section.header-bar-full > h1,
+      body.law section.secondary-content section#legal_self_help.header-bar-full > h1 {
+        background-color: #656358;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 100;
+        font-style: normal;
+        margin: 0 -0.5em;
+        padding: 0.25em 0.5em;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+        text-transform: uppercase; }
+      /* line 113, ../../scss/areas/_page-law-show.scss */
+      body.law section.secondary-content div.grouping > section.header-bar-full p,
+      body.law section.secondary-content section#legal_self_help.header-bar-full p {
+        margin: 0 0 10px 0; }
+    /* line 119, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#legal_self_help,
+    body.law section.secondary-content section#legal_self_help#legal_self_help {
+      overflow: hidden; }
+      /* line 122, ../../scss/areas/_page-law-show.scss */
+      body.law section.secondary-content div.grouping > section#legal_self_help ul,
+      body.law section.secondary-content section#legal_self_help#legal_self_help ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        /* line 127, ../../scss/areas/_page-law-show.scss */
+        body.law section.secondary-content div.grouping > section#legal_self_help ul li,
+        body.law section.secondary-content section#legal_self_help#legal_self_help ul li {
+          list-style-type: none;
+          float: left;
+          margin-bottom: 15px;
+          width: 49%; }
+          /* line 135, ../../scss/areas/_page-law-show.scss */
+          body.law section.secondary-content div.grouping > section#legal_self_help ul li article h1,
+          body.law section.secondary-content section#legal_self_help#legal_self_help ul li article h1 {
+            font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif; }
+          /* line 142, ../../scss/areas/_page-law-show.scss */
+          body.law section.secondary-content div.grouping > section#legal_self_help ul li article.pdf,
+          body.law section.secondary-content section#legal_self_help#legal_self_help ul li article.pdf {
+            background-image: url("/public/images/icon_pdf_32.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            padding-left: 42px; }
+    /* line 156, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#amendment_attempts h2,
+    body.law section.secondary-content section#legal_self_help#amendment_attempts h2 {
+      font-size: 125%; }
+    /* line 160, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#amendment_attempts a,
+    body.law section.secondary-content section#legal_self_help#amendment_attempts a {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold; }
+    /* line 170, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h1,
+    body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h1 {
+      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+      margin: 1em 0 0 0; }
+    /* line 175, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h2,
+    body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h2 {
+      font-size: 81.25%;
+      font-weight: normal;
+      font-variant: uppercase;
+      margin: 0;
+      text-transform: uppsercase; }
+    /* line 188, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#cross_references article.cross-reference h1,
+    body.law section.secondary-content section#legal_self_help#cross_references article.cross-reference h1 {
+      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+      margin: 1em 0 0 0; }
+    /* line 197, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#related_laws article.related-law h1,
+    body.law section.secondary-content section#legal_self_help#related_laws article.related-law h1 {
+      font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+      margin: 1em 0 0 0; }
+    /* line 204, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section#cite_as,
+    body.law section.secondary-content section#legal_self_help#cite_as {
+      background-color: #656358;
+      color: #fff;
+      overflow: hidden;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4); }
+      /* line 210, ../../scss/areas/_page-law-show.scss */
+      body.law section.secondary-content div.grouping > section#cite_as > h1,
+      body.law section.secondary-content section#legal_self_help#cite_as > h1 {
+        float: left;
+        font-size: 24px;
+        font-weight: 100;
+        font-style: normal;
+        margin: 0 -0.5em;
+        padding: 0.25em 0.5em;
+        text-transform: uppercase;
+        width: 50%; }
+      /* line 221, ../../scss/areas/_page-law-show.scss */
+      body.law section.secondary-content div.grouping > section#cite_as dl,
+      body.law section.secondary-content section#legal_self_help#cite_as dl {
+        float: right;
+        margin: 1em 0 0 0;
+        padding: 0;
+        width: 49%; }
+        /* line 227, ../../scss/areas/_page-law-show.scss */
+        body.law section.secondary-content div.grouping > section#cite_as dl dt,
+        body.law section.secondary-content section#legal_self_help#cite_as dl dt {
+          font-size: 85%;
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase; }
+        /* line 228, ../../scss/areas/_page-law-show.scss */
+        body.law section.secondary-content div.grouping > section#cite_as dl dd,
+        body.law section.secondary-content section#legal_self_help#cite_as dl dd {
+          margin: 0 0 1em 0;
+          padding: 0; }
+
+/* line 269, ../../scss/areas/_page-law-show.scss */
+section.breadcrumbs {
+  clear: both;
+  margin-bottom: 20px; }
+
+/* line 275, ../../scss/areas/_page-law-show.scss */
+.steps-nav {
+  clear: both;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%; }
+  /* line 282, ../../scss/areas/_page-law-show.scss */
+  .steps-nav li {
+    padding: 0;
+    position: relative;
+    float: left; }
+    /* line 286, ../../scss/areas/_page-law-show.scss */
+    .steps-nav li a {
+      position: relative;
+      display: inline-block;
+      font-size: 12px;
+      height: 24px;
+      line-height: 24px;
+      margin-right: 20px;
+      padding: 0 5px;
+      color: white !important;
+      background-color: #8fa9b2;
+      text-decoration: none; }
+      /* line 297, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li a span {
+        font-weight: bold; }
+      /* line 300, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li a:before, .steps-nav li a:after {
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: "";
+        top: 0;
+        border: 12px solid #8fa9b2;
+        border-right-width: 0; }
+      /* line 309, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li a:before {
+        border-left: 24px solid transparent;
+        left: -24px; }
+      /* line 313, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li a:after {
+        border-color: transparent;
+        border-left: 24px solid #8fa9b2;
+        right: -24px; }
+    /* line 319, ../../scss/areas/_page-law-show.scss */
+    .steps-nav li:first-child a:before {
+      border-left: none; }
+    /* line 257, ../../scss/areas/_page-law-show.scss */
+    .steps-nav li.active a {
+      color: white;
+      text-shadow: 0 1px 0 #30393c;
+      background-color: #526166; }
+      /* line 246, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li.active a:before {
+        border-top-color: #526166;
+        border-bottom-color: #526166; }
+      /* line 251, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li.active a:after {
+        border-left-color: #526166; }
+    /* line 261, ../../scss/areas/_page-law-show.scss */
+    .steps-nav li.active:hover a {
+      color: white;
+      text-shadow: 0 1px 0 black;
+      background-color: #252b2d; }
+      /* line 246, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li.active:hover a:before {
+        border-top-color: #252b2d;
+        border-bottom-color: #252b2d; }
+      /* line 251, ../../scss/areas/_page-law-show.scss */
+      .steps-nav li.active:hover a:after {
+        border-left-color: #252b2d; }

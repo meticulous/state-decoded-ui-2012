@@ -7,28 +7,17 @@
 // Try to avoid customizing these :)
 
 
-$zindexBase:            1000 !default;
-$zindexDropdown:        ($zindexBase + 10) !default;
-$zindexPopover:         ($zindexBase + 20) !default;
-$zindexTooltip:         ($zindexBase + 30) !default;
-$zindexFixedNavbar:     ($zindexBase + 40) !default;
+$zindex-base: 1000 !default;
+$zindex-drop-down: ($zindex-base + 10) !default;
+$zindex-popover: ($zindex-base + 20) !default;
+$zindex-tooltip: ($zindex-base + 30) !default;
+$zindex-fixed-navbar: ($zindex-base + 40) !default;
 
 // ------------------------------------------------------------------
 //  Modals
 // ------------------------------------------------------------------
 
-$zindexModalHidden:     ($zindexBase - 10) !default;
-$zindexModalBackdrop:   ($zindexBase + 50) !default;
-$zindexModalBackdropHidden:  ($zindexBase - 50) !default;
-$zindexModal:           ($zindexBase + 60) !default;
-
-// ------------------------------------------------------------------
-//  Responsive Design
-// ------------------------------------------------------------------
-
-$zindexSlideOutToggle: ($zindexBase + 1000) !default;
-$zindexSlideOut: ($zindexSlideOutToggle + 1) !default;
-
-
-// Mobile Full Page Warning
-$zindexPortraitWarning: 9999 !default;
+$zindex-modal-hidden: ($zindex-base - 10) !default;
+$zindex-modal-backdrop: ($zindex-base + 50) !default;
+$zindex-modal-backdrop-hidden: ($zindex-base - 50) !default;
+$zindex-modal: ($zindex-base + 60) !default;

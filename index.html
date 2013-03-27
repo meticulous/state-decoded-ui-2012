@@ -21,7 +21,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   </head>
-  <body>
+  <body class="preload">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -131,16 +131,30 @@
       </div> <!-- // .nest -->
     </footer> <!-- // #page_footer -->
 
-
+    <!-- Modal -->
+    <div id="keyboard-shortcuts" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Keyboard Shortcuts</h3>
+      </div>
+      <div class="modal-body">
+        <p>Put your keyboard shortcut help here.</p>
+      </div>
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="public/js/vendor/jquery.min.js"><\/script>')</script>
 <!--    <script src="public/js/plugins.js"></script> -->
 <!--    <script src="public/js/main.js"></script> -->
-    <script src="public/js/vendor/js-webshim/minified/polyfillter.js"></script>
+    <script src="public/js/vendor/js-webshim/polyfillter.js"></script>
     <script>
       $.webshims.polyfill('mediaelement');
     </script>
+
+    <script src="public/js/vendor/bootstrap-transition.js"></script>
+    <script src="public/js/vendor/bootstrap-modal.js"></script>
+    <script src="public/js/vendor/mousetrap.min.js"></script>
+    <script src="public/js/ready.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -151,4 +165,3 @@
     </script>
   </body>
 </html>
-
