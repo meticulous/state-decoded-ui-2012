@@ -24,7 +24,7 @@
 
 jQuery(function($) {
 
-  console.log("Ready Loaded");
+  //console.log("Ready Loaded");
   // Remove Preload so that transitions work after page loads
   $("body").removeClass("preload");
 
