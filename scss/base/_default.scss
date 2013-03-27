@@ -87,6 +87,38 @@ html {
         resize: vertical;
     }
 
+    #main_content {
+      padding: 20px 0;
+    }
+
+    // Unordered and Ordered - <ol> & <ul>
+    // ------------------------------------------------------------------
+
+    ul, ol {
+      padding: 0;
+      margin: 0 0 $base-line-height / 2 25px;
+      ul, ol {
+         margin-bottom: 0;
+      }
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    ol, ol ol ol ol, ol ol ol ol ol ol ol {
+      list-style: decimal;
+      ol{
+        list-style-type: lower-alpha;
+        ol  {
+          list-style-type: lower-roman;
+        }
+      }
+    }
+
+    li {
+      line-height: $base-line-height;
+    }
 
 
   } // body

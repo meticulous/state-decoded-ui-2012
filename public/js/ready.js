@@ -48,6 +48,15 @@ jQuery(function($) {
     }
   });
 
+  // Open Lists
+  // --------------------------------------------------------
+
+  $(".collapse-list").delegate('li','click', function(e) {
+    //console.log("Clicked");
+    $(this).toggleClass("is-open");
+  });
+
+
 
   // Handler for .ready() called.
 });

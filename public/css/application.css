@@ -488,21 +488,46 @@ html {
     /* line 86, ../../scss/base/_default.scss */
     html body textarea {
       resize: vertical; }
+    /* line 90, ../../scss/base/_default.scss */
+    html body #main_content {
+      padding: 20px 0; }
+    /* line 97, ../../scss/base/_default.scss */
+    html body ul, html body ol {
+      padding: 0;
+      margin: 0 0 12px 25px; }
+      /* line 100, ../../scss/base/_default.scss */
+      html body ul ul, html body ul ol, html body ol ul, html body ol ol {
+        margin-bottom: 0; }
+    /* line 105, ../../scss/base/_default.scss */
+    html body ul {
+      list-style: disc; }
+    /* line 109, ../../scss/base/_default.scss */
+    html body ol, html body ol ol ol ol, html body ol ol ol ol ol ol ol {
+      list-style: decimal; }
+      /* line 111, ../../scss/base/_default.scss */
+      html body ol ol, html body ol ol ol ol ol, html body ol ol ol ol ol ol ol ol {
+        list-style-type: lower-alpha; }
+        /* line 113, ../../scss/base/_default.scss */
+        html body ol ol ol, html body ol ol ol ol ol ol, html body ol ol ol ol ol ol ol ol ol {
+          list-style-type: lower-roman; }
+    /* line 119, ../../scss/base/_default.scss */
+    html body li {
+      line-height: 24px; }
 
-/* line 97, ../../scss/base/_default.scss */
+/* line 129, ../../scss/base/_default.scss */
 .chromeframe {
   background-color: #ccc;
   color: black;
   margin: 0.2em 0;
   padding: 0.2em 0; }
 
-/* line 105, ../../scss/base/_default.scss */
+/* line 137, ../../scss/base/_default.scss */
 .nest {
   margin: auto;
   position: relative;
   max-width: 960px; }
 
-/* line 111, ../../scss/base/_default.scss */
+/* line 143, ../../scss/base/_default.scss */
 p {
   hyphenate: auto;
   /* http://webtypography.net/Rhythm_and_Proportion/Etiquette_of_Hyphenation_and_Pagination/2.4.3/ */
@@ -511,29 +536,29 @@ p {
   orphans: 4;
   widows: 4; }
 
-/* line 119, ../../scss/base/_default.scss */
+/* line 151, ../../scss/base/_default.scss */
 small {
   font-size: 85%; }
 
-/* line 121, ../../scss/base/_default.scss */
+/* line 153, ../../scss/base/_default.scss */
 strong, th {
   font-weight: bold; }
 
-/* line 123, ../../scss/base/_default.scss */
+/* line 155, ../../scss/base/_default.scss */
 td, td img {
   vertical-align: top; }
 
-/* line 125, ../../scss/base/_default.scss */
+/* line 157, ../../scss/base/_default.scss */
 sub {
   vertical-align: sub;
   font-size: smaller; }
 
-/* line 127, ../../scss/base/_default.scss */
+/* line 159, ../../scss/base/_default.scss */
 sup {
   vertical-align: super;
   font-size: smaller; }
 
-/* line 129, ../../scss/base/_default.scss */
+/* line 161, ../../scss/base/_default.scss */
 pre {
   padding: 15px;
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
@@ -1443,6 +1468,16 @@ tbody .is-active td {
   background-color: rgba(233, 186, 38, 0.3) !important; }
 
 /* Components */
+/* line 6, ../../scss/components/_lists-collapseable.scss */
+.collapse-list li {
+  display: none; }
+  /* line 9, ../../scss/components/_lists-collapseable.scss */
+  .collapse-list li.is-open > ol > li {
+    display: list-item !important; }
+/* line 14, ../../scss/components/_lists-collapseable.scss */
+.collapse-list > li {
+  display: list-item; }
+
 /* line 9, ../../scss/components/_modal.scss */
 .modal-open .dropdown-menu {
   z-index: 2070; }
@@ -1951,6 +1986,22 @@ header#page_header {
           .inside header#page_header nav#main_navigation li a#about_us {
             background-size: 40px 40px;
             background-position: center 8px; }
+
+/* line 3, ../../scss/areas/_title-list.scss */
+.title-list li {
+  list-style: none;
+  padding: 5px; }
+  /* line 6, ../../scss/areas/_title-list.scss */
+  .title-list li a {
+    text-decoration: none; }
+  /* line 9, ../../scss/areas/_title-list.scss */
+  .title-list li span {
+    float: left;
+    display: block;
+    margin-right: 50px; }
+  /* line 14, ../../scss/areas/_title-list.scss */
+  .title-list li:nth-child(even) {
+    background-color: #f2f1ee; }
 
 /* line 2, ../../scss/areas/_footer.scss */
 footer#page_footer {

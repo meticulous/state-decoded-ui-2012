@@ -54,11 +54,13 @@
 @import "base/tables/_tables.css.scss";
 
 /* Components */
+@import "components/_lists-collapseable.scss";
 @import "components/_modal.scss";
 @import "components/_keyboard-shortcuts.scss";
 
 // Areas
 @import "areas/_header.scss";
+@import "areas/_title-list.scss";
 @import "areas/_footer.scss";
 @import "areas/_video-frame.scss";
 @import "areas/_search.scss";
