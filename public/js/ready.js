@@ -33,5 +33,21 @@ jQuery(function($) {
      $('#keyboard-shortcuts').modal("show");
     });
 
+  // Table Column Highlgihting
+  // --------------------------------------------------------
+
+  $(".table-highlighting").delegate('td','mouseover mouseleave', function(e) {
+    var whichCol = $(this).index();
+    if (e.type == 'mouseover') {
+      $(this).parent().addClass("is-active");
+      $(this).parent().parent().siblings("colgroup").eq(whichCol).addClass("is-active");
+    }
+    else {
+      $(this).parent().removeClass("is-active");
+      $(this).parent().parent().siblings("colgroup").eq(whichCol).removeClass("is-active");
+    }
+  });
+
+
   // Handler for .ready() called.
 });

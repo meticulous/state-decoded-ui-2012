@@ -5,7 +5,7 @@
 // Primary Palette
 // ------------------------------------------------------------------
 
-$base:       #137da1; // Blue
+$base:  #137da1; // Blue
 $base-light: adjust-color($base, $saturation: -20%, $lightness: 10%);
 $base-lightest: #8fa9b2;
 $base-dark:  adjust-color(adjust-hue($base, 4deg), $saturation: -1%, $lightness: -7%);
@@ -54,7 +54,7 @@ $glow-lighter: hsla(100,100%,100%,0.25) !default;
 $glow-light: hsla(100,100%,100%,0.5) !default;
 $glow: hsla(100,100%,100%,0.75) !default;
 
-$highlight: transparentize($yellow, .7);
+$highlight: transparentize(#e9ba26, .7);
 
 // ------------------------------------------------------------------
 //  COLORS 2 THINGS
