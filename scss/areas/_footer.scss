@@ -1,5 +1,7 @@
 
 footer#page_footer {
+  @extend %clearfix;
+  clear: both;
   background-color: $gray-darkest;
   color: $gray;
   font-family: $statedecoded-stack3;

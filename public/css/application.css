@@ -397,13 +397,13 @@ table {
   visibility: hidden; }
 
 /* line 60, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
-.modal .modal-footer:before, section.breadcrumbs:before, .modal .modal-footer:after, section.breadcrumbs:after {
+.modal .modal-footer:before, footer#page_footer:before, section.breadcrumbs:before, .modal .modal-footer:after, footer#page_footer:after, section.breadcrumbs:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 /* line 64, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
-.modal .modal-footer:after, section.breadcrumbs:after {
+.modal .modal-footer:after, footer#page_footer:after, section.breadcrumbs:after {
   clear: both; }
 
 /*
@@ -2005,47 +2005,48 @@ header#page_header {
 
 /* line 2, ../../scss/areas/_footer.scss */
 footer#page_footer {
+  clear: both;
   background-color: #403f3d;
   color: #c9c7c3;
   font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden; }
-  /* line 8, ../../scss/areas/_footer.scss */
+  /* line 10, ../../scss/areas/_footer.scss */
   footer#page_footer p {
     font-size: 75%; }
-    /* line 11, ../../scss/areas/_footer.scss */
+    /* line 13, ../../scss/areas/_footer.scss */
     footer#page_footer p a {
       color: #d9d8d6; }
-    /* line 15, ../../scss/areas/_footer.scss */
+    /* line 17, ../../scss/areas/_footer.scss */
     footer#page_footer p.downloads, footer#page_footer p.credits {
       width: 20%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 15, ../../scss/areas/_footer.scss */
+        /* line 17, ../../scss/areas/_footer.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 15, ../../scss/areas/_footer.scss */
+        /* line 17, ../../scss/areas/_footer.scss */
         footer#page_footer p.downloads, footer#page_footer p.credits {
           width: 30%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-      /* line 27, ../../scss/areas/_footer.scss */
+      /* line 29, ../../scss/areas/_footer.scss */
       footer#page_footer p.credits {
         width: 100%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 27, ../../scss/areas/_footer.scss */
+      /* line 29, ../../scss/areas/_footer.scss */
       footer#page_footer p.credits {
         width: 30%; } }
-    /* line 39, ../../scss/areas/_footer.scss */
+    /* line 41, ../../scss/areas/_footer.scss */
     footer#page_footer p.legalese {
       float: right;
       font-size: 68.75%;
       width: 75%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 39, ../../scss/areas/_footer.scss */
+        /* line 41, ../../scss/areas/_footer.scss */
         footer#page_footer p.legalese {
           float: none;
           width: 100%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 39, ../../scss/areas/_footer.scss */
+        /* line 41, ../../scss/areas/_footer.scss */
         footer#page_footer p.legalese {
           width: 70%; } }
 
