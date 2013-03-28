@@ -9,6 +9,9 @@ footer#page_footer {
   @include respond-to(smartphone) {
     padding: 0 10px;
   }
+  @include respond-to(tablet) {
+    padding: 0 10px;
+  }
   p {
     font-size: 75%;
 

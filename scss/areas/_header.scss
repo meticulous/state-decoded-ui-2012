@@ -228,78 +228,80 @@
     } // ul
   } // nav
 
-  .inside & {
-    // Style for the small header
-    border-bottom: 10px solid $base-dark;
-    height: 75px;
+ @include respond-to(desktop) {
+    .inside & {
+      // Style for the small header
+      border-bottom: 10px solid $base-dark;
+      height: 75px;
 
-    .nest {
-      max-width: none;
-      padding: 0 40px;
-      width: 100%;
-    }
-
-    hgroup#virginia_logo {
-      background-size: 50px 50px;
-      height: 50px;
-      padding-left: 0;
-      position: absolute;
-        top: 8px;
-        left: 40px;
-
-      h1 {
-        font-size: 35px;
-        line-height: 35px;
-        margin: 0 0 0 55px;
-      } // h1
-
-      h2 {
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.5em;
-        margin: -5px 0 0 120px;
-      }
-    } // hgroup#virginia_logo
-
-    section#search {
-      margin-top: 0;
-      width: 25%;
-
-      label {
-        display: none;
+      .nest {
+        max-width: none;
+        padding: 0 40px;
+        width: 100%;
       }
 
-      input[type="search"] {
-        width: 70%;
-      }
+      hgroup#virginia_logo {
+        background-size: 50px 50px;
+        height: 50px;
+        padding-left: 0;
+        position: absolute;
+          top: 8px;
+          left: 40px;
 
-      input[type="submit"] {
-        padding: 2px 10px;
-      }
+        h1 {
+          font-size: 35px;
+          line-height: 35px;
+          margin: 0 0 0 55px;
+        } // h1
 
-    } // section#search
-
-    nav#main_navigation {
-      background-color: transparent;
-      margin-left: 250px;
-      padding: 0;
-      position: relative;
-      top: -5px;
-      width: 35%;
-      min-width: 450px;
-
-      li {
-        width: 24%;
-        a {
-          background-size: 25px 25px;
-          background-position: center 15px;
-          padding-top: 45px;
-           &#about_us {
-            background-size: 40px 40px;
-            background-position: center 8px;
-           }
+        h2 {
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.5em;
+          margin: -5px 0 0 120px;
         }
-      }
-    } // nav#main_navigation
-  } // .inside nav
+      } // hgroup#virginia_logo
+
+      section#search {
+        margin-top: 0;
+        width: 25%;
+
+        label {
+          display: none;
+        }
+
+        input[type="search"] {
+          width: 70%;
+        }
+
+        input[type="submit"] {
+          padding: 2px 10px;
+        }
+
+      } // section#search
+
+      nav#main_navigation {
+        background-color: transparent;
+        margin-left: 250px;
+        padding: 0;
+        position: relative;
+        top: -5px;
+        width: 35%;
+        min-width: 450px;
+
+        li {
+          width: 24%;
+          a {
+            background-size: 25px 25px;
+            background-position: center 15px;
+            padding-top: 45px;
+             &#about_us {
+              background-size: 40px 40px;
+              background-position: center 8px;
+             }
+          }
+        }
+      } // nav#main_navigation
+    } // .inside nav
+  }
 } // header#page_header

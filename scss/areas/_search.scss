@@ -24,10 +24,14 @@
       }
     }
 
+    @include respond-to(desktop) {
+      min-width: 300px;
+    }
+
     @include respond-to(tablet) {
       font-size: 75%;
-      margin-top: 15px;
-      width: 60%;
+      margin: 15px 10px 0 0 ;
+      width: 55%;
     }
 
     label {
@@ -36,6 +40,13 @@
       margin-bottom: 8px;
       @include respond-to(smartphone) {
         display: none;
+      }
+      @include respond-to(tablet) {
+        font-size: 12px;
+        margin-bottom: 0;
+        .inside & {
+          display: none;
+        }
       }
     }
 
@@ -47,7 +58,7 @@
       }
       @include respond-to(tablet) {
         font-size: 125%;
-        width: 325px;
+        width: 250px;
       }
     } // input
 

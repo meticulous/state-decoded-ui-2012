@@ -24,5 +24,8 @@
       @include respond-to(smartphone) {
         max-width: 100%;
       }
+      @include respond-to(tablet) {
+        margin-left: 20px;
+      }
     }
   } // section.feature-content
