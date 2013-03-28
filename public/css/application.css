@@ -1916,41 +1916,33 @@ header#page_header {
               background-image: url("/public/images/nav-icons/fallbacks/nav_court-cases.png"); }
           /* line 200, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#about_us {
-            background-image: url("/public/images/nav-icons/nav_about-us.svg");
-            background-position: center top;
-            background-size: 50px 50px; }
-            /* line 204, ../../scss/areas/_header.scss */
+            background-image: url("/public/images/nav-icons/nav_about-us.svg"); }
+            /* line 203, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#about_us:hover {
               background-image: url("/public/images/nav-icons/nav_about-us-hover.svg"); }
-            /* line 207, ../../scss/areas/_header.scss */
+            /* line 206, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#about_us {
-              background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
-              background-position: center 5px; }
-            @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-              /* line 200, ../../scss/areas/_header.scss */
-              header#page_header nav#main_navigation ul li a#about_us {
-                background-position: 20px center;
-                background-size: 35px 35px; } }
-          /* line 217, ../../scss/areas/_header.scss */
+              background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png"); }
+          /* line 211, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#use_the_api {
             background-image: url("/public/images/nav-icons/nav_use-the-api.svg"); }
-            /* line 219, ../../scss/areas/_header.scss */
+            /* line 213, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#use_the_api:hover {
               background-image: url("/public/images/nav-icons/nav_use-the-api-hover.svg"); }
-            /* line 222, ../../scss/areas/_header.scss */
+            /* line 216, ../../scss/areas/_header.scss */
             .lt-ie8 header#page_header nav#main_navigation ul li a#use_the_api {
               background-image: url("/public/images/nav-icons/fallbacks/nav_use-the-api.png"); }
   @media only screen and (min-width: 769px) {
-    /* line 232, ../../scss/areas/_header.scss */
+    /* line 225, ../../scss/areas/_header.scss */
     .inside header#page_header {
       border-bottom: 10px solid #105c80;
       height: 75px; }
-      /* line 237, ../../scss/areas/_header.scss */
+      /* line 236, ../../scss/areas/_header.scss */
       .inside header#page_header .nest {
         max-width: none;
         padding: 0 40px;
         width: 100%; }
-      /* line 243, ../../scss/areas/_header.scss */
+      /* line 242, ../../scss/areas/_header.scss */
       .inside header#page_header hgroup#virginia_logo {
         background-size: 50px 50px;
         height: 50px;
@@ -1958,31 +1950,31 @@ header#page_header {
         position: absolute;
         top: 8px;
         left: 40px; }
-        /* line 251, ../../scss/areas/_header.scss */
+        /* line 250, ../../scss/areas/_header.scss */
         .inside header#page_header hgroup#virginia_logo h1 {
           font-size: 35px;
           line-height: 35px;
           margin: 0 0 0 55px; }
-        /* line 257, ../../scss/areas/_header.scss */
+        /* line 256, ../../scss/areas/_header.scss */
         .inside header#page_header hgroup#virginia_logo h2 {
           font-size: 12px;
           font-weight: 400;
           letter-spacing: 0.5em;
           margin: -5px 0 0 120px; }
-      /* line 265, ../../scss/areas/_header.scss */
+      /* line 264, ../../scss/areas/_header.scss */
       .inside header#page_header section#search {
         margin-top: 0;
         width: 25%; }
-        /* line 269, ../../scss/areas/_header.scss */
+        /* line 268, ../../scss/areas/_header.scss */
         .inside header#page_header section#search label {
           display: none; }
-        /* line 273, ../../scss/areas/_header.scss */
+        /* line 272, ../../scss/areas/_header.scss */
         .inside header#page_header section#search input[type="search"] {
           width: 70%; }
-        /* line 277, ../../scss/areas/_header.scss */
+        /* line 276, ../../scss/areas/_header.scss */
         .inside header#page_header section#search input[type="submit"] {
           padding: 2px 10px; }
-      /* line 283, ../../scss/areas/_header.scss */
+      /* line 282, ../../scss/areas/_header.scss */
       .inside header#page_header nav#main_navigation {
         background-color: transparent;
         margin-left: 250px;
@@ -1991,15 +1983,15 @@ header#page_header {
         top: -5px;
         width: 35%;
         min-width: 450px; }
-        /* line 292, ../../scss/areas/_header.scss */
+        /* line 291, ../../scss/areas/_header.scss */
         .inside header#page_header nav#main_navigation li {
           width: 24%; }
-          /* line 294, ../../scss/areas/_header.scss */
+          /* line 293, ../../scss/areas/_header.scss */
           .inside header#page_header nav#main_navigation li a {
             background-size: 25px 25px;
             background-position: center 15px;
             padding-top: 45px; }
-            /* line 298, ../../scss/areas/_header.scss */
+            /* line 297, ../../scss/areas/_header.scss */
             .inside header#page_header nav#main_navigation li a#about_us {
               background-size: 40px 40px;
               background-position: center 8px; } }
@@ -2135,7 +2127,7 @@ section#search {
   color: white;
   float: right;
   font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 70px;
+  margin: 70px 20px 0 0;
   padding: 10px;
   width: 50%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
@@ -2255,6 +2247,7 @@ section#search {
       float: left;
       margin-bottom: 20px;
       padding-right: 5%;
+      margin-right: 5%;
       width: 50%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
         /* line 49, ../../scss/areas/_page-homepage.scss */
@@ -2262,20 +2255,21 @@ section#search {
           border-right: none;
           float: none;
           width: 100%; } }
-    /* line 66, ../../scss/areas/_page-homepage.scss */
+    /* line 67, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract:nth-child(2) {
       float: right;
       margin-bottom: 20px;
-      width: 45%; }
+      width: 39%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 66, ../../scss/areas/_page-homepage.scss */
+        /* line 67, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract:nth-child(2) {
           float: none;
           width: 100%; } }
-    /* line 80, ../../scss/areas/_page-homepage.scss */
+    /* line 81, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract:nth-child(3) {
+      clear: both;
       margin: 20px 0; }
-    /* line 84, ../../scss/areas/_page-homepage.scss */
+    /* line 86, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract figure {
       height: 125px;
       margin: 20px 0;
@@ -2284,28 +2278,28 @@ section#search {
       overflow: hidden;
       width: 100%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-        /* line 84, ../../scss/areas/_page-homepage.scss */
+        /* line 86, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 75px; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* line 84, ../../scss/areas/_page-homepage.scss */
+        /* line 86, ../../scss/areas/_page-homepage.scss */
         .homepage section.secondary-content article.abstract figure {
           height: 100px; } }
-      /* line 100, ../../scss/areas/_page-homepage.scss */
+      /* line 102, ../../scss/areas/_page-homepage.scss */
       .homepage section.secondary-content article.abstract figure img {
         position: absolute;
         top: -120px;
         left: 0;
         width: 100%; }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-          /* line 100, ../../scss/areas/_page-homepage.scss */
+          /* line 102, ../../scss/areas/_page-homepage.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -70px; } }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-          /* line 100, ../../scss/areas/_page-homepage.scss */
+          /* line 102, ../../scss/areas/_page-homepage.scss */
           .homepage section.secondary-content article.abstract figure img {
             top: -150px; } }
-    /* line 116, ../../scss/areas/_page-homepage.scss */
+    /* line 118, ../../scss/areas/_page-homepage.scss */
     .homepage section.secondary-content article.abstract h1 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 107.1428%;

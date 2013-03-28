@@ -199,18 +199,12 @@
 
           &#about_us {
             background-image: url("/public/images/nav-icons/nav_about-us.svg");
-            background-position: center top;
-            background-size: 50px 50px;
+            //background-size: 50px 50px;
             &:hover {
               background-image: url("/public/images/nav-icons/nav_about-us-hover.svg");
             }
             .lt-ie8 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
-              background-position: center 5px;
-            }
-            @include respond-to(smartphone) {
-              background-position: 20px center;
-              background-size: 35px 35px;
             }
           } // &#the_code
 
@@ -228,8 +222,13 @@
     } // ul
   } // nav
 
+.inside & {
+
+ @include respond-to(tablet) {
+
+  }
+
  @include respond-to(desktop) {
-    .inside & {
       // Style for the small header
       border-bottom: 10px solid $base-dark;
       height: 75px;
