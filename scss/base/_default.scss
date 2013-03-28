@@ -89,6 +89,9 @@ html {
 
     #main_content {
       padding: 20px 0;
+      @include respond-to(smartphone) {
+        padding: 0 10px;
+      }
     }
 
     // Unordered and Ordered - <ol> & <ul>

@@ -9,16 +9,24 @@
     width: 50%;
 
     @include respond-to(smartphone) {
+      background-color: transparent;
+      border: none;
       float: none;
       font-size: 70%;
       height: 50px;
-      margin: -1em -1.2em 1em -1.5em;
-      width: 115%;
+      margin: 0 20px;
+      position: absolute;
+        top: 330px;
+        left: 0;
+      width: 90%;
+      .advanced {
+        display: none;
+      }
     }
 
     @include respond-to(tablet) {
-      margin-top: 2.5em;
       font-size: 75%;
+      margin-top: 15px;
       width: 60%;
     }
 
@@ -35,7 +43,7 @@
       width: 65%;
       @include respond-to(smartphone) {
         font-size: 100%;
-        width: 220px;
+        width: 250px;
       }
       @include respond-to(tablet) {
         font-size: 125%;
@@ -44,7 +52,10 @@
     } // input
 
     input[type="submit"] {
-
+      @include respond-to(smartphone) {
+        font-size: 12px;
+        padding: 0 8px;
+      }
     }
 
     a {

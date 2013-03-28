@@ -6,7 +6,9 @@ footer#page_footer {
   color: $gray;
   font-family: $statedecoded-stack3;
   overflow: hidden;
-
+  @include respond-to(smartphone) {
+    padding: 0 10px;
+  }
   p {
     font-size: 75%;
 

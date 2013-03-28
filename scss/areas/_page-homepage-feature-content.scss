@@ -21,5 +21,8 @@
 
     img.ad {
       margin: 20px 0;
+      @include respond-to(smartphone) {
+        max-width: 100%;
+      }
     }
   } // section.feature-content

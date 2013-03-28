@@ -8,8 +8,8 @@
 
 
   @include respond-to(smartphone) {
-    padding-top: 0;
-    height: 370px;
+    padding-top: 10px;
+    height: 400px;
   }
 
   @include respond-to(tablet) {
@@ -33,11 +33,13 @@
     text-shadow: 0 -1px 1px rgba(0,0,0,0.35);
 
     @include respond-to(smartphone) {
+      background-position: 0 10px;
       background-size: 88px 88px; //~75%
-      padding-left: 100px;
-      position: relative;
+      clear: both;
+      margin: 0;
+      padding: 10px 0 0 100px;
+      position: absolute;
         top: 0;
-        left: 10px;
     }
 
     @include respond-to(tablet) {
@@ -45,7 +47,7 @@
       float: left;
       padding-left: 100px;
       position: relative;
-        top: 20px;
+        top: 15px;
         left: 0;
       width: 40%;
     }
@@ -58,12 +60,15 @@
       margin: 0;
 
       @include respond-to(smartphone) {
-        font-size: 300%;
+        font-size: 50px;
+        line-height: 60px;
+        margin: 0;
       }
 
       @include respond-to(tablet) {
-        font-size: 325%;
-        margin: 0 0 0 0;
+        font-size: 50px;
+        line-height: 60px;
+        margin: 0;
       }
     } //h1
 
@@ -77,13 +82,14 @@
 
       @include respond-to(smartphone) {
         font-size: 125%;
+        margin: 0;
       }
 
       @include respond-to(tablet) {
-        font-size: 130%;
+        font-size: 120%;
         font-weight: 400;
-        letter-spacing: 0.55em;
-        margin: -0.7em 0 0 0;
+        letter-spacing: 0.7em;
+        margin: 0;
       }
     } //h2
   } // hgroup#virginia_logo
@@ -101,11 +107,10 @@
     width: 100%;
 
     @include respond-to(smartphone) {
-      height: auto;
-      margin: 0 -1.5em;
-      padding: 0;
-      position: relative;
-      width: 115%;
+      height: 200px;
+      position: absolute;
+        top: 130px;
+        left: 0;
     }
 
     $nav-height: 70px;
@@ -137,9 +142,9 @@
           display: block;
           font-size: 150%;
           height: 50px;
-          padding: 15px 10px 0 10px;
+          padding: 0;
           text-align: left;
-          width: 110%;
+          width: 100%;
         }
 
         @include respond-to(tablet) {
@@ -164,9 +169,11 @@
             background-size: auto !important;
           }
           @include respond-to(smartphone) {
-            background-position: 0 0;
+            background-position: 20px center;
             height: 50px;
-            padding: 15px 100px 15px 50px;
+            line-height: 50px;
+            padding: 0 0 0 75px;
+            text-align: left;
             width: 100%;
           }
 
@@ -200,6 +207,10 @@
             .lt-ie8 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
               background-position: center 5px;
+            }
+            @include respond-to(smartphone) {
+              background-position: 20px center;
+              background-size: 35px 35px;
             }
           } // &#the_code
 
