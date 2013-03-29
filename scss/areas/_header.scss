@@ -130,6 +130,7 @@
 
       li {
         display: inline-block;
+        float: left;
         height: $nav-height;
         list-style-type: none;
         margin: 0;
@@ -182,7 +183,7 @@
             &:hover {
               background-image: url("/public/images/nav-icons/nav_the-code-hover.svg");
             }
-            .lt-ie8 & {
+            .lt-ie9 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_the-code.png");
             }
           } // &#the_code
@@ -192,7 +193,7 @@
             &:hover {
               background-image: url("/public/images/nav-icons/nav_court-cases-hover.svg");
             }
-            .lt-ie8 & {
+            .lt-ie9 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_court-cases.png");
             }
           } // &#the_code
@@ -203,7 +204,7 @@
             &:hover {
               background-image: url("/public/images/nav-icons/nav_about-us-hover.svg");
             }
-            .lt-ie8 & {
+            .lt-ie9 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png");
             }
           } // &#the_code
@@ -213,7 +214,7 @@
             &:hover {
               background-image: url("/public/images/nav-icons/nav_use-the-api-hover.svg");
             }
-            .lt-ie8 & {
+            .lt-ie9 & {
               background-image: url("/public/images/nav-icons/fallbacks/nav_use-the-api.png");
             }
           } // &#the_code

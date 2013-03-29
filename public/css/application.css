@@ -397,13 +397,19 @@ table {
   visibility: hidden; }
 
 /* line 60, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
-.modal .modal-footer:before, footer#page_footer:before, section.breadcrumbs:before, .modal .modal-footer:after, footer#page_footer:after, section.breadcrumbs:after {
+.modal .modal-footer:before, footer#page_footer:before, body.law section.secondary-content div.grouping > section:before,
+body.law section.secondary-content section#legal_self_help:before, body.law section.secondary-content div.grouping > section#legal_self_help ul:before,
+body.law section.secondary-content section#legal_self_help#legal_self_help ul:before, section.breadcrumbs:before, .modal .modal-footer:after, footer#page_footer:after, body.law section.secondary-content div.grouping > section:after,
+body.law section.secondary-content section#legal_self_help:after, body.law section.secondary-content div.grouping > section#legal_self_help ul:after,
+body.law section.secondary-content section#legal_self_help#legal_self_help ul:after, section.breadcrumbs:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 /* line 64, ../../scss/dependencies/mixins/_non-semantic-helpers.scss */
-.modal .modal-footer:after, footer#page_footer:after, section.breadcrumbs:after {
+.modal .modal-footer:after, footer#page_footer:after, body.law section.secondary-content div.grouping > section:after,
+body.law section.secondary-content section#legal_self_help:after, body.law section.secondary-content div.grouping > section#legal_self_help ul:after,
+body.law section.secondary-content section#legal_self_help#legal_self_help ul:after, section.breadcrumbs:after {
   clear: both; }
 
 /*
@@ -1849,6 +1855,7 @@ header#page_header {
       /* line 131, ../../scss/areas/_header.scss */
       header#page_header nav#main_navigation ul li {
         display: inline-block;
+        float: left;
         height: 70px;
         list-style-type: none;
         margin: 0;
@@ -1869,7 +1876,7 @@ header#page_header {
           /* line 131, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li {
             width: 22%; } }
-        /* line 154, ../../scss/areas/_header.scss */
+        /* line 155, ../../scss/areas/_header.scss */
         header#page_header nav#main_navigation ul li a {
           background-repeat: no-repeat;
           background-position: center 10px;
@@ -1884,11 +1891,11 @@ header#page_header {
           text-transform: uppercase;
           text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
           width: 100%; }
-          /* line 168, ../../scss/areas/_header.scss */
+          /* line 169, ../../scss/areas/_header.scss */
           .lt-ie8 header#page_header nav#main_navigation ul li a {
             background-size: auto !important; }
           @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-            /* line 154, ../../scss/areas/_header.scss */
+            /* line 155, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a {
               background-position: 20px center;
               height: 50px;
@@ -1896,53 +1903,53 @@ header#page_header {
               padding: 0 0 0 75px;
               text-align: left;
               width: 100%; } }
-          /* line 180, ../../scss/areas/_header.scss */
+          /* line 181, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#the_code {
             background-image: url("/public/images/nav-icons/nav_the-code.svg"); }
-            /* line 182, ../../scss/areas/_header.scss */
+            /* line 183, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#the_code:hover {
               background-image: url("/public/images/nav-icons/nav_the-code-hover.svg"); }
-            /* line 185, ../../scss/areas/_header.scss */
-            .lt-ie8 header#page_header nav#main_navigation ul li a#the_code {
+            /* line 186, ../../scss/areas/_header.scss */
+            .lt-ie9 header#page_header nav#main_navigation ul li a#the_code {
               background-image: url("/public/images/nav-icons/fallbacks/nav_the-code.png"); }
-          /* line 190, ../../scss/areas/_header.scss */
+          /* line 191, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#court_cases {
             background-image: url("/public/images/nav-icons/nav_court-cases.svg"); }
-            /* line 192, ../../scss/areas/_header.scss */
+            /* line 193, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#court_cases:hover {
               background-image: url("/public/images/nav-icons/nav_court-cases-hover.svg"); }
-            /* line 195, ../../scss/areas/_header.scss */
-            .lt-ie8 header#page_header nav#main_navigation ul li a#court_cases {
+            /* line 196, ../../scss/areas/_header.scss */
+            .lt-ie9 header#page_header nav#main_navigation ul li a#court_cases {
               background-image: url("/public/images/nav-icons/fallbacks/nav_court-cases.png"); }
-          /* line 200, ../../scss/areas/_header.scss */
+          /* line 201, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#about_us {
             background-image: url("/public/images/nav-icons/nav_about-us.svg"); }
-            /* line 203, ../../scss/areas/_header.scss */
+            /* line 204, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#about_us:hover {
               background-image: url("/public/images/nav-icons/nav_about-us-hover.svg"); }
-            /* line 206, ../../scss/areas/_header.scss */
-            .lt-ie8 header#page_header nav#main_navigation ul li a#about_us {
+            /* line 207, ../../scss/areas/_header.scss */
+            .lt-ie9 header#page_header nav#main_navigation ul li a#about_us {
               background-image: url("/public/images/nav-icons/fallbacks/nav_about-us.png"); }
-          /* line 211, ../../scss/areas/_header.scss */
+          /* line 212, ../../scss/areas/_header.scss */
           header#page_header nav#main_navigation ul li a#use_the_api {
             background-image: url("/public/images/nav-icons/nav_use-the-api.svg"); }
-            /* line 213, ../../scss/areas/_header.scss */
+            /* line 214, ../../scss/areas/_header.scss */
             header#page_header nav#main_navigation ul li a#use_the_api:hover {
               background-image: url("/public/images/nav-icons/nav_use-the-api-hover.svg"); }
-            /* line 216, ../../scss/areas/_header.scss */
-            .lt-ie8 header#page_header nav#main_navigation ul li a#use_the_api {
+            /* line 217, ../../scss/areas/_header.scss */
+            .lt-ie9 header#page_header nav#main_navigation ul li a#use_the_api {
               background-image: url("/public/images/nav-icons/fallbacks/nav_use-the-api.png"); }
   @media only screen and (min-width: 769px) {
-    /* line 225, ../../scss/areas/_header.scss */
+    /* line 226, ../../scss/areas/_header.scss */
     .inside header#page_header {
       border-bottom: 10px solid #105c80;
       height: 75px; }
-      /* line 236, ../../scss/areas/_header.scss */
+      /* line 237, ../../scss/areas/_header.scss */
       .inside header#page_header .nest {
         max-width: none;
         padding: 0 40px;
         width: 100%; }
-      /* line 242, ../../scss/areas/_header.scss */
+      /* line 243, ../../scss/areas/_header.scss */
       .inside header#page_header hgroup#virginia_logo {
         background-size: 50px 50px;
         height: 50px;
@@ -1950,31 +1957,31 @@ header#page_header {
         position: absolute;
         top: 8px;
         left: 40px; }
-        /* line 250, ../../scss/areas/_header.scss */
+        /* line 251, ../../scss/areas/_header.scss */
         .inside header#page_header hgroup#virginia_logo h1 {
           font-size: 35px;
           line-height: 35px;
           margin: 0 0 0 55px; }
-        /* line 256, ../../scss/areas/_header.scss */
+        /* line 257, ../../scss/areas/_header.scss */
         .inside header#page_header hgroup#virginia_logo h2 {
           font-size: 12px;
           font-weight: 400;
           letter-spacing: 0.5em;
           margin: -5px 0 0 120px; }
-      /* line 264, ../../scss/areas/_header.scss */
+      /* line 265, ../../scss/areas/_header.scss */
       .inside header#page_header section#search {
         margin-top: 0;
         width: 25%; }
-        /* line 268, ../../scss/areas/_header.scss */
+        /* line 269, ../../scss/areas/_header.scss */
         .inside header#page_header section#search label {
           display: none; }
-        /* line 272, ../../scss/areas/_header.scss */
+        /* line 273, ../../scss/areas/_header.scss */
         .inside header#page_header section#search input[type="search"] {
           width: 70%; }
-        /* line 276, ../../scss/areas/_header.scss */
+        /* line 277, ../../scss/areas/_header.scss */
         .inside header#page_header section#search input[type="submit"] {
           padding: 2px 10px; }
-      /* line 282, ../../scss/areas/_header.scss */
+      /* line 283, ../../scss/areas/_header.scss */
       .inside header#page_header nav#main_navigation {
         background-color: transparent;
         margin-left: 250px;
@@ -1983,15 +1990,15 @@ header#page_header {
         top: -5px;
         width: 35%;
         min-width: 450px; }
-        /* line 291, ../../scss/areas/_header.scss */
+        /* line 292, ../../scss/areas/_header.scss */
         .inside header#page_header nav#main_navigation li {
           width: 24%; }
-          /* line 293, ../../scss/areas/_header.scss */
+          /* line 294, ../../scss/areas/_header.scss */
           .inside header#page_header nav#main_navigation li a {
             background-size: 25px 25px;
             background-position: center 15px;
             padding-top: 45px; }
-            /* line 297, ../../scss/areas/_header.scss */
+            /* line 298, ../../scss/areas/_header.scss */
             .inside header#page_header nav#main_navigation li a#about_us {
               background-size: 40px 40px;
               background-position: center 8px; } }
@@ -2433,31 +2440,39 @@ body.law section.secondary-content {
   /* line 108, ../../scss/areas/_page-law-show.scss */
   body.law section.secondary-content div.grouping > section,
   body.law section.secondary-content section#legal_self_help {
+    clear: both;
     border: 1px solid #e4e9e7;
     background-color: #fcfdfa;
     box-shadow: inset 0 2px 20px rgba(111, 114, 117, 0.15);
     margin-bottom: 1em;
-    padding: 0 1em;
-    text-align: left; }
-    /* line 118, ../../scss/areas/_page-law-show.scss */
+    padding: 0;
+    text-align: left;
+    width: 100%; }
+    /* line 121, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section h1,
     body.law section.secondary-content section#legal_self_help h1 {
       font-family: "proxima-nova", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-style: italic;
       margin: 0.5em 0;
+      padding: 0 10px;
       text-transform: capitalize; }
-    /* line 126, ../../scss/areas/_page-law-show.scss */
+    /* line 130, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section > h1,
     body.law section.secondary-content section#legal_self_help > h1 {
       font-style: normal;
       text-transform: uppercase; }
-    /* line 131, ../../scss/areas/_page-law-show.scss */
+    /* line 135, ../../scss/areas/_page-law-show.scss */
+    body.law section.secondary-content div.grouping > section p, body.law section.secondary-content div.grouping > section h2,
+    body.law section.secondary-content section#legal_self_help p,
+    body.law section.secondary-content section#legal_self_help h2 {
+      padding: 0 10px; }
+    /* line 139, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section.header-bar-full,
     body.law section.secondary-content section#legal_self_help.header-bar-full {
       float: none;
       width: 100%; }
-      /* line 135, ../../scss/areas/_page-law-show.scss */
+      /* line 143, ../../scss/areas/_page-law-show.scss */
       body.law section.secondary-content div.grouping > section.header-bar-full > h1,
       body.law section.secondary-content section#legal_self_help.header-bar-full > h1 {
         background-color: #656358;
@@ -2465,25 +2480,27 @@ body.law section.secondary-content {
         font-size: 30px;
         font-weight: 100;
         font-style: normal;
-        margin: 0 -0.5em;
+        margin: 0;
         padding: 0.25em 0.5em;
         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
-        text-transform: uppercase; }
-      /* line 147, ../../scss/areas/_page-law-show.scss */
+        text-transform: uppercase;
+        width: 100%; }
+      /* line 156, ../../scss/areas/_page-law-show.scss */
       body.law section.secondary-content div.grouping > section.header-bar-full p,
       body.law section.secondary-content section#legal_self_help.header-bar-full p {
         margin: 0 0 10px 0; }
-    /* line 153, ../../scss/areas/_page-law-show.scss */
+    /* line 162, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#legal_self_help,
     body.law section.secondary-content section#legal_self_help#legal_self_help {
       overflow: hidden; }
-      /* line 156, ../../scss/areas/_page-law-show.scss */
+      /* line 165, ../../scss/areas/_page-law-show.scss */
       body.law section.secondary-content div.grouping > section#legal_self_help ul,
       body.law section.secondary-content section#legal_self_help#legal_self_help ul {
+        clear: both;
         list-style-type: none;
-        padding: 0;
+        padding: 0 10px;
         margin: 0; }
-        /* line 161, ../../scss/areas/_page-law-show.scss */
+        /* line 172, ../../scss/areas/_page-law-show.scss */
         body.law section.secondary-content div.grouping > section#legal_self_help ul li,
         body.law section.secondary-content section#legal_self_help#legal_self_help ul li {
           list-style-type: none;
@@ -2491,44 +2508,44 @@ body.law section.secondary-content {
           margin-bottom: 15px;
           width: 49%; }
           @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-width: 320px) and (max-width: 480px) {
-            /* line 161, ../../scss/areas/_page-law-show.scss */
+            /* line 172, ../../scss/areas/_page-law-show.scss */
             body.law section.secondary-content div.grouping > section#legal_self_help ul li,
             body.law section.secondary-content section#legal_self_help#legal_self_help ul li {
               float: none;
               width: 100%; } }
           @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) {
-            /* line 161, ../../scss/areas/_page-law-show.scss */
+            /* line 172, ../../scss/areas/_page-law-show.scss */
             body.law section.secondary-content div.grouping > section#legal_self_help ul li,
             body.law section.secondary-content section#legal_self_help#legal_self_help ul li {
               float: none;
               width: 100%; } }
-          /* line 179, ../../scss/areas/_page-law-show.scss */
+          /* line 190, ../../scss/areas/_page-law-show.scss */
           body.law section.secondary-content div.grouping > section#legal_self_help ul li article h1,
           body.law section.secondary-content section#legal_self_help#legal_self_help ul li article h1 {
             font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif; }
-          /* line 186, ../../scss/areas/_page-law-show.scss */
+          /* line 197, ../../scss/areas/_page-law-show.scss */
           body.law section.secondary-content div.grouping > section#legal_self_help ul li article.pdf,
           body.law section.secondary-content section#legal_self_help#legal_self_help ul li article.pdf {
             background-image: url("/public/images/icon_pdf_32.png");
             background-repeat: no-repeat;
             background-position: top left;
             padding-left: 42px; }
-    /* line 200, ../../scss/areas/_page-law-show.scss */
+    /* line 211, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#amendment_attempts h2,
     body.law section.secondary-content section#legal_self_help#amendment_attempts h2 {
       font-size: 125%; }
-    /* line 204, ../../scss/areas/_page-law-show.scss */
+    /* line 215, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#amendment_attempts a,
     body.law section.secondary-content section#legal_self_help#amendment_attempts a {
       font-size: 18px;
       font-style: italic;
       font-weight: bold; }
-    /* line 214, ../../scss/areas/_page-law-show.scss */
+    /* line 225, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h1,
     body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h1 {
       font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
       margin: 1em 0 0 0; }
-    /* line 219, ../../scss/areas/_page-law-show.scss */
+    /* line 230, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#court_decisions article.court-decision h2,
     body.law section.secondary-content section#legal_self_help#court_decisions article.court-decision h2 {
       font-size: 81.25%;
@@ -2536,60 +2553,60 @@ body.law section.secondary-content {
       font-variant: uppercase;
       margin: 0;
       text-transform: uppsercase; }
-    /* line 232, ../../scss/areas/_page-law-show.scss */
+    /* line 243, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#cross_references article.cross-reference h1,
     body.law section.secondary-content section#legal_self_help#cross_references article.cross-reference h1 {
       font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
       margin: 1em 0 0 0; }
-    /* line 241, ../../scss/areas/_page-law-show.scss */
+    /* line 252, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#related_laws article.related-law h1,
     body.law section.secondary-content section#legal_self_help#related_laws article.related-law h1 {
       font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
       margin: 1em 0 0 0; }
-    /* line 248, ../../scss/areas/_page-law-show.scss */
+    /* line 259, ../../scss/areas/_page-law-show.scss */
     body.law section.secondary-content div.grouping > section#cite_as,
     body.law section.secondary-content section#legal_self_help#cite_as {
       background-color: #656358;
       color: #fff;
       overflow: hidden;
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4); }
-      /* line 254, ../../scss/areas/_page-law-show.scss */
+      /* line 265, ../../scss/areas/_page-law-show.scss */
       body.law section.secondary-content div.grouping > section#cite_as > h1,
       body.law section.secondary-content section#legal_self_help#cite_as > h1 {
         float: left;
         font-size: 24px;
         font-weight: 100;
         font-style: normal;
-        margin: 0 -0.5em;
-        padding: 0.25em 0.5em;
+        margin: 0;
+        padding: 10px;
         text-transform: uppercase;
         width: 50%; }
-      /* line 265, ../../scss/areas/_page-law-show.scss */
+      /* line 276, ../../scss/areas/_page-law-show.scss */
       body.law section.secondary-content div.grouping > section#cite_as dl,
       body.law section.secondary-content section#legal_self_help#cite_as dl {
         float: right;
         margin: 1em 0 0 0;
         padding: 0;
         width: 49%; }
-        /* line 271, ../../scss/areas/_page-law-show.scss */
+        /* line 282, ../../scss/areas/_page-law-show.scss */
         body.law section.secondary-content div.grouping > section#cite_as dl dt,
         body.law section.secondary-content section#legal_self_help#cite_as dl dt {
           font-size: 85%;
           margin: 0;
           padding: 0;
           text-transform: uppercase; }
-        /* line 272, ../../scss/areas/_page-law-show.scss */
+        /* line 283, ../../scss/areas/_page-law-show.scss */
         body.law section.secondary-content div.grouping > section#cite_as dl dd,
         body.law section.secondary-content section#legal_self_help#cite_as dl dd {
           margin: 0 0 1em 0;
           padding: 0; }
 
-/* line 313, ../../scss/areas/_page-law-show.scss */
+/* line 324, ../../scss/areas/_page-law-show.scss */
 section.breadcrumbs {
   clear: both;
   margin-bottom: 20px; }
 
-/* line 319, ../../scss/areas/_page-law-show.scss */
+/* line 330, ../../scss/areas/_page-law-show.scss */
 .steps-nav {
   clear: both;
   position: relative;
@@ -2597,12 +2614,12 @@ section.breadcrumbs {
   padding: 0;
   list-style-type: none;
   width: 100%; }
-  /* line 326, ../../scss/areas/_page-law-show.scss */
+  /* line 337, ../../scss/areas/_page-law-show.scss */
   .steps-nav li {
     padding: 0;
     position: relative;
     float: left; }
-    /* line 330, ../../scss/areas/_page-law-show.scss */
+    /* line 341, ../../scss/areas/_page-law-show.scss */
     .steps-nav li a {
       position: relative;
       display: inline-block;
@@ -2614,10 +2631,10 @@ section.breadcrumbs {
       color: white !important;
       background-color: #8fa9b2;
       text-decoration: none; }
-      /* line 341, ../../scss/areas/_page-law-show.scss */
+      /* line 352, ../../scss/areas/_page-law-show.scss */
       .steps-nav li a span {
         font-weight: bold; }
-      /* line 344, ../../scss/areas/_page-law-show.scss */
+      /* line 355, ../../scss/areas/_page-law-show.scss */
       .steps-nav li a:before, .steps-nav li a:after {
         width: 0;
         height: 0;
@@ -2626,39 +2643,39 @@ section.breadcrumbs {
         top: 0;
         border: 12px solid #8fa9b2;
         border-right-width: 0; }
-      /* line 353, ../../scss/areas/_page-law-show.scss */
+      /* line 364, ../../scss/areas/_page-law-show.scss */
       .steps-nav li a:before {
         border-left: 24px solid transparent;
         left: -24px; }
-      /* line 357, ../../scss/areas/_page-law-show.scss */
+      /* line 368, ../../scss/areas/_page-law-show.scss */
       .steps-nav li a:after {
         border-color: transparent;
         border-left: 24px solid #8fa9b2;
         right: -24px; }
-    /* line 363, ../../scss/areas/_page-law-show.scss */
+    /* line 374, ../../scss/areas/_page-law-show.scss */
     .steps-nav li:first-child a:before {
       border-left: none; }
-    /* line 301, ../../scss/areas/_page-law-show.scss */
+    /* line 312, ../../scss/areas/_page-law-show.scss */
     .steps-nav li.active a {
       color: white;
       text-shadow: 0 1px 0 #30393c;
       background-color: #526166; }
-      /* line 290, ../../scss/areas/_page-law-show.scss */
+      /* line 301, ../../scss/areas/_page-law-show.scss */
       .steps-nav li.active a:before {
         border-top-color: #526166;
         border-bottom-color: #526166; }
-      /* line 295, ../../scss/areas/_page-law-show.scss */
+      /* line 306, ../../scss/areas/_page-law-show.scss */
       .steps-nav li.active a:after {
         border-left-color: #526166; }
-    /* line 305, ../../scss/areas/_page-law-show.scss */
+    /* line 316, ../../scss/areas/_page-law-show.scss */
     .steps-nav li.active:hover a {
       color: white;
       text-shadow: 0 1px 0 black;
       background-color: #252b2d; }
-      /* line 290, ../../scss/areas/_page-law-show.scss */
+      /* line 301, ../../scss/areas/_page-law-show.scss */
       .steps-nav li.active:hover a:before {
         border-top-color: #252b2d;
         border-bottom-color: #252b2d; }
-      /* line 295, ../../scss/areas/_page-law-show.scss */
+      /* line 306, ../../scss/areas/_page-law-show.scss */
       .steps-nav li.active:hover a:after {
         border-left-color: #252b2d; }
