@@ -84,9 +84,8 @@ body.law {
 
     div.grouping {
       float: left;
-      margin-right:1%;
       text-align: left;
-      width: 32.5%;
+      width: 630px;
 
       @include respond-to(tablet) {
         float: none;
@@ -116,7 +115,7 @@ body.law {
       margin-bottom: 1em;
       padding: 0;
       text-align: left;
-      width: 100%;
+      width: 190px;
 
       h1 {
         font-family: $statedecoded-stack3;
